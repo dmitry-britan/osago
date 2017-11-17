@@ -120,30 +120,7 @@
                     <div class="b-form__block b-form__insured">
                         <div class="b-container">
                             <div class="b-container_finalize">
-                                <figure class="b-method__trash">
-                                    <figcaption class="b-trash__tabs">
-                                        <span class="b-trash__tab b-trash__tab_guy b-trash__tab_active">Я парень</span>
-                                        <span class="b-trash__tab b-trash__tab_girl">Я девушка</span>
-                                    </figcaption>
-                                    <div class="b-trash__sides">
-                                        <div class="b-trash__side b-trash__side_front">
-                                            <div class="b-trash__balloons">
-                                                <div class="b-balloon b-balloon_small"></div>
-                                                <div class="b-balloon b-balloon_large">
-                                                    <span class="b-balloon__text">МММ, страхуй меня полностью!!!</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="b-trash__side b-trash__side_back">
-                                            <div class="b-trash__balloons">
-                                                <div class="b-balloon b-balloon_small"></div>
-                                                <div class="b-balloon b-balloon_large">
-                                                    <span class="b-balloon__text">Красавица, заполни форму. У тебя это займет только 3 минуты.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
+                                <div class="b-bg_man"></div>
                                 <div class="b-form__heading_finalize">Страхователь</div>
                                 <div class="row row_form">
                                     <div class="b-form__cell">
@@ -379,14 +356,13 @@
                                         <label for="card_self" class="b-label_pay"><span class="fa fa-credit-card-alt" aria-hidden="true">&nbsp;</span>Онлайн</label>
                                     </div>
                                 </div>
-                                <button type="submit" class="b-form__submit_vehicle b-form__submit_pay" id="submitBySelf">
-                                    <span class="b-text_btn">Заказать</span><span class="fa fa-angle-down" aria-hidden="true"></span>
-                                </button>
                             </div>
                         </div>
                     </div>
                     <div class="step__action">
-                        <a href="" class="b-btn b-btn--yellow-border with--arrow-left js-step-nav" data-step="2">Назад <i class="fa fa-angle-left"></i></a>
+                        <button type="submit" class="b-btn b-btn--purple with--arrow b-form__submit_vehicle b-form__submit_pay" id="submitBySelf">
+                            Заказать<i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </button>
                     </div>
                 </div>
             </form>
