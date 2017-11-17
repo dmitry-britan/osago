@@ -3639,8 +3639,8 @@ border: 1px solid #efca14;
     height: 203px;
 }
 .b-container_finalize{
-    margin-left: 300px;
-    max-width: 800px;
+    margin: 0 auto;
+    max-width: 760px;
 }
 .b-form__heading_finalize{
     margin-bottom: 17px;
@@ -3692,9 +3692,9 @@ border: 1px solid #efca14;
     font-size: 16px;
     font-weight: 700;
 }
-.b-form__cell #address_insured{
+/* .b-form__cell #address_insured{
     width: 284px;
-}
+} */
 .b-cell_error input{
     color: #ff4128;
 }
@@ -6773,7 +6773,7 @@ border: 1px solid #efca14;
     .b-btn{
         position: relative;
         display: inline-block;
-        min-width: 130px;
+        min-width: 100px;
         padding: 10px 10px;
         font-family: "Roboto Condensed";
         font-size: 16px;
@@ -6784,6 +6784,7 @@ border: 1px solid #efca14;
         transition: all 300ms;
         text-align: center;
         cursor: pointer;
+        text-decoration: none;
     }
     .b-btn:hover{
         box-shadow: 0 0 24px 6px rgba(0, 0, 0, 0.13);
@@ -6791,12 +6792,22 @@ border: 1px solid #efca14;
     .b-btn.with--arrow{
         padding-right: 50px;
     }
-    .b-btn i{
+    .b-btn.with--arrow-left{
+        padding-left: 50px;
+    }
+    .b-btn.with--arrow i{
         position: absolute;
         right: 0; top: 0;
         width: 40px; height: 40px;
         line-height: 40px;
         border-left: 1px solid;
+    }
+    .b-btn.with--arrow-left i{
+        position: absolute;
+        left: 0; top: 0;
+        width: 40px; height: 40px;
+        line-height: 40px;
+        border-right: 1px solid;
     }
     .b-btn--purple:hover,
     .b-btn--yellow{
@@ -6807,6 +6818,14 @@ border: 1px solid #efca14;
     .b-btn--purple{
         background-color: #7139a4;
         color: #fff;
+    }
+    .b-btn--yellow-border{
+        background: transparent;
+        border: 1px solid #e9c72f;
+        color: #231f20;
+    }
+    .b-btn--yellow-border i{
+        border-color: #e9c72f!important;
     }
 
 /* Form */
@@ -6869,4 +6888,20 @@ border: 1px solid #efca14;
     .callback__action{
         display: block;
         width: 100%;
+    }
+
+/* step */
+    .step{
+        display: none;
+    }
+    .step.is--active{
+        display: block;
+    }
+    .step__action{
+        margin: 0 auto;
+        max-width: 760px;
+        text-align: right;
+    }
+    .step__action a{
+        display: inline-block;
     }

@@ -955,6 +955,7 @@ $(document).ready(function(){
 			,$newPostCity = $methods.find("input[name='delivCityIdNP']").prev()
 			,$newPostDivision = $methods.find("select[name='delivDivisionIdNP']")
 			,$newPostRow = $newPostDivision.parents(".row_form")
+			,$orderByYourselfNavigate = $orderBlock.find(".js-step-nav")
 			;
 		
 		// show only selected buy method
@@ -989,6 +990,14 @@ $(document).ready(function(){
 			$('html, body').animate({ scrollTop: offsetAnchor}, 400);
 		});
 
+		// Order by yourself - steps navigation
+		$orderByYourselfNavigate.on('click', function(e){
+			e.preventDefault();
+			var stepId = $(this).data('step');
+
+			$('.step').removeClass('is--active');
+			$('.step--'+stepId).addClass('is--active');
+		});
 		// on mobiles show only byFileUpload method
 		$window.on("resize", function(){
 			if ($window.outerWidth() <= BREAKPOINT_XS && !$methodBtns.filter("[data-for='byUpload']").hasClass("b-finalize__btn_active")){
@@ -2257,4 +2266,5 @@ $(document).ready(function(){
 	footer.init();	// footer module init
 
 	$("#toTop").trigger("click");	// scroll to top after page is loaded
+
 });

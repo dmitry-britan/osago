@@ -116,6 +116,7 @@
         <div class="b-finalize__method b-finalize__method_self" id="bySelf">
             <div class="b-calculator__heading b-heading_finalize b-heading_method">Введите данные, чтобы получить полис</div>
             <form action="" class="b-form_finalize" id="formBySelf">
+                <div class="step step--1 is--active">
                     <div class="b-form__block b-form__insured">
                         <div class="b-container">
                             <div class="b-container_finalize">
@@ -193,6 +194,11 @@
                             </div>
                         </div>
                     </div>
+                    <div class="step__action">
+                        <a href="" class="b-btn b-btn--yellow with--arrow js-step-nav" data-step="2">Далее <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="step step--2">
                     <div class="b-form__block b-form__vehicle">
                         <div class="b-container">
                             <div class="b-container_finalize">
@@ -272,6 +278,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="step__action">
+                        <a href="" class="b-btn b-btn--yellow-border with--arrow-left js-step-nav" data-step="1">Назад <i class="fa fa-angle-left"></i></a>
+                        <a href="" class="b-btn b-btn--yellow with--arrow js-step-nav" data-step="3">Далее <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="step step--3">
                     <div class="b-form__block b-form__delivery">
                         <div class="b-container">
                             <div class="b-container_finalize">
@@ -309,8 +321,8 @@
                                             <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
                                             <span class="fa_error fa fa-times" aria-hidden="true"></span>
                                         </label>
-<!--                                        <input type="text" class="js-autocomplete js-ignoreValidate" id="delivRegionNP">-->
-<!--                                        <input type="hidden" name="delivRegionIdNP" class="hidden" id="delivRegionIdNP">-->
+                                        <!-- <input type="text" class="js-autocomplete js-ignoreValidate" id="delivRegionNP">-->
+                                        <!-- <input type="hidden" name="delivRegionIdNP" class="hidden" id="delivRegionIdNP">-->
                                         <select name="regionNP" id="delivRegionNP">
                                             <option value="" disabled selected hidden>Выберите область</option>
                                             <option value="1">Киевская</option>
@@ -331,10 +343,10 @@
                                             <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
                                             <span class="fa_error fa fa-times" aria-hidden="true"></span>
                                         </label>
-<!--
+                                         <!--
                                         <input type="text" class="js-autocomplete js-ignoreValidate" id="delivDivisionNP" disabled>
                                         <input type="hidden" name="delivDivisionIdNP" class="hidden" id="delivDivisionIdNP">
--->
+                                        -->
                                         <select name="delivDivisionIdNP" id="delivDivisionNP" disabled>
                                             <option value="" disabled selected hidden>Выберите отделение</option>
                                         </select>
@@ -373,6 +385,10 @@
                             </div>
                         </div>
                     </div>
+                    <div class="step__action">
+                        <a href="" class="b-btn b-btn--yellow-border with--arrow-left js-step-nav" data-step="2">Назад <i class="fa fa-angle-left"></i></a>
+                    </div>
+                </div>
             </form>
         </div>
         <div class="b-finalize__method b-finalize__method__phone" id="byPhone">
