@@ -1,0 +1,270 @@
+<div id="finalize">
+    <div class="b-container">
+        <div class="b-section_crumbs">
+            <div class="b-container">
+                <ol class="b-crumbs b-crumbs_finalize">
+                    <li class="b-crumbs__item" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <a href="http://test.oh.ua/" itemprop="url"><span itemprop="title">Главная</span></a>
+                    </li>
+                    <li class="b-crumbs__item" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <span> Осаго</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="b-finalize__btns_method" style="display:none">
+            <div class="b-finalize__btn_method b-finalize__btn_active" data-for="bySelf"></div>
+            <div class="b-finalize__btn_method" data-for="byPhone"></div>
+            <div class="b-finalize__btn_method" data-for="byUpload"></div>
+        </div>
+    </div>
+    <div class="b-finalize__methods">
+        <div class="b-finalize__method b-finalize__method_self js-method_active" id="bySelf" style="display:none"></div>
+        <div class="b-finalize__method b-finalize__method__phone" id="byPhone" style="display:none"></div>
+        <div class="b-finalize__method b-finalize__method__upload" id="byUpload">
+            <div class="b-calculator__heading b-heading_finalize b-heading_method">Введите данные, чтобы получить доставку полиса быстрее</div>
+            <form action="" class="b-form_finalize" id="formByUpload">
+                <div class="b-form__block b-form__insured_byupload">
+                    <div class="b-container g-pos_relative">
+                        <ul class="b-crumbs_aside">
+                            <li class="b-crumbs__item_aside b-item_done js-crumbs__link" data-step="1">
+                                <div class="b-item__link">
+                                    <span class="b-item__pre"></span>
+                                    <span class="b-item__text">Расчет</span>
+                                </div>
+                            </li>
+                            <li class="b-crumbs__item_aside b-item_done js-crumbs__link" data-step="2">
+                                <div class="b-item__link">
+                                    <span class="b-item__pre"></span>
+                                    <span class="b-item__text">Выбор</span>
+                                </div>
+                            </li>
+                            <li class="b-crumbs__item_aside b-item_active">
+                                <div class="b-item__link">
+                                    <span class="b-item__pre">3</span>
+                                    <span class="b-item__text">Оформление</span>
+                                </div>
+                            </li>
+                            <li class="b-crumbs__item_aside b-item_unactive">
+                                <div class="b-item__link">
+                                    <span class="b-item__pre">4</span>
+                                    <span class="b-item__text">Оплата</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="b-container_finalize">
+                            <div class="b-form__heading_finalize">Страхователь</div>
+                            <div class="row row_form">
+                                <div class="b-form__cell">
+                                    <label for="phone_byupload" class="b-label_finalize">Телефон
+                                        <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
+                                        <span class="fa_error fa fa-times" aria-hidden="true"></span>
+                                    </label>
+                                    <input type="tel" name="phone" id="phone_byupload">
+                                </div>
+                                <div class="b-form__cell">
+                                    <label for="email_byupload" class="b-label_finalize">E-mail
+                                        <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
+                                        <span class="fa_error fa fa-times" aria-hidden="true"></span>
+                                    </label>
+                                    <input type="email" name="email" id="email_byupload">
+                                </div>
+                                <div class="b-form__cell">
+                                    <label for="first-name_byupload" class="b-label_finalize">Имя
+                                        <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
+                                        <span class="fa_error fa fa-times" aria-hidden="true"></span>
+                                    </label>
+                                    <input type="text" name="firstName" id="first-name_byupload">
+                                </div>
+                            </div>
+                            <div class="row row_form">
+                                <div class="b-form__cell b-form__cell_file">
+                                    <label for="copies_byupload" class="b-label_finalize" title="Не более 10ти фото">Прикрепите фото прав и Тех.Паспорта<br>(лицевая и обратная сторона)
+                                        <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
+                                        <span class="fa_error fa fa-times" aria-hidden="true"></span>
+                                    </label>
+                                    <div class="b-wrap_files">
+                                        <input type="file" name="docScan[]" accept="image/*" id="copies_byupload" class="js-ignoreValidate">
+                                        <button type="button" class="b-button_files">
+                                            <span class="b-progress_files"></span>
+                                            <span class="b-button__text_files">Нажмите чтобы выбрать фото</span>
+                                        </button>
+                                        <div class="b-list_files"></div>
+                                    </div>
+                                    <div class="b-wrap_files hidden">
+                                        <input type="file" name="docScan[]" accept="image/*" class="js-ignoreValidate">
+                                        <button type="button" class="b-button_files">
+                                            <span class="b-progress_files"></span>
+                                            <span class="b-button__text_files">Нажмите чтобы выбрать фото</span>
+                                        </button>
+                                        <div class="b-list_files"></div>
+                                    </div>
+                                    <div class="b-wrap_files hidden">
+                                        <input type="file" name="docScan[]" accept="image/*" class="js-ignoreValidate">
+                                        <button type="button" class="b-button_files">
+                                            <span class="b-progress_files"></span>
+                                            <span class="b-button__text_files">Нажмите чтобы выбрать фото</span>
+                                        </button>
+                                        <div class="b-list_files"></div>
+                                    </div>
+                                    <div class="b-wrap_files hidden">
+                                        <input type="file" name="docScan[]" accept="image/*" class="js-ignoreValidate">
+                                        <button type="button" class="b-button_files">
+                                            <span class="b-progress_files"></span>
+                                            <span class="b-button__text_files">Нажмите чтобы выбрать фото</span>
+                                        </button>
+                                        <div class="b-list_files"></div>
+                                    </div>
+                                    <div class="b-wrap_files hidden">
+                                        <input type="file" name="docScan[]" accept="image/*" class="js-ignoreValidate">
+                                        <button type="button" class="b-button_files">
+                                            <span class="b-progress_files"></span>
+                                            <span class="b-button__text_files">Нажмите чтобы выбрать фото</span>
+                                        </button>
+                                        <div class="b-list_files"></div>
+                                    </div>
+                                    <div class="b-wrap_files hidden">
+                                        <input type="file" name="docScan[]" accept="image/*" class="js-ignoreValidate">
+                                        <button type="button" class="b-button_files">
+                                            <span class="b-progress_files"></span>
+                                            <span class="b-button__text_files">Нажмите чтобы выбрать фото</span>
+                                        </button>
+                                        <div class="b-list_files"></div>
+                                    </div>
+                                    <div class="b-wrap_files hidden">
+                                        <input type="file" name="docScan[]" accept="image/*" class="js-ignoreValidate">
+                                        <button type="button" class="b-button_files">
+                                            <span class="b-progress_files"></span>
+                                            <span class="b-button__text_files">Нажмите чтобы выбрать фото</span>
+                                        </button>
+                                        <div class="b-list_files"></div>
+                                    </div>
+                                    <div class="b-wrap_files hidden">
+                                        <input type="file" name="docScan[]" accept="image/*" class="js-ignoreValidate">
+                                        <button type="button" class="b-button_files">
+                                            <span class="b-progress_files"></span>
+                                            <span class="b-button__text_files">Нажмите чтобы выбрать фото</span>
+                                        </button>
+                                        <div class="b-list_files"></div>
+                                    </div>
+                                    <div class="b-wrap_files hidden">
+                                        <input type="file" name="docScan[]" accept="image/*" class="js-ignoreValidate">
+                                        <button type="button" class="b-button_files">
+                                            <span class="b-progress_files"></span>
+                                            <span class="b-button__text_files">Нажмите чтобы выбрать фото</span>
+                                        </button>
+                                        <div class="b-list_files"></div>
+                                    </div>
+                                    <div class="b-wrap_files hidden">
+                                        <input type="file" name="docScan[]" accept="image/*" class="js-ignoreValidate">
+                                        <button type="button" class="b-button_files">
+                                            <span class="b-progress_files"></span>
+                                            <span class="b-button__text_files">Нажмите чтобы выбрать фото</span>
+                                        </button>
+                                        <div class="b-list_files"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-form__block b-form__delivery_byupload">
+                    <div class="b-container">
+                            <div class="b-container_finalize">
+                                <div class="b-form__heading_finalize">Выберите способ доставки</div>
+                                
+                                <div class="row row_form">
+                                    <div class="b-form__cell">
+                                        <label class="b-label_finalize">&nbsp;</label>
+                                        <select name="deliveryMode" class="js-selectric" id="deliveryMode_byUpload">
+                                            <option value="bySelf" selected>Самовывоз</option>
+                                            <option value="byCourier">Курьер</option>
+                                            <option value="byNP">Новая почта</option>
+                                        </select>
+                                    </div>
+                                    <div class="b-form__cell hidden">
+                                        <label for="delivCityCourier_byUpload" class="b-label_finalize">Город доставки 
+                                            <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
+                                            <span class="fa_error fa fa-times" aria-hidden="true"></span>
+                                        </label>
+                                        <input type="text" class="js-autocomplete js-ignoreValidate" id="delivCityCourier_byUpload" disabled>
+                                        <input type="hidden" name="delivCityId" class="hidden" id="delivCityIdCourier_byUpload">
+                                    </div>
+                                    <div class="b-form__cell hidden">
+                                        <label for="deliveryAddrCourier_byUpload" class="b-label_finalize">Адрес доставки
+                                            <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
+                                            <span class="fa_error fa fa-times" aria-hidden="true"></span>
+                                        </label>
+                                        <input type="text" name="deliveryAddr" id="deliveryAddrCourier_byUpload" disabled>
+                                    </div>
+                                </div>
+                                
+                                <div class="row row_form hidden">
+                                    <div class="b-form__cell">
+                                        <label for="delivRegionNP_byUpload" class="b-label_finalize">Выберите область
+                                            <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
+                                            <span class="fa_error fa fa-times" aria-hidden="true"></span>
+                                        </label>
+                                        <select name="regionNP" id="delivRegionNP_byUpload" disabled>
+                                            <option value="" disabled selected hidden>Выберите область</option>
+                                            <option value="1">Киевская</option>
+                                            <option value="2">Житомирская</option>
+                                            <option value="3">Черкасская</option>
+                                        </select>
+                                    </div>
+                                    <div class="b-form__cell">
+                                        <label for="delivCityNP_byUpload" class="b-label_finalize">Выберите город
+                                            <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
+                                            <span class="fa_error fa fa-times" aria-hidden="true"></span>
+                                        </label>
+                                        <input type="text" class="js-autocomplete js-ignoreValidate" id="delivCityNP_byUpload" disabled>
+                                        <input type="hidden" name="delivCityIdNP" class="hidden" id="delivCityIdNP_byUpload">
+                                    </div>
+                                    <div class="b-form__cell">
+                                        <label for="delivDivisionNP_byUpload" class="b-label_finalize">Выберите отделение
+                                            <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
+                                            <span class="fa_error fa fa-times" aria-hidden="true"></span>
+                                        </label>
+                                        <select name="delivDivisionIdNP" id="delivDivisionNP_byUpload" disabled>
+                                            <option value="" disabled selected hidden>Выберите отделение</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="row row_form">
+                                    <div class="b-form__cell b-form__cell_comment">
+                                        <label for="commentByUpload" class="b-label_finalize">Комментарий к заказу
+                                        </label>
+                                        <textarea class="b-autocomplete b-comment b-comment_finalize" id="commentByUpload"></textarea>
+                                    </div>
+                                    <div class="b-form__cell b-form__cell_map">
+                                        <label class="b-label_finalize">&nbsp;</label>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4273.107226297036!2d30.515630968815113!3d50.44473723949905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef476aeabf7%3A0x7a1e66ef15f87549!2z0KHRgtGA0LDRhdC-0LLQutCwINCe0KHQkNCT0J4g0LIg0JrQuNC10LLQtSwg0L7QvdC70LDQudC9INC60LDQu9GM0LrRg9C70Y_RgtC-0YAg0LDQstGC0L7RhtC40LLQuNC70LrQuCDigJQgT2guVUE!5e0!3m2!1suk!2sua!4v1494764523312" frameborder="0" class="b-map b-map_finalize" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                    <div class="b-form__block b-form__pay b-form__pay_byupload">
+                        <div class="b-container">
+                           <div class="b-container_finalize">
+                                <div class="b-form__heading_finalize">Выберите способ оплаты</div>
+                                <div class="row row_form">
+                                    <div class="b-form__cell">
+                                        <input type="radio" class="radio b-radio_pay sr-only" name="pay" value="cash" id="cash_selfByUpload" checked>
+                                        <label for="cash_selfByUpload" class="b-label_pay">Наличными</label>
+                                        <input type="radio" class="radio b-radio_pay sr-only" name="pay" value="card" id="card_selfByUpload">
+                                        <label for="card_selfByUpload" class="b-label_pay"><span class="fa fa-credit-card-alt" aria-hidden="true">&nbsp;</span>Онлайн</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="b-form__submit_vehicle b-form__submit_pay" id="submitByUpload">
+                                    <span class="b-text_btn">Заказать</span><span class="fa fa-angle-down" aria-hidden="true"></span>
+                                </button>
+                                <div class="b-bg_mailbox"></div>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>

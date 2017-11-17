@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>ОСАГО-Ленд</title>
+	
+    
+    <script type="application/ld+json">
+    {
+     "@context": "http://schema.org",
+     "@type": "InsuranceAgency",
+     "address": 
+     {
+        "@type": "PostalAddress",
+        "addressLocality": "Киев",
+        "addressCountry": "Украина",
+        "streetAddress": "ул. Пушкинская, 9"
+     },
+     "url": "https://oh.ua",
+     "brand": "OH", 
+     "name": "Страхование онлайн - OH.UA",
+     "image": "https://oh.ua/images/news/29.1.b.jpg",
+     "logo": "https://oh.ua/osago/app/web/img/logo.png",
+     "telephone": "+38 (098) 733 67 18", 
+     "email": "sales@oh.ua", 
+    "priceRange": "₴300-₴2000"
+      }
+    </script>
+
+	<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Product",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "bestRating": "5",
+        "ratingCount": "24",
+        "ratingValue": "4.9"
+      },
+      "image": "http://oh.ua/osago/app/web/img/seoCar.png",
+      "name": "ОСАГО - страхование онлайн",
+     "alternateName": "Автоцивилка онлайн",
+      "offers": {
+        "@type": "AggregateOffer",
+     "priceCurrency": "UAH",
+         "lowPrice": "699",
+
+        "offerCount": "6",
+         "offers": [
+          {
+            "@type": "Offer",
+             "name": "ОСАГО в Киеве",
+            "url": "kyiv/"
+          },
+        {
+            "@type": "Offer",
+            "name": "ОСАГО в Харькове",
+            "url": "kharkiv/"
+          },
+          {
+            "@type": "Offer",
+            "name": "ОСАГО в Днепропетровске",
+            "url": "dnepropetrovsk/"
+          },
+          {
+            "@type": "Offer",
+            "name": "ОСАГО в Запорожье",
+            "url": "zaporozhye/"
+          },
+          {
+            "@type": "Offer",
+            "name": "ОСАГО в Одессе",
+            "url": "odessa/"
+          },
+          {
+            "@type": "Offer",
+            "name": "ОСАГО во Львове",
+            "url": "lviv/"
+          }
+        ]
+      }
+    }
+    </script>
+	
+	<link href="./css/normalize.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="./css/selectric.css" rel="stylesheet">
+<!--
+	<link href="./css/classic.css" rel="stylesheet">
+	<link href="./css/classic.date.css" rel="stylesheet">
+-->
+	<link href="./css/jquery.auto-complete.css" rel="stylesheet">
+	<link href="./css/ion.rangeSlider.css" rel="stylesheet">
+	<link href="./css/ion.rangeSlider.skinOh.css" rel="stylesheet">
+	<link href="./css/default.css" rel="stylesheet">
+	<link href="./css/default.date.css" rel="stylesheet">
+	<link href="./css/styles.css" rel="stylesheet">
+
+    <script>
+        dataLayer=[];   // google tagManager imitation
+    </script>
+    
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <!--Site Preloader Start-->
+    <!--[if !IE 8]><!-->
+    <script src="https://oh.ua/project/templates/oh.ua/js/vendor/queryloader2.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            new QueryLoader2(document.querySelector("body"), {
+                barColor: "#efefef",
+                backgroundColor: "#111",
+                percentage: true,
+                barHeight: 1,
+                minimumTime: 200,
+                fadeOutTime: 1000
+            });
+        });
+    </script>
+    <!--<![endif]-->
+    <!--/Site Preloader End-->
+    <!--For Main Page only! (queryloader2.js helper)-->
+    <div id="qLoverlay"></div>
+    <!--/For Main Page only! (queryloader2.js helper)-->
+    
+	<div id="headerWrapper">
+        <header class="b-header b-container b-container_mid" id="header">
+            <a href="#" class="b-logo__link">
+                <img src="./img/logo.svg" alt="OH.UA лого" class="b-logo">
+            </a>
+            <button class="b-btn_menu" id="menuBtn">
+                <span class="b-menu__icon">
+                    <span class="b-icon_bars"></span>
+                    <span class="fa fa-times" aria-hidden="true"></span>
+                </span>
+                <span class="b-btn__text">Меню</span>
+            </button>
+            <span class="b-adress_header">Украина, г. Киев, ул. Пушкинская, 9</span>
+            <a href="mailto:sales@oh.ua" class="b-header__link b-header__link_email">
+                <span class="fa fa-envelope-open-o" aria-hidden="true"></span>
+                <span class="b-link__text">sales@oh.ua</span>
+            </a>
+            <div class="b-call">
+                <a href="tel:0442903669" class="b-header__link b-header__link_phone">
+                    <span class="b-icon_phone"></span>
+                    <span class="b-link__text">(098) 733 67 18</span>
+                </a>
+                <a class="b-header__link b-btn_callback js-btn_callback callback" id="callbackBtn">Обратный звонок</a>
+            </div>
+            <div class="b-btn_lang b-btn_menu" id="langBtn">
+                <span>RU</span>
+                <ul class="b-dropdown_lang">
+                    <li><a href="https://oh.ua/ua/" class="set-lang b-link_lang">UA</a></li>
+                </ul>
+            </div>
+            <div class="b-menu" id="mainMenu">
+                <div class="b-modal__btn_close js-menu__close">
+                    <span class="fa fa-times" aria-hidden="true"></span>
+                </div>
+                <ul class="b-menu__list">
+                    <li class="b-menu__item">
+                        <a href="#" class="b-menu__heading"><span>ОСАГО</span></a>
+                        <span class="b-heading_submenu">Регион:</span>
+                        <ul class="b-submenu">
+                            <li><a href="#" class="b-submenu__link">ОСАГО в Харькове</a></li>
+                            <li><a href="#" class="b-submenu__link">ОСАГО в Днепре</a></li>
+                            <li><a href="#" class="b-submenu__link">ОСАГО в Запорожье</a></li>
+                            <li><a href="#" class="b-submenu__link">ОСАГО в Одессе</a></li>
+                            <li><a href="#" class="b-submenu__link">ОСАГО во Львове</a></li>
+                            <li><a href="#" class="b-submenu__link b-submenu__link_more">Другие регионы</a></li>
+                        </ul>
+                        <span class="b-heading_submenu">Доп услуги:</span>
+                        <ul class="b-submenu">
+                            <li><a href="#" class="b-submenu__link">Электронный полис ОСАГО</a></li>
+                            <li><a href="#" class="b-submenu__link">ОСАГО с доставкой</a></li>
+                        </ul>
+                    </li>
+                    <li class="b-menu__item">
+                        <a href="#" class="b-menu__heading"><span>КАСКО</span></a>
+                        <span class="b-heading_submenu">Регион:</span>
+                        <ul class="b-submenu">
+                            <li><a href="#" class="b-submenu__link">КАСКО в Харькове</a></li>
+                            <li><a href="#" class="b-submenu__link">КАСКО в Днепре</a></li>
+                            <li><a href="#" class="b-submenu__link">КАСКО в Запорожье</a></li>
+                            <li><a href="#" class="b-submenu__link">КАСКО в Одессе</a></li>
+                            <li><a href="#" class="b-submenu__link">КАСКО во Львове</a></li>
+                            <li><a href="#" class="b-submenu__link b-submenu__link_more">Другие регионы</a></li>
+                        </ul>
+                        <span class="b-heading_submenu">Доп услуги:</span>
+                        <ul class="b-submenu">
+                            <li><a href="#" class="b-submenu__link">Проверить полис КАСКО</a></li>
+                        </ul>
+                    </li>
+                    <li class="b-menu__item">
+                        <a href="#" class="b-menu__heading"><span>Туристическое страхование</span></a>
+                        <span class="b-heading_submenu">Регион:</span>
+                        <ul class="b-submenu">
+                            <li><a href="#" class="b-submenu__link">Туристическое страхование в Харькове</a></li>
+                            <li><a href="#" class="b-submenu__link">Туристическое страхование в Днепре</a></li>
+                            <li><a href="#" class="b-submenu__link">Туристическое страхование в Запорожье</a></li>
+                            <li><a href="#" class="b-submenu__link">Туристическое страхование в Одессе</a></li>
+                            <li><a href="#" class="b-submenu__link">Туристическое страхование во Львове</a></li>
+                            <li><a href="#" class="b-submenu__link b-submenu__link_more">Другие регионы</a></li>
+                        </ul>
+                        <span class="b-heading_submenu">Доп услуги:</span>
+                        <ul class="b-submenu">
+                            <li><a href="#" class="b-submenu__link">Страхование для визы</a></li>
+                            <li><a href="#" class="b-submenu__link">Страхование для рабочей визы</a></li>
+                        </ul>
+                    </li>
+                    <li class="b-menu__item">
+                        <a href="#" class="b-menu__heading"><span>Зеленая карта</span></a>
+                        <span class="b-heading_submenu">Регион:</span>
+                        <ul class="b-submenu">
+                            <li><a href="#" class="b-submenu__link">Зеленая карта в Харькове</a></li>
+                            <li><a href="#" class="b-submenu__link">Зеленая карта в Днепре</a></li>
+                            <li><a href="#" class="b-submenu__link">Зеленая карта в Запорожье</a></li>
+                            <li><a href="#" class="b-submenu__link">Зеленая карта в Одессе</a></li>
+                            <li><a href="#" class="b-submenu__link">Зеленая карта во Львове</a></li>
+                            <li><a href="#" class="b-submenu__link b-submenu__link_more">Другие регионы</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="b-menu__item_callback b-header__link b-btn_callback js-btn_callback callback">Обратный звонок</a>
+            </div>
+        </header>
+    </div>
+	<section class="b-section_calculator" id="calculator">
+        <div class="b-container_preloader" style="display:none">
+             <div class="b-wrap_preloader">
+                <div class="md-preloader"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="75" width="75" viewbox="0 0 75 75"><circle cx="37.5" cy="37.5" r="33.5" stroke-width="8"/></svg></div>
+             </div>
+        </div>
+        <div class="js-ajax_calculator">
+            <div class="b-section_crumbs">
+                <div class="b-container">
+                    <ol class="b-crumbs">
+                        <li class="b-crumbs__item" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                            <a href="http://test.oh.ua/" itemprop="url"><span itemprop="title">Главная</span></a>
+                        </li>
+                        <li class="b-crumbs__item" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                            <span>Осаго</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="b-container b-container__calculator_vehicle">
+                <div class="b-calculator b-calculator_vehicle">
+                    <h1 class="b-calculator__heading_main">ОСАГО по лучшей цене за 3 минуты!</h1>
+                    <form action="" class="b-form_calculator b-form_vehicle" id="vehicleForm">
+                        <span class="b-calculator__heading">Выберите страховку на свое авто 
+<!--                            <span class="b-icon_tolltip fa fa-question-circle" aria-hidden="true" title="Выберите страховку на свое ТС"></span>-->
+                        </span>
+                        <div class="b-vehicles">
+                            <input type="radio" class="sr-only" id="car" value="car" name="vehicle" checked>
+                            <label class="b-vehicle b-vehicle_active js-vehicle_active" for="car">
+                                <span class="b-vehicle__back">
+                                    <svg viewBox="0 0 409.9 246.5" class="svg-vehicle svg-vehicle_car" id="svg-car">
+                                            <path class="st0" d="M58.7,82.1c3.5,1.5,7.5-0.1,9-3.6L88,31.1c5.7-11.4,14.6-16.7,28-16.7h95.6c16.6,0,31.9,8.8,42.3,24.6 l40.8,54.2c1.8,3.3,10.2,16.8,26.1,16.8h20.5c29.3,0,40.9,16.2,45.4,27.3h-11.3c-3.8,0-6.8,3.1-6.8,6.8c0,3.8,3.1,6.8,6.8,6.8 h14.7l5.6,34.6c0.5,1.8,0.3,3.2-0.5,4.2c-1,1.4-3.3,2.1-6.2,2.1h-21c-3.3-23.1-23.2-41-47.2-41c-26.3,0-47.8,21.4-47.8,47.8 c0,26.4,21.4,47.8,47.8,47.8c24,0,43.9-17.8,47.2-41h21c7.2,0,13.3-2.6,17-7.5c3.4-4.4,4.4-10.1,3-15.4l-6.4-39.9 c-4.5-22.5-23-46.4-61.3-46.4h-20.5c-9.1,0-14.2-9.8-14.2-9.8c-0.2-0.4-0.4-0.8-0.7-1.1l-40.8-54.3c-12.5-19-32.5-30.4-53.4-30.4  h-95.6c-18.7,0-32.2,8.2-40.4,24.6L55.2,73.2C53.7,76.6,55.3,80.7,58.7,82.1L58.7,82.1z M320.8,232.9c-18.8,0-34.1-15.3-34.1-34.1 c0-18.8,15.3-34.1,34.1-34.1c18.8,0,34.1,15.3,34.1,34.1C354.9,217.6,339.6,232.9,320.8,232.9L320.8,232.9z M320.8,232.9"/>
+                                            <path d="M20.5,205.6H24c3.8,0,6.8-3.1,6.8-6.8c0-3.8-3.1-6.8-6.8-6.8h-3.5c-3.8,0-6.8-3.1-6.8-6.8V151h6.8c3.8,0,6.8-3.1,6.8-6.8 c0-3.8-3.1-6.8-6.8-6.8h-6.8v-20.5c0-3.8,3.1-6.8,6.8-6.8h130.9l12.6,62.8c0.6,3.2,3.5,5.5,6.7,5.5c0.4,0,0.9,0,1.3-0.1 c3.7-0.7,6.1-4.3,5.4-8l-12-60.1h114.5c3.8,0,6.8-3.1,6.8-6.8c0-3.8-3.1-6.8-6.8-6.8h-23.1l8.7-17.4c1.7-3.4,0.3-7.5-3.1-9.2 c-3.4-1.7-7.5-0.3-9.2,3.1l-11.8,23.5h-77.6V34.9c0-3.8-3.1-6.8-6.8-6.8c-3.8,0-6.8,3.1-6.8,6.8v61.4H20.5 C9.2,96.3,0,105.5,0,116.8v68.3C0,196.4,9.2,205.6,20.5,205.6L20.5,205.6z M20.5,205.6"/>
+                                            <path d="M259.4,198.7c0-3.8-3.1-6.8-6.8-6.8H136c-3.3-23.1-23.2-41-47.2-41C62.4,151,41,172.4,41,198.7c0,26.4,21.4,47.8,47.8,47.8 c24,0,43.9-17.8,47.2-41h116.5C256.3,205.6,259.4,202.5,259.4,198.7L259.4,198.7z M88.7,232.9c-18.8,0-34.1-15.3-34.1-34.1 c0-18.8,15.3-34.1,34.1-34.1s34.1,15.3,34.1,34.1C122.9,217.6,107.6,232.9,88.7,232.9L88.7,232.9z M88.7,232.9"/>
+                                            <path d="M320.8,178.3c-11.3,0-20.5,9.2-20.5,20.5c0,11.3,9.2,20.5,20.5,20.5c11.3,0,20.5-9.2,20.5-20.5 C341.3,187.5,332.1,178.3,320.8,178.3L320.8,178.3z M320.8,205.6c-3.8,0-6.8-3.1-6.8-6.8c0-3.8,3.1-6.8,6.8-6.8 c3.8,0,6.8,3.1,6.8,6.8C327.6,202.5,324.6,205.6,320.8,205.6L320.8,205.6z M320.8,205.6"/>
+                                            <path d="M191.1,123.7c-3.8,0-6.8,3.1-6.8,6.8c0,3.8,3.1,6.8,6.8,6.8h6.8c3.8,0,6.8-3.1,6.8-6.8c0-3.8-3.1-6.8-6.8-6.8H191.1z M191.1,123.7"/>
+                                            <path d="M88.7,178.3c-11.3,0-20.5,9.2-20.5,20.5c0,11.3,9.2,20.5,20.5,20.5c11.3,0,20.5-9.2,20.5-20.5 C109.2,187.5,100,178.3,88.7,178.3L88.7,178.3z M88.7,205.6c-3.8,0-6.8-3.1-6.8-6.8c0-3.8,3.1-6.8,6.8-6.8c3.8,0,6.8,3.1,6.8,6.8 C95.6,202.5,92.5,205.6,88.7,205.6L88.7,205.6z M88.7,205.6"/>
+                                        </svg>
+                                    <span class="b-vehicle__title">Легковой автомобиль</span>
+                                </span>
+                            </label>
+                            <input type="radio" class="sr-only" id="truck" value="truck" name="vehicle">
+                            <label class="b-vehicle" for="truck">
+                                <span class="b-vehicle__back">
+                                    <svg viewBox="0 0 409.9 328.6" class="svg-vehicle svg-vehicle_cargo" id="svg-cargo">
+                                            <path d="M400.8,173.6l-18.7-18.7l-6.6-78.9c0-18.8-15.3-34.1-34.1-34.1h-47.8c-3.8,0-6.8,3.1-6.8,6.8c0,3.8,3.1,6.8,6.8,6.8h47.8 c11.1,0,20.5,9.4,20.5,21l6.2,74.5h-22.5l8.7-17.4c1.7-3.4,0.3-7.5-3.1-9.2c-3.4-1.7-7.5-0.3-9.2,3.1l-11.8,23.5h-36.7 c-3.8,0-6.8,3.1-6.8,6.8c0,3.8,3.1,6.8,6.8,6.8h79.1l18.5,18.5c3.9,3.9,4.8,12.8,4.8,15.7v6.8h-6.8c-3.8,0-6.8,3.1-6.8,6.8 c0,3.8,3.1,6.8,6.8,6.8h6.8V274h-14.2c-3.3-23.1-23.2-41-47.2-41c-26.4,0-47.8,21.4-47.8,47.8c0,26.4,21.4,47.8,47.8,47.8 c24,0,43.9-17.8,47.2-41h21c3.8,0,6.8-3.1,6.8-6.8v-81.9C409.6,197.3,409.4,182.2,400.8,173.6L400.8,173.6z M334.5,315 c-18.8,0-34.1-15.3-34.1-34.1c0-18.8,15.3-34.1,34.1-34.1c18.8,0,34.1,15.3,34.1,34.1C368.6,299.7,353.3,315,334.5,315L334.5,315z M334.5,315"/>
+                                            <path d="M102.4,260.4c-11.3,0-20.5,9.2-20.5,20.5c0,11.3,9.2,20.5,20.5,20.5c11.3,0,20.5-9.2,20.5-20.5 C122.9,269.6,113.7,260.4,102.4,260.4L102.4,260.4z  M102.4,287.7c-3.8,0-6.8-3.1-6.8-6.8c0-3.8,3.1-6.8,6.8-6.8 c3.8,0,6.8,3.1,6.8,6.8C109.2,284.6,106.2,287.7,102.4,287.7L102.4,287.7z M102.4,287.7"/>
+                                            <path class="st0" d="M334.5,260.4c-11.3,0-20.5,9.2-20.5,20.5c0,11.3,9.2,20.5,20.5,20.5c11.3,0,20.5-9.2,20.5-20.5 C355,269.6,345.8,260.4,334.5,260.4L334.5,260.4z M334.5,287.7c-3.8,0-6.8-3.1-6.8-6.8c0-3.8,3.1-6.8,6.8-6.8 c3.8,0,6.8,3.1,6.8,6.8C341.3,284.6,338.3,287.7,334.5,287.7L334.5,287.7z M334.5,287.7"/>
+                                            <path class="st0" d="M266.2,1H34.1C15.3,1,0,16.3,0,35.1v218.5c0,19.1,15,34.1,34.1,34.1c3.8,0,6.8-3.1,6.8-6.8 c0-3.8-3.1-6.8-6.8-6.8c-11.5,0-20.5-9-20.5-20.5V35.1c0-11.3,9.2-20.5,20.5-20.5h225.3v191.1H34.1c-3.8,0-6.8,3.1-6.8,6.8 c0,3.8,3.1,6.8,6.8,6.8h225.3V274H149.6c-3.3-23.1-23.2-41-47.2-41c-26.4,0-47.8,21.4-47.8,47.8c0,26.3,21.4,47.8,47.8,47.8 c24,0,43.9-17.8,47.2-41h116.6c3.8,0,6.8-3.1,6.8-6.8V7.8C273.1,4,270,1,266.2,1L266.2,1z M102.4,315c-18.8,0-34.1-15.3-34.1-34.1 c0-18.8,15.3-34.1,34.1-34.1c18.8,0,34.1,15.3,34.1,34.1C136.5,299.7,121.2,315,102.4,315L102.4,315z M102.4,315"/>
+                                        </svg>
+                                    <span class="b-vehicle__title">Грузовой автомобиль</span>
+                                </span>
+                            </label>
+                            <input type="radio" class="sr-only" id="bus" value="bus" name="vehicle">
+                            <label class="b-vehicle" for="bus">
+                                <span class="b-vehicle__back">
+                                    <svg viewBox="0 0 409.6 273.1" class="svg-vehicle svg-vehicle_bus" id="svg-bus">
+                                            <path d="M88.7,204.8c-11.3,0-20.5,9.2-20.5,20.5c0,11.3,9.2,20.5,20.5,20.5c11.3,0,20.5-9.2,20.5-20.5	C109.2,214,100,204.8,88.7,204.8L88.7,204.8z M88.7,232.1c-3.8,0-6.8-3.1-6.8-6.8c0-3.8,3.1-6.8,6.8-6.8c3.8,0,6.8,3.1,6.8,6.8 C95.6,229,92.5,232.1,88.7,232.1L88.7,232.1z M88.7,232.1"/>
+                                            <path d="M361.8,0H20.5C9.2,0,0,9.2,0,20.5v191.1c0,11.3,9.2,20.5,20.5,20.5c3.8,0,6.8-3.1,6.8-6.8c0-3.8-3.1-6.8-6.8-6.8 c-3.8,0-6.8-3.1-6.8-6.8v-20.5h6.8c3.8,0,6.8-3.1,6.8-6.8c0-3.8-3.1-6.8-6.8-6.8h-6.8v-157c0-3.8,3.1-6.8,6.8-6.8H314v13.7H34.1 c-3.8,0-6.8,3.1-6.8,6.8c0,3.8,3.1,6.8,6.8,6.8H41v81.9h-6.8c-3.8,0-6.8,3.1-6.8,6.8c0,3.8,3.1,6.8,6.8,6.8H314v27.3 c0,3.8,3.1,6.8,6.8,6.8c3.8,0,6.8-3.1,6.8-6.8v-27.3h68.3v41h-6.8c-3.8,0-6.8,3.1-6.8,6.8c0,3.8,3.1,6.8,6.8,6.8h6.8v20.5 c0,3.8-3.1,6.8-6.8,6.8h-21c-3.3-23.1-23.2-41-47.2-41c-26.4,0-47.8,21.4-47.8,47.8c0,26.4,21.4,47.8,47.8,47.8 c24,0,43.9-17.8,47.2-41h21c11.3,0,20.5-9.2,20.5-20.5V47.8C409.6,21,388.6,0,361.8,0L361.8,0z M109.2,122.9H54.6V41h54.6V122.9z M177.5,122.9h-54.6V41h54.6V122.9z M245.8,122.9h-54.6V41h54.6V122.9z M314,122.9h-54.6V41H314V122.9z M320.9,259.4 c-18.8,0-34.1-15.3-34.1-34.1c0-18.8,15.3-34.1,34.1-34.1c18.8,0,34.1,15.3,34.1,34.1C355,244.1,339.7,259.4,320.9,259.4 L320.9,259.4z M395.9,122.9h-23.1l8.7-17.4c1.7-3.4,0.3-7.5-3.1-9.2c-3.4-1.7-7.5-0.3-9.2,3.1l-11.8,23.5h-29.9V13.7h34.1 c19.5,0,34.1,14.7,34.1,34.1V122.9z M395.9,122.9"/>
+                                            <path d="M259.4,225.3c0-3.8-3.1-6.8-6.8-6.8H136c-3.3-23.1-23.2-41-47.2-41c-26.4,0-47.8,21.4-47.8,47.8 c0,26.4,21.4,47.8,47.8,47.8c24,0,43.9-17.8,47.2-41h116.6C256.4,232.1,259.4,229,259.4,225.3L259.4,225.3z M88.7,259.4 c-18.8,0-34.1-15.3-34.1-34.1c0-18.8,15.3-34.1,34.1-34.1s34.1,15.3,34.1,34.1C122.9,244.1,107.6,259.4,88.7,259.4L88.7,259.4z M88.7,259.4"/>
+                                            <path d="M320.9,204.8c-11.3,0-20.5,9.2-20.5,20.5c0,11.3,9.2,20.5,20.5,20.5c11.3,0,20.5-9.2,20.5-20.5 C341.3,214,332.1,204.8,320.9,204.8L320.9,204.8z M320.9,232.1c-3.8,0-6.8-3.1-6.8-6.8c0-3.8,3.1-6.8,6.8-6.8 c3.8,0,6.8,3.1,6.8,6.8C327.7,229,324.6,232.1,320.9,232.1L320.9,232.1z M320.9,232.1"/>
+                                            <path d="M266.2,191.1c3.8,0,6.8-3.1,6.8-6.8c0-3.8-3.1-6.8-6.8-6.8H143.4c-3.8,0-6.8,3.1-6.8,6.8c0,3.8,3.1,6.8,6.8,6.8H266.2z M266.2,191.1"/>
+                                        </svg>
+                                    <span class="b-vehicle__title">Пассажирский автобус</span>
+                                </span>
+                            </label>
+                            <input type="radio" class="sr-only" id="moto" value="moto" name="vehicle">
+                            <label class="b-vehicle" for="moto">
+                                <span class="b-vehicle__back">
+                                    <svg viewBox="0 0 409.9 287.6" class="svg-vehicle svg-vehicle_moto" id="svg-moto">
+                                            <path d="M6.8,232.9h184.3c2.1,0,4-0.9,5.3-2.5l88.6-109.2c1.2-1.4,1.7-3.3,1.5-5.1l-6.8-54.6c-0.3-2.8-2.3-5-5-5.8 c-2.7-0.7-5.5,0.3-7.2,2.5L247,85.5c-2.3,3-1.7,7.3,1.4,9.6c3,2.3,7.3,1.7,9.6-1.4l10.3-13.8l4.4,35l-84.7,104.4H14 c3.5-38.2,35.7-68.3,74.8-68.3h76.8l12.2,42.8c0.9,3,3.6,4.9,6.6,4.9c0.6,0,1.3-0.1,1.9-0.3c3.6-1,5.7-4.8,4.7-8.4l-11.2-39.3 c14-1.1,25.1-12.8,25.1-27.1c0-15.1-12.2-27.3-27.3-27.3H61.4c-11.3,0-20.5,9.2-20.5,20.5v13.7c0,6.7,3.2,12.5,8.2,16.3 c-9.1,4.6-17.3,10.6-24.3,17.9H13.7c-3.8,0-6.8,3.1-6.8,6.8c0,3.8,3.1,6.8,6.8,6.8h0.4C5.2,192.1,0,208.5,0,226.1 C0,229.9,3.1,232.9,6.8,232.9L6.8,232.9z M54.6,116.9c0-3.8,3.1-6.8,6.8-6.8h116.1c7.5,0,13.7,6.1,13.7,13.7 c0,7.5-6.1,13.7-13.7,13.7H61.4c-3.8,0-6.8-3.1-6.8-6.8V116.9z M54.6,116.9"/>
+                                            <path d="M128.6,163.8c-2.7,2.6-2.7,7-0.1,9.7c7.8,7.9,13.8,17.5,17.4,27.9c1,2.8,3.6,4.6,6.4,4.6 c0.7,0,1.5-0.1,2.3-0.4c3.6-1.3,5.4-5.1,4.2-8.7c-4.3-12.2-11.4-23.6-20.6-32.9C135.7,161.1,131.3,161.1,128.6,163.8L128.6,163.8z M128.6,163.8"/>
+                                            <path d="M267.5,39.1c1.3,1.7,3.3,2.7,5.5,2.7H314c6.4,0,10.7-3.6,13.3-5.8c0.1-0.1,0.2-0.2,0.3-0.3 v25.9c-0.2-0.2-0.4-0.4-0.6-0.5c-2.6-2.3-6.7-5.7-13-5.7h-13.8c-2.3,0-4.4,1.1-5.7,3c-1.3,1.9-1.5,4.3-0.6,6.4l34.3,81.9 c1.1,2.5,3.6,4.2,6.3,4.2c22.1,0,42.8,9.7,56.9,26.3L260,216.8c3.5-27.9,22.4-52,49.3-61.5c3.6-1.3,5.4-5.2,4.2-8.7 c-1.3-3.6-5.1-5.4-8.7-4.2c-35.3,12.5-59,46.1-59,83.7c0,2.2,1,4.2,2.8,5.5c1.2,0.9,2.6,1.4,4.1,1.4c0.7,0,1.3-0.1,2-0.3 l150.2-45.1c2.1-0.6,3.7-2.2,4.5-4.2c0.7-2,0.5-4.3-0.7-6.1c-15.7-23.7-41.3-38.3-69.4-39.8l-28.6-68.4h3.5c1.2,0,2.2,0.7,4.2,2.4 c2.2,1.9,5.2,4.4,9.5,4.4c7.8,0,13.7-5.9,13.7-13.7V35c0-7.5-6.1-13.7-13.7-13.7c-4,0-6.9,2.3-9.1,4.2c-1.9,1.6-3.2,2.6-4.5,2.6 h-37.7L257.9,3.6c-2.3-3-6.5-3.6-9.6-1.4c-3,2.3-3.6,6.5-1.4,9.6L267.5,39.1z M267.5,39.1"/>
+                                            <path d="M334.4,246.6c-8.3,0-15.7-4.9-18.9-12.6c-1.5-3.5-5.5-5.1-8.9-3.7c-3.5,1.5-5.1,5.5-3.7,8.9c5.3,12.7,17.7,20.9,31.5,20.9 c18.8,0,34.1-15.3,34.1-34.1c0-2.9-0.4-5.8-1.1-8.7c-1-3.6-4.7-5.8-8.3-4.9c-3.7,0.9-5.8,4.7-4.9,8.3c0.4,1.7,0.7,3.5,0.7,5.2 C354.8,237.4,345.7,246.6,334.4,246.6L334.4,246.6z M334.4,246.6"/>
+                                            <path d="M139.4,247.5c-3.3-1.9-7.4-0.8-9.3,2.5c-8.5,14.7-24.4,23.9-41.3,23.9s-32.8-9.2-41.3-23.9c-1.9-3.3-6.1-4.4-9.3-2.5 c-3.3,1.9-4.4,6.1-2.5,9.3c11,18.9,31.3,30.7,53.2,30.7c21.8,0,42.2-11.8,53.2-30.7C143.8,253.6,142.7,249.4,139.4,247.5 L139.4,247.5z M139.4,247.5"/>
+                                            <path d="M99,243.9c-6.2,3.6-14.3,3.6-20.6-0.1c-3.3-1.9-7.4-0.8-9.3,2.4c-1.9,3.3-0.8,7.4,2.4,9.3c5.2,3.1,11.2,4.7,17.3,4.7 c6,0,11.9-1.6,17-4.5c3.3-1.9,4.4-6.1,2.5-9.3C106.4,243.1,102.3,242,99,243.9L99,243.9z M99,243.9"/>
+                                            <path d="M334.3,287.6c4.9,0,9.9-0.6,14.9-1.8c32.9-8.2,52.9-41.6,44.8-74.5c-0.9-3.7-4.6-5.9-8.3-5c-3.7,0.9-5.9,4.6-5,8.3 c6.4,25.6-9.2,51.6-34.8,57.9c-23.5,5.9-47.7-6.8-56.3-29.5c-1.3-3.5-5.3-5.3-8.8-4c-3.5,1.3-5.3,5.3-4,8.8 C286.1,272.2,309.3,287.6,334.3,287.6L334.3,287.6z M334.3,287.6"/>
+                                        </svg>
+                                    <span class="b-vehicle__title">Мотоцикл, мотороллер</span>
+                                </span>
+                            </label>
+                        </div>
+<!--                            <span class="b-icon_tolltip fa fa-question-circle" aria-hidden="true" title="Выберите обьем двигателя вашего ТС"></span>-->
+                        <div class="b-vehicle__params">
+                            <div class="b-params b-params_car js-params_active b-params_active">
+                                <span class="b-calculator__heading b-calculator__heading_registration">Объем двигателя</span>
+                                <input type="radio" class="radio sr-only" id="small" value="3" name="type" checked>
+                                <label for="small">до 1600 см<sup>3</sup></label>
+                                <input type="radio" class="radio sr-only" id="middle" value="4" name="type">
+                                <label for="middle">1601 - 2000 см<sup>3</sup></label>
+                                <input type="radio" class="radio sr-only" id="large" value="5" name="type">
+                                <label for="large">до 2001 - 3000 см<sup>3</sup></label>
+                                <input type="radio" class="radio sr-only" id="xlarge" value="6" name="type" >
+                                <label for="xlarge">от 3001 см<sup>3</sup></label>
+                            </div>
+                            <div class="b-params b-params_truck">
+                                <span class="b-calculator__heading b-calculator__heading_registration">Грузоподьемность</span>
+                                <input type="radio" class="radio sr-only" id="light" value="7" name="type">
+                                <label for="light">до 2т</label>
+                                <input type="radio" class="radio sr-only" id="heavy" value="8" name="type">
+                                <label for="heavy">более 2т</label>
+                            </div>
+                            <div class="b-params b-params_bus">
+                                <span class="b-calculator__heading b-calculator__heading_registration">Пассажировместительность</span>
+                                <input type="radio" class="radio sr-only" id="few" value="9" name="type">
+                                <label for="few">до 20 человек</label>
+                                <input type="radio" class="radio sr-only" id="many" value="10" name="type">
+                                <label for="many">более 20 человек</label>
+                            </div>
+                            <div class="b-params b-params_moto">
+                                <span class="b-calculator__heading b-calculator__heading_registration">Объем двигателя</span>
+                                <input type="radio" class="radio sr-only" id="motorbike" value="1" name="type">
+                                <label for="motorbike">до 300 см<sup>3</sup></label>
+                                <input type="radio" class="radio sr-only" id="motorcycle" value="2" name="type">
+                                <label for="motorcycle">более 300 см<sup>3</sup></label>
+                            </div>
+                        </div>
+                        <div class="b-vehicle__params_mobile">
+                            <select class="js-selectric" name="type" id="">
+<!--                               auto-->
+                                <option value="3">Автомобиль, до 1600 см<sup>3</sup></option>
+                                <option value="4">Автомобиль, 1601 - 2000 см<sup>3</sup></option>
+                                <option value="5">Автомобиль, 2001 - 3000 см<sup>3</sup></option>
+                                <option value="6">Автомобиль, от 3001 см<sup>3</sup></option>
+<!--                                truck-->
+                                <option value="7">Грузовик, до 2т</option>
+                                <option value="8">Грузовик, более 2т</option>
+<!--                                bus-->
+                                <option value="9">Автобус, до 20 человек</option>
+                                <option value="10">Автобус, более 20 человек</option>
+<!--                                moto-->
+                                <option value="1">Мототранспорт, до 300 см<sup>3</sup></option>
+                                <option value="2">Мототранспорт, от 300 см<sup>3</sup></option>
+                            </select>
+                        </div>
+                        <div class="clearfix">
+                            <div class="b-block_registration">
+                                <span class="b-calculator__heading b-calculator__heading_registration">Место регистрации авто <span class="b-icon_tolltip fa fa-question-circle" aria-hidden="true" title="Введите несколько букв названия населенного пункта, затем выберете населенный пункт из списка. Место регистрации вашего ТС необходимо указывать согласно технического паспорта. (Не путать с местом жительства или прописки)"></span></span>
+                                <div class="b-block_select b-selectBlock_registration">
+                                    <input type="text" class="b-autocomplete b-autocomplete_vehicle selectric" id="regCity" title="Введите и выберите город" data-item="Киев (г.), Киевская обл." value="Киев (г.), Киевская обл." data-item="Киев (г.), Киевская обл.">
+                                    <input type="hidden" class="hidden" name="regCityId" id="cityId" value="1">
+                                    <input type="hidden" class="hidden" name="zoneId" id="zoneId" value="1">
+                                    <div class="autocomplete-suggestions b-precomplete_brand js-precomplete">
+                                        <div class="autocomplete-suggestion" data-id="1" data-zone="1">Киев (г.), Киевская обл.</div>
+                                        <div class="autocomplete-suggestion" data-id="9" data-zone="3">Харьков (г.), Харьковская обл.</div>
+                                        <div class="autocomplete-suggestion" data-id="14" data-zone="3">Днепропетровск (г.), Днепропетровская обл.</div>
+                                        <div class="autocomplete-suggestion" data-id="46" data-zone="3">Мариуполь (г.), Донецкая обл.</div>
+                                        <div class="autocomplete-suggestion" data-id="15" data-zone="3">Львов (г.), Львовская обл.</div>
+                                        <div class="autocomplete-suggestion" data-id="10" data-zone="3">Одесса (г.), Одесская обл.</div>
+                                        <div class="autocomplete-suggestion" data-id="12" data-zone="3">Запорожье (г.), Запорожская обл.</div>
+                                        <div class="autocomplete-suggestion" data-id="5237" data-zone="3">Красноармейск (г.), Донецкая обл.</div>
+                                        <div class="autocomplete-suggestion" data-id="47" data-zone="3">Черкассы (г.), Черкасская обл.</div>
+                                        <div class="autocomplete-suggestion" data-id="3" data-zone="3">Бровары (г.), Киевская обл.</div>
+                                        <div class="autocomplete-suggestion" data-id="37" data-zone="3">Житомир (г.), Житомирская обл.</div>
+                                        <div class="autocomplete-suggestion" data-id="32" data-zone="3">Полтава (г.), Полтавская обл.</div>
+                                        <div class="autocomplete-suggestion" data-id="13" data-zone="6">Кривой Рог (г.), Днепропетровская обл.</div>
+                                        <div class="autocomplete-suggestion" data-id="44" data-zone="3">Николаев (г.), Николаевская обл.</div>
+                                    </div>
+                            </div>
+                            </div>
+                            <div class="b-block_franshiza">
+                                <span class="b-calculator__heading b-calculator__heading_registration">Франшиза <span class="b-icon_tolltip fa fa-question-circle" aria-hidden="true" title="Выберите величину франшизы"></span></span>
+                                <input type="text" name="franshiza" class="js-range_franshiza" data-min="0" data-from="1000" data-max="2000" data-step="1000">
+                            </div>
+                        </div>
+                        <label class="b-block_checkbox">
+                           <input type="checkbox" class="sr-only" id="notTaxi" value="true" name="notTaxi" checked>
+                           <span class="fa fa-check-square-o" aria-hidden="true"></span> 
+                           <span class="fa fa-square-o" aria-hidden="true"></span> 
+                           Не такси
+                        </label>
+                        <button type="submit" class="b-form__submit_vehicle">
+                            <span class="b-text_btn">Узнать стоимость ОСАГО</span><span class="fa fa-angle-right" aria-hidden="true"></span>
+                        </button>
+                    </form>
+<!--
+                    <ul class="b-crumbs_aside">
+                        <li class="b-crumbs__item_aside b-item_active">
+                            <div class="b-item__link">
+                                <span class="b-item__pre">1</span>
+                                <span class="b-item__text">Расчет</span>
+                            </div>
+                        </li>
+                        <li class="b-crumbs__item_aside b-item_unactive">
+                            <div class="b-item__link">
+                                <span class="b-item__pre">2</span>
+                                <span class="b-item__text">Выбор</span>
+                            </div>
+                        </li>
+                        <li class="b-crumbs__item_aside b-item_unactive">
+                            <div class="b-item__link">
+                                <span class="b-item__pre">3</span>
+                                <span class="b-item__text">Оформление</span>
+                            </div>
+                        </li>
+                        <li class="b-crumbs__item_aside b-item_unactive">
+                            <div class="b-item__link">
+                                <span class="b-item__pre">4</span>
+                                <span class="b-item__text">Оплата</span>
+                            </div>
+                        </li>
+                    </ul>
+-->
+                </div>
+                <div class="b-advantages">
+                    <span class="b-advantages__heading">Oh.UA ЭТО:</span>
+                    <ul class="b-advantages__list">
+                       <li><span class="fa fa-check b-list__tick" aria-hidden="true"></span>Топ 10 страховых компаний</li>
+                       <li><span class="fa fa-check b-list__tick" aria-hidden="true"></span>Самые низкие цены</li>
+                       <li><span class="fa fa-check b-list__tick" aria-hidden="true"></span>Оплата онлайн или при получении</li>
+                       <li><span class="fa fa-check b-list__tick" aria-hidden="true"></span>Бесплатная доставка</li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+	</section>
+    <section class="b-section_video">
+        <div class="b-container">
+            <div class="b-videohelp">
+                <div class="b-heading_videohelp">Видео Помощник<br>Oh.ua</div>
+            </div>
+            <div class="b-card b-card_video">
+                <iframe width="625" height="440" src="https://www.youtube.com/embed/FpxfsSiqKuQ" class="js-preserveAspectRatio" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="b-videohelp">
+                <div class="b-heading_videohelp">Видео<br>Помощник<br>Oh.ua</div>
+                <p class="b-descr_videohelp">Вы зашли на сайт сервиса сравнения цен и подбора страховок № 1 в Украине - Oh.ua.</p>
+                <ol class="b-stages_videohelp">
+                    <li>
+                        <div class="b-stage_videohelp"><span class="g-bold">Вверху страницы выберите тип транспортного средства и место регистрации авто,</span></div>
+                    </li>
+                    <li>
+                        <div class="b-stage_videohelp">затем <span class="g-bold">нажмите кнопку</span><span class="g-bold"> “Узнать стоимость ОСАГО”</span>.</div>
+                    </li>
+                    <li>
+                        <div class="b-stage_videohelp"><span class="g-bold">Выберите предложение по страховке,</span> которое вам понравилось,</div>
+                    </li>
+                    <li>
+                        <div class="b-stage_videohelp"><span class="g-bold">нажмите кнопку “Купить”</span> и оформите удобным способом.</div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+	<section class="b-section_reasons">
+        <div class="b-container">
+	        <span class="b-section__heading">
+               <span class="b-header__num">7</span> причин купить ОСАГО на Oh.ua<br>
+               <span class="b-subHeader">и сэкономить время и деньги!</span>
+            </span>
+            <div class="b-reasons__container_slider">
+                <div class="b-reasons__slider">
+                    <div class="b-slider__wrap">
+                        <div class="b-slider__string">
+                        <div class="b-string__slide">
+                            <div class="b-reason__count">
+                                <span>01</span>
+                                <span>/</span>
+                                <span>07</span>
+                            </div>
+                            <p class="b-reason__text">Сервис сравнения и подбора ОСАГО №1 в Украине</p>
+                        </div>
+                        <div class="b-string__slide">
+                            <div class="b-reason__count">
+                                <span>02</span>
+                                <span>/</span>
+                                <span>07</span>
+                            </div>
+                            <p class="b-reason__text">Стоимость страховки дешевле, чем на сайтах страховых компаний</p>
+                        </div>
+                        <div class="b-string__slide">
+                            <div class="b-reason__count">
+                                <span>03</span>
+                                <span>/</span>
+                                <span>07</span>
+                            </div>
+                            <p class="b-reason__text">Моментальный расчет и оформление ОСАГО, до 5 минут</p>
+                        </div>
+                        <div class="b-string__slide">
+                            <div class="b-reason__count">
+                                <span>04</span>
+                                <span>/</span>
+                                <span>07</span>
+                            </div>
+                            <p class="b-reason__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="b-string__slide">
+                            <div class="b-reason__count">
+                                <span>05</span>
+                                <span>/</span>
+                                <span>07</span>
+                            </div>
+                            <p class="b-reason__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="b-string__slide">
+                            <div class="b-reason__count">
+                                <span>06</span>
+                                <span>/</span>
+                                <span>07</span>
+                            </div>
+                            <p class="b-reason__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="b-string__slide">
+                            <div class="b-reason__count">
+                                <span>07</span>
+                                <span>/</span>
+                                <span>07</span>
+                            </div>
+                            <p class="b-reason__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="b-slider__control b-slider__control_left"><span class="fa fa-angle-double-left" aria-hidden="true"></span></button>
+                    <button class="b-slider__control b-slider__control_right"><span class="fa fa-angle-double-right" aria-hidden="true"></span></button>
+                </div>
+                
+                <p class="b-reasons__text"><span class="b-ohua">Oh.ua</span> -  это онлайн сервис сравнения цен и подбора предложений по Автогражданке с помощью которого вы за 5 минут сможете оформить страховку.<br><span class="hidden-xs"><br>Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги на страховке более 2000 клиентам  Мы гарантируем самые низкие цены. Не дороже, чем напрямую в страховой компании. Решим все вопросы по доставке полиса и оплате.</span></p>
+            </div>
+        </div>
+	</section>
+	<section class="b-section_map">
+	    <div class="b-container b-container_map">
+	        <div class="b-card b-card_contacts">
+	            <div class="b-map__header">Мы находимся по адресу</div>
+	            <p class="b-map__address">01032, Украина,<br>г. Киев, ул. Пушкинская, 9</p>
+	            <p class="b-map__address"><span>Звоните нам:</span>(044) 290 36 71</p>
+	            <p class="b-map__address"><span>Или пишите:</span>sales@oh.ua</p>
+	        </div>
+	        <div class="b-card b-card_map">
+	            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.715301864317!2d30.51680831566454!3d50.446403395537665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef476aeabf7%3A0x7a1e66ef15f87549!2z0KHRgtGA0LDRhdC-0LLQutCwINCe0KHQkNCT0J4g0LIg0JrQuNC10LLQtSwg0L7QvdC70LDQudC9INC60LDQu9GM0LrRg9C70Y_RgtC-0YAg0LDQstGC0L7RhtC40LLQuNC70LrQuCDigJQgT2guVUE!5e0!3m2!1suk!2sua!4v1497353903019" width="625" height="454" frameborder="0" style="border:0" class="b-map_iframe" allowfullscreen></iframe>
+	        </div>
+	    </div>
+	</section>
+	<section class="b-section_howto">
+        <div class="b-container">
+	        <span class="b-section__heading b-section__heading_howto">Как <span>вы можете </span>оформить полис ОСАГО на сайте Oh.ua?</span>
+	        <div class="b-howto__stages">
+	            <span class="b-howto__stage">
+	                <img src="./img/loupe.svg" alt="лупа">
+	                Рассчитайте стоимость ОСАГО
+	            </span>
+	            <span class="fa fa-angle-double-right" aria-hidden="true"></span>
+	            <span class="b-howto__stage">
+	                <img src="./img/balance.svg" alt="лупа">
+	                Сравните предложения по ОСАГО и выберите лучшее
+	            </span>
+	            <span class="fa fa-angle-double-right" aria-hidden="true"></span>
+	            <span class="b-howto__stage">
+	                <img src="./img/sheet.svg" alt="лупа">
+	                Заполните данные для полиса онлайн
+	            </span>
+	            <span class="fa fa-angle-double-right" aria-hidden="true"></span>
+	            <span class="b-howto__stage">
+	                <img src="./img/diploma.svg" alt="лупа">
+	                Получите курьером или на отделении новой почты.
+<!--	                По Киеву бесплатно.-->
+	            </span>
+	        </div>
+        </div>
+    </section>
+	<section class="b-section_attention">
+        <div class="b-container">
+	        <span class="b-section__heading b-section__heading_howto">На что  вам следует обратить внимание при выборе ОСАГО?</span>
+	        <div class="b-attention__factors">
+	            <div class="b-attention__factor">
+	                <div class="b-factor__heading">Стоимость</div>
+	                <p>Цена не должна отличаться более чем на 15-20%</p>
+	            </div>
+	            <div class="b-attention__factor">
+	                <div class="b-factor__heading">Светофор МТСБУ</div>
+	                <p>Оценка деятельности страховщика государственным регулятором  МТСБУ</p>
+	            </div>
+	            <div class="b-attention__factor">
+	                <div class="b-factor__heading">Отзывы</div>
+	                <p>Отзывы клиентов о страховщике</p>
+	            </div>
+	            <div class="b-attention__factor">
+	                <div class="b-factor__heading">Франшиза</div>
+	                <p>сумма, которую выплачивает застрахованный самостоятельно, бывает 0, 1000, 2000 грн</p>
+	            </div>
+	        </div>
+	        <a href="#calculator" class="b-form__submit_vehicle b-anchor_calculator">
+                <span class="b-text_btn">Вернуться к калькулятору</span><span class="fa fa-angle-up" aria-hidden="true"></span>
+            </a>
+        </div>
+    </section>
+<!--
+	<section class="b-section_rating">
+        <div class="b-container">
+	        <span class="b-section__heading b-section__heading_rating">Рейтинг страховщиков по ОСАГО</span>
+            <div class="b-rating__block_btns">
+                <button class="b-rating__btn b-rating__btn_mtsbu">Светофор МТСБУ</button>
+                <button class="b-rating__btn b-rating__btn_clients b-btn_active">Рейтинг клиентов Oh.ua</button>
+            </div>
+            <div class="b-rating__wrapper_clients">
+                <div class="b-rating__slider">
+                    <div class="b-slider__string_rating">
+                        <div class="b-rating__slide">
+                            <div class="b-rating__company_clients">
+                                <span class="b-rating__num">01</span>
+                                <div class="b-rating__content">
+                                    <div class="b-rating__description">
+                                        <img src="./img/vuso.png" alt="" class="b-company__logo">
+                                        <span class="b-company__rating" data-rating="5">
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                        </span>
+                                        <p class="b-company__about">Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги </p>
+                                    </div>
+                                    <div class="b-rating__bonuses">
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-gift" aria-hidden="true"></span>
+                                            Минус 15% от Oh.UA
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+                                            Выбор выбор Клиентов
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-refresh" aria-hidden="true"></span>
+                                            Прямое урегулирование
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-rating__company_clients">
+                                <span class="b-rating__num">02</span>
+                                <div class="b-rating__content">
+                                    <div class="b-rating__description">
+                                        <img src="./img/vuso.png" alt="" class="b-company__logo">
+                                        <span class="b-company__rating" data-rating="4">
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                        </span>
+                                        <p class="b-company__about">Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги </p>
+                                    </div>
+                                    <div class="b-rating__bonuses">
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-gift" aria-hidden="true"></span>
+                                            Минус 15% от Oh.UA
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+                                            Выбор выбор Клиентов
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-refresh" aria-hidden="true"></span>
+                                            Прямое урегулирование
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-rating__company_clients">
+                                <span class="b-rating__num">03</span>
+                                <div class="b-rating__content">
+                                    <div class="b-rating__description">
+                                        <img src="./img/vuso.png" alt="" class="b-company__logo">
+                                        <span class="b-company__rating" data-rating="3">
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                        </span>
+                                        <p class="b-company__about">Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги </p>
+                                    </div>
+                                    <div class="b-rating__bonuses">
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-gift" aria-hidden="true"></span>
+                                            Минус 15% от Oh.UA
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+                                            Выбор выбор Клиентов
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-refresh" aria-hidden="true"></span>
+                                            Прямое урегулирование
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-rating__company_clients">
+                                <span class="b-rating__num">04</span>
+                                <div class="b-rating__content">
+                                    <div class="b-rating__description">
+                                        <img src="./img/vuso.png" alt="" class="b-company__logo">
+                                        <span class="b-company__rating" data-rating="2">
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                        </span>
+                                        <p class="b-company__about">Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги </p>
+                                    </div>
+                                    <div class="b-rating__bonuses">
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-gift" aria-hidden="true"></span>
+                                            Минус 15% от Oh.UA
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+                                            Выбор выбор Клиентов
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-refresh" aria-hidden="true"></span>
+                                            Прямое урегулирование
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-rating__company_clients">
+                                <span class="b-rating__num">05</span>
+                                <div class="b-rating__content">
+                                    <div class="b-rating__description">
+                                        <img src="./img/vuso.png" alt="" class="b-company__logo">
+                                        <span class="b-company__rating" data-rating="1">
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                        </span>
+                                        <p class="b-company__about">Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги </p>
+                                    </div>
+                                    <div class="b-rating__bonuses">
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-gift" aria-hidden="true"></span>
+                                            Минус 15% от Oh.UA
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+                                            Выбор выбор Клиентов
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-refresh" aria-hidden="true"></span>
+                                            Прямое урегулирование
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-rating__company_clients">
+                                <span class="b-rating__num">06</span>
+                                <div class="b-rating__content">
+                                    <div class="b-rating__description">
+                                        <img src="./img/vuso.png" alt="" class="b-company__logo">
+                                        <span class="b-company__rating" data-rating="0">
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                        </span>
+                                        <p class="b-company__about">Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги </p>
+                                    </div>
+                                    <div class="b-rating__bonuses">
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-gift" aria-hidden="true"></span>
+                                            Минус 15% от Oh.UA
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+                                            Выбор выбор Клиентов
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-refresh" aria-hidden="true"></span>
+                                            Прямое урегулирование
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-rating__slide">
+                            <div class="b-rating__company_clients">
+                                <span class="b-rating__num">07</span>
+                                <div class="b-rating__content">
+                                    <div class="b-rating__description">
+                                        <img src="./img/vuso.png" alt="" class="b-company__logo">
+                                        <span class="b-company__rating" data-rating="1">
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                        </span>
+                                        <p class="b-company__about">Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги </p>
+                                    </div>
+                                    <div class="b-rating__bonuses">
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-gift" aria-hidden="true"></span>
+                                            Минус 15% от Oh.UA
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+                                            Выбор выбор Клиентов
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-refresh" aria-hidden="true"></span>
+                                            Прямое урегулирование
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-rating__company_clients">
+                                <span class="b-rating__num">08</span>
+                                <div class="b-rating__content">
+                                    <div class="b-rating__description">
+                                        <img src="./img/vuso.png" alt="" class="b-company__logo">
+                                        <span class="b-company__rating" data-rating="2">
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                        </span>
+                                        <p class="b-company__about">Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги </p>
+                                    </div>
+                                    <div class="b-rating__bonuses">
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-gift" aria-hidden="true"></span>
+                                            Минус 15% от Oh.UA
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+                                            Выбор выбор Клиентов
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-refresh" aria-hidden="true"></span>
+                                            Прямое урегулирование
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-rating__company_clients">
+                                <span class="b-rating__num">09</span>
+                                <div class="b-rating__content">
+                                    <div class="b-rating__description">
+                                        <img src="./img/vuso.png" alt="" class="b-company__logo">
+                                        <span class="b-company__rating" data-rating="3">
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                        </span>
+                                        <p class="b-company__about">Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги </p>
+                                    </div>
+                                    <div class="b-rating__bonuses">
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-gift" aria-hidden="true"></span>
+                                            Минус 15% от Oh.UA
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+                                            Выбор выбор Клиентов
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-refresh" aria-hidden="true"></span>
+                                            Прямое урегулирование
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-rating__company_clients">
+                                <span class="b-rating__num">10</span>
+                                <div class="b-rating__content">
+                                    <div class="b-rating__description">
+                                        <img src="./img/vuso.png" alt="" class="b-company__logo">
+                                        <span class="b-company__rating" data-rating="4">
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                        </span>
+                                        <p class="b-company__about">Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги </p>
+                                    </div>
+                                    <div class="b-rating__bonuses">
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-gift" aria-hidden="true"></span>
+                                            Минус 15% от Oh.UA
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+                                            Выбор выбор Клиентов
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-refresh" aria-hidden="true"></span>
+                                            Прямое урегулирование
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-rating__company_clients">
+                                <span class="b-rating__num">11</span>
+                                <div class="b-rating__content">
+                                    <div class="b-rating__description">
+                                        <img src="./img/vuso.png" alt="" class="b-company__logo">
+                                        <span class="b-company__rating" data-rating="5">
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                        </span>
+                                        <p class="b-company__about">Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги </p>
+                                    </div>
+                                    <div class="b-rating__bonuses">
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-gift" aria-hidden="true"></span>
+                                            Минус 15% от Oh.UA
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+                                            Выбор выбор Клиентов
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-refresh" aria-hidden="true"></span>
+                                            Прямое урегулирование
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-rating__company_clients">
+                                <span class="b-rating__num">12</span>
+                                <div class="b-rating__content">
+                                    <div class="b-rating__description">
+                                        <img src="./img/vuso.png" alt="" class="b-company__logo">
+                                        <span class="b-company__rating" data-rating="4">
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                            <span class="fa fa-star-o" aria-hidden="true"></span>
+                                        </span>
+                                        <p class="b-company__about">Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги </p>
+                                    </div>
+                                    <div class="b-rating__bonuses">
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-gift" aria-hidden="true"></span>
+                                            Минус 15% от Oh.UA
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-check-circle-o" aria-hidden="true"></span>
+                                            Выбор выбор Клиентов
+                                        </span>
+                                        <span class="b-rating__bonus">
+                                            <span class="fa fa-refresh" aria-hidden="true"></span>
+                                            Прямое урегулирование
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-slider__buttons_rating">
+                        <button class="b-slider__control b-slider__control_rating b-slider__control_left"><span class="fa fa-angle-double-left" aria-hidden="true"></span></button>
+                        <button class="b-slider__control b-slider__control_rating b-slider__control_right"><span class="fa fa-angle-double-right" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="b-rating__wrapper_mtsbu">
+                <table class="b-table_mtsbu">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Общая оценка деятельности страховщика</th>
+                            <th>Оценка по показателю «Качество урегулирования убытков»</th>
+                            <th>Оценка по показателю<br>«Уровень жалоб от<br>пострадавших и страхователей»</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>ДОМИНАНТА</th>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                        </tr>
+                        <tr>
+                            <th>ВУСО</th>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                        </tr>
+                        <tr>
+                            <th>ПРОВИДНА</th>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                        </tr>
+                        <tr>
+                            <th>АРСЕНАЛ СТРАХОВАНИЕ</th>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                        </tr>
+                        <tr>
+                            <th>АЛЬФА СТРАХОВАНИЕ</th>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_yellow"></td>
+                            <td class="b-tlight_yellow"></td>
+                        </tr>
+                        <tr>
+                            <th>КНЯЖА</th>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                        </tr>
+                        <tr>
+                            <th>АХА СТРАХОВАНИЕ</th>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                        </tr>
+                        <tr>
+                            <th>ПРОСТО-СТРАХОВАНИЕ</th>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                        </tr>
+                        <tr>
+                            <th>ИНГО УКРАИНА</th>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                        </tr>
+                        <tr>
+                            <th>ПЗУ УКРАИНА</th>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                        </tr>
+                        <tr>
+                            <th>УНИКА</th>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                            <td class="b-tlight_green"></td>
+                        </tr>
+                        <tr>
+                             needed for table border-bottom 
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th></th>
+                            <td>
+                                <a href="#" class="b-link_mtsbu">Посмотреть на сайте МТСБУ<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+                            </td>
+                            <td>
+                                <a href="#calculator" class="b-form__submit_vehicle b-anchor_calculator">
+                                    <span class="b-text_btn">Узнать стоимость ОСАГО</span><span class="fa fa-angle-right" aria-hidden="true"></span>
+                                </a>
+                           </td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+-->
+    <section class="b-section_seoMap">
+        <div class="b-container b-container_seoMap">
+            <div class="b-seoMap" id="seoMap">                
+                <img src="./img/seomap/ukraine.svg" alt="ukraine" class="b-seomap__bgnd">
+                
+                <a href="#" class="b-map__region b-region_lutsk js-link_region">
+                    <div class="b-region__title b-region__title_active js-title js-title_active">Луцк</div>
+                    <img src="./img/seomap/regular/lutsk.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Луцке">
+                    <img src="./img/seomap/highlighted/lutsk.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Луцке">
+                </a>
+                <a href="#" class="b-map__region b-region_rovno js-link_region">
+                    <div class="b-region__title js-title">Ровно</div>
+                    <img src="./img/seomap/regular/rovno.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Ровно">
+                    <img src="./img/seomap/highlighted/rovno.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Ровно">
+                </a>
+                <a href="#" class="b-map__region b-region_zhitomyr js-link_region">
+                    <div class="b-region__title js-title">Житомир</div>
+                    <img src="./img/seomap/regular/zhitomyr.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Житомире">
+                    <img src="./img/seomap/highlighted/zhitomyr.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Житомире">
+                </a>
+                <a href="#" class="b-map__region b-region_kyiv js-link_region">
+                    <div class="b-region__title js-title">Киев</div>
+                    <img src="./img/seomap/regular/kyiv.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Киеве">
+                    <img src="./img/seomap/highlighted/kyiv.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Киеве">
+                </a>
+                <a href="#" class="b-map__region b-region_chernigov js-link_region">
+                    <div class="b-region__title js-title">Чернигов</div>
+                    <img src="./img/seomap/regular/chernigov.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Чернигове">
+                    <img src="./img/seomap/highlighted/chernigov.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Чернигове">
+                </a>
+                <a href="#" class="b-map__region b-region_sumy js-link_region">
+                    <div class="b-region__title js-title">Сумы</div>
+                    <img src="./img/seomap/regular/sumy.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Сумах">
+                    <img src="./img/seomap/highlighted/sumy.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Сумах">
+                </a>
+                
+                <a href="#" class="b-map__region b-region_lviv js-link_region">
+                    <div class="b-region__title js-title">Львов</div>
+                    <img src="./img/seomap/regular/lviv.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Львове">
+                    <img src="./img/seomap/highlighted/lviv.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Львове">
+                </a>
+                <a href="#" class="b-map__region b-region_ternopol js-link_region">
+                    <div class="b-region__title js-title">Тернополь</div>
+                    <img src="./img/seomap/regular/ternopol.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Тернополе">
+                    <img src="./img/seomap/highlighted/ternopol.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Тернополе">
+                </a>
+                <a href="#" class="b-map__region b-region_khmelnickyi js-link_region">
+                    <div class="b-region__title js-title">Хмельницкий</div>
+                    <img src="./img/seomap/regular/khmelnickyi.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Хмельницке">
+                    <img src="./img/seomap/highlighted/khmelnickyi.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Хмельницке">
+                </a>
+                <a href="#" class="b-map__region b-region_vinnytsia js-link_region">
+                    <div class="b-region__title js-title">Винница</div>
+                    <img src="./img/seomap/regular/vinnytsia.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Виннице">
+                    <img src="./img/seomap/highlighted/vinnytsia.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Виннице">
+                </a>
+                <a href="#" class="b-map__region b-region_cherkassy js-link_region">
+                    <div class="b-region__title js-title">Черкассы</div>
+                    <img src="./img/seomap/regular/cherkassy.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Черкассах">
+                    <img src="./img/seomap/highlighted/cherkassy.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Черкассах">
+                </a>
+                <a href="#" class="b-map__region b-region_poltava js-link_region">
+                    <div class="b-region__title js-title">Полтава</div>
+                    <img src="./img/seomap/regular/poltava.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Полтаве">
+                    <img src="./img/seomap/highlighted/poltava.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Полтаве">
+                </a>
+                <a href="#" class="b-map__region b-region_kharkiv js-link_region">
+                    <div class="b-region__title js-title">Харков</div>
+                    <img src="./img/seomap/regular/kharkiv.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Харькове">
+                    <img src="./img/seomap/highlighted/kharkiv.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Харькове">
+                </a>
+                
+                <a href="#" class="b-map__region b-region_uzhgorod js-link_region">
+                    <div class="b-region__title js-title">Ужгород</div>
+                    <img src="./img/seomap/regular/uzhgorod.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Ужгороде">
+                    <img src="./img/seomap/highlighted/uzhgorod.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Ужгороде">
+                </a>
+                <a href="#" class="b-map__region b-region_ivano-frankovsk  js-link_region">
+                    <div class="b-region__title js-title">Ивано-Франковск</div>
+                    <img src="./img/seomap/regular/ivano-frankovsk.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Ивано-Франковске">
+                    <img src="./img/seomap/highlighted/ivano-frankovsk.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Ивано-Франковске">
+                </a>
+                <a href="#" class="b-map__region b-region_chernovtsy js-link_region">
+                    <div class="b-region__title js-title">Черновцы</div>
+                    <img src="./img/seomap/regular/chernovtsy.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Черновцах">
+                    <img src="./img/seomap/highlighted/chernovtsy.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Черновцах">
+                </a>
+                <a href="#" class="b-map__region b-region_kirovograd js-link_region">
+                    <div class="b-region__title js-title">Кировоград</div>
+                    <img src="./img/seomap/regular/kirovograd.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Кировограде">
+                    <img src="./img/seomap/highlighted/kirovograd.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Кировограде">
+                </a>
+                <a href="#" class="b-map__region b-region_dnepropetrovsk js-link_region">
+                    <div class="b-region__title js-title">Днепропетровск</div>
+                    <img src="./img/seomap/regular/dnepropetrovsk.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Днепропетровске">
+                    <img src="./img/seomap/highlighted/dnepropetrovsk.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Днепропетровске">
+                </a>
+                <a href="#" class="b-map__region b-region_donetsk js-link_region">
+                    <div class="b-region__title js-title">Донецк</div>
+                    <img src="./img/seomap/regular/donetsk.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Донецке">
+                    <img src="./img/seomap/highlighted/donetsk.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Донецке">
+                </a>
+                <a href="#" class="b-map__region b-region_lugansk js-link_region">
+                    <div class="b-region__title js-title">Луганск</div>
+                    <img src="./img/seomap/regular/lugansk.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Луганске">
+                    <img src="./img/seomap/highlighted/lugansk.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Луганске">
+                </a>
+                <a href="#" class="b-map__region b-region_odessa js-link_region">
+                    <div class="b-region__title js-title">Одесса</div>
+                    <img src="./img/seomap/regular/odessa.svg" class="b-region__img b-region__img_regular" alt="ОСАГО в Одессе и Одесской области" title="ОСАГО в Одессе">
+                    <img src="./img/seomap/highlighted/odessa.svg" class="b-region__img b-region__img_highlighted" alt="ОСАГО в Одессе и Одесской области" title="ОСАГО в Одессе">
+                </a>
+                <a href="#" class="b-map__region b-region_nikolaev js-link_region">
+                    <div class="b-region__title js-title">Николаев</div>
+                    <img src="./img/seomap/regular/nikolaev.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Николаеве">
+                    <img src="./img/seomap/highlighted/nikolaev.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Николаеве">
+                </a>
+                <a href="#" class="b-map__region b-region_kherson js-link_region">
+                    <div class="b-region__title js-title">Херсон</div>
+                    <img src="./img/seomap/regular/kherson.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Херсоне">
+                    <img src="./img/seomap/highlighted/kherson.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Херсоне">
+                </a>
+                <a href="#" class="b-map__region b-region_zaporozhye js-link_region">
+                    <div class="b-region__title js-title">Запорожье</div>
+                    <img src="./img/seomap/regular/zaporozhye.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Запорожье">
+                    <img src="./img/seomap/highlighted/zaporozhye.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Запорожье">
+                </a>
+                <a href="#" class="b-map__region b-region_simferopol js-link_region">
+                    <div class="b-region__title js-title">Симферополь</div>
+                    <img src="./img/seomap/regular/simferopol.svg" class="b-region__img b-region__img_regular" alt="" title="ОСАГО в Симферополе">
+                    <img src="./img/seomap/highlighted/simferopol.svg" class="b-region__img b-region__img_highlighted" alt="" title="ОСАГО в Симферополе">
+                </a>
+            </div>
+            <div class="b-seoMap_descr">
+                <span class="b-heading_videohelp">Выбрать регион</span>
+                <p class="b-reasons__text b-reasons__text_seomap">
+                <span class="b-ohua">Oh.ua</span> -  это онлайн сервис сравнения цен и подбора предложений по Автогражданке с помощью которого вы за 5 минут сможете оформить страховку.<br><br>Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги на страховке более 2000 клиентам  Мы гарантируем самые низкие цены. Не дороже, чем напрямую в страховой компании. Решим все вопросы по доставке полиса и оплате.</p>
+            </div>
+        </div>
+    </section>
+	<section class="b-section_faq">
+        <div class="b-container">
+	        <span class="b-section__heading b-section__heading_rating b-section__heading_faq">У нас часто спрашивают</span>
+	        <div class="b-container__faq b-faq">
+	            <article class="b-questAnsw b-questAnsw_unrolled">
+	               <h5>
+	                    Что такое полис ОСАГО?
+	                    <span class="b-toggler_question"></span>
+	               </h5>
+	               <p>Работаем на украинском страховом рынке с 2015 года, помогли сэкономить деньги на страховке более 2000 клиентам  Мы гарантируем самые низкие цены. Не дороже, чем напрямую в страховой компании. Решим все вопросы по доставке полиса и оплате.</p>
+	            </article>
+	            <article class="b-questAnsw">
+	               <h5>
+	                    Почему в некоторых страховых полис ОСАГО дешевле, а в других дороже?
+	                    <span class="b-toggler_question"></span>
+	               </h5>
+	               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aliquam adipisci perspiciatis distinctio? Aperiam ea pariatur explicabo architecto facere qui a numquam, ad quisquam dolor nostrum dicta, adipisci, distinctio hic!</p>
+	            </article>
+	            <article class="b-questAnsw">
+	               <h5>
+	                    Могу ли я купить ОСАГО на сайте страховой дешевле?
+	                    <span class="b-toggler_question"></span>
+	               </h5>
+	               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus dolorem repellat facilis in quos ab officiis animi libero dignissimos alias veniam aliquid expedita, praesentium, rem totam velit tempora autem.</p>
+	            </article>
+	            <article class="b-questAnsw">
+	               <h5>
+	                    С какими страховыми компания вы работаете?
+	                    <span class="b-toggler_question"></span>
+	               </h5>
+	               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus dolorem repellat facilis in quos ab officiis animi libero dignissimos alias veniam aliquid expedita, praesentium, rem totam velit tempora autem.</p>
+	            </article>
+	            <article class="b-questAnsw">
+	               <h5>
+	                    Город регистрации авто - что это?
+	                    <span class="b-toggler_question"></span>
+	               </h5>
+	               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus dolorem repellat facilis in quos ab officiis animi libero dignissimos alias veniam aliquid expedita, praesentium, rem totam velit tempora autem.</p>
+	            </article>
+	            <article class="b-questAnsw">
+	               <h5>
+	                    Что такое “франшиза”?
+	                    <span class="b-toggler_question"></span>
+	               </h5>
+	               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus dolorem repellat facilis in quos ab officiis animi libero dignissimos alias veniam aliquid expedita, praesentium, rem totam velit tempora autem.</p>
+	            </article>
+	            <article class="b-questAnsw">
+	               <h5>
+	                    Что такое “расширение лимита ответственности” по ОСАГО?
+	                    <span class="b-toggler_question"></span>
+	               </h5>
+	               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus dolorem repellat facilis in quos ab officiis animi libero dignissimos alias veniam aliquid expedita, praesentium, rem totam velit tempora autem.</p>
+	            </article>
+	            <article class="b-questAnsw">
+	               <h5>
+	                    Есть ли скидки для льготников и пенсионеров?
+	                    <span class="b-toggler_question"></span>
+	               </h5>
+	               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus dolorem repellat facilis in quos ab officiis animi libero dignissimos alias veniam aliquid expedita, praesentium, rem totam velit tempora autem.</p>
+	            </article>
+	            <article class="b-questAnsw">
+	               <h5>
+	                    За руль своего авто сажусь не только я, но и члены семьи. Действует ли страховка на других людей за рулем?
+	                    <span class="b-toggler_question"></span>
+	               </h5>
+	               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus dolorem repellat facilis in quos ab officiis animi libero dignissimos alias veniam aliquid expedita, praesentium, rem totam velit tempora autem.</p>
+	            </article>
+	            <article class="b-questAnsw">
+	               <h5>
+	                    Какие документы нужно предоставить в страховую, чтобы получить выплату?
+	                    <span class="b-toggler_question"></span>
+	               </h5>
+	               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus dolorem repellat facilis in quos ab officiis animi libero dignissimos alias veniam aliquid expedita, praesentium, rem totam velit tempora autem.</p>
+	            </article>
+	            <article class="b-questAnsw">
+	               <h5>
+	                    Как я могу оплатить и получить свой полис ОСАГО?
+	                    <span class="b-toggler_question"></span>
+	               </h5>
+	               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus dolorem repellat facilis in quos ab officiis animi libero dignissimos alias veniam aliquid expedita, praesentium, rem totam velit tempora autem.</p>
+	            </article>
+	        </div>
+	        <div class="g-center">
+                <button type="button" class="b-form__submit_vehicle b-btn_faqs js-btn_faqs">
+                    <span class="b-text_btn">Больше ответов</span><span class="fa fa-angle-down" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+	<section class="b-section_responses" id="responses">
+        <div class="b-container">
+	        <span class="b-section__heading b-section__heading_rating b-section__heading_faq">ОТЗЬІВЬІ КЛИЕНТОВ</span>
+            <div class="b-rating__block_btns b-responses__block_btns js-btns_category">
+                <button class="b-rating__btn b-btn_active b-rating__btn_mtsbu b-rating__btn_responses b-btn_active js-btn_responses">Отзывы от клиентов Oh.ua</button>
+                <button class="b-rating__btn b-rating__btn_clients b-rating__btn_responses js-btn_feedback">оставить отзыв</button>
+            </div>
+            <div class="b-responses__container_slider">
+                <div class="b-slider_responses">
+                    <div class="b-slider__string_responses">
+                        <figure class="b-slide_responses b-slide">
+                            <div class="b-slide__side b-slide__side_front">
+                                <div class="b-slide__wrap">
+                                    <!-- slide content loads HERE by JS -->
+                                </div>
+                            </div>
+                            <div class="b-slide__side b-slide__side_back">
+                                <div class="b-slide__wrap b-slide__wrap_back">
+                                <div class="b-slide__heading b-slide__heading_back">Что вы о нас думаете</div>
+                                   <form action="" class="b-form_feedback js-form_feedback">
+                                        <div class="row">
+                                            <div class="col-l">
+                                                <label for="name1" class="b-label_registration">Ваше Имя</label>
+                                                <input type="text" name="name" id="name1" required pattern="[A-Za-zА-Яа-яЁёІіЇї\s]{2,}">
+                                            </div>
+                                            <div class="col-r">
+                                                <label for="phone1" class="b-label_registration">Ваш Телефон</label>
+                                                <input type="tel" name="phone" id="phone1" required pattern="[0-9()\s+-]{19}">
+                                            </div>
+                                        </div>
+                                        <div class="b-feedbackForm__rating">
+                                            <input type="radio" id="star5" name="rating" value="5" required>
+                                            <label class="fa" for="star5" title="восхитительно"></label>
+                                            <input type="radio" id="star4" name="rating" value="4">
+                                            <label class="fa" for="star4" title="отлично"></label>
+                                            <input type="radio" id="star3" name="rating" value="3">
+                                            <label class="fa" for="star3" title="хорошо"></label>
+                                            <input type="radio" id="star2" name="rating" value="2">
+                                            <label class="fa" for="star2" title="удовлетворительно"></label>
+                                            <input type="radio" id="star1" name="rating" value="1">
+                                            <label class="fa" for="star1" title="плохо"></label>
+                                            <span class="b-label_rating">Ваша оценка</span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-l col-12">
+                                                <label for="feedback1" class="b-label_registration">Ваш отзыв</label>
+                                                <textarea class="b-comment" name="feedback" id="feedback1" required></textarea>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="b-form__submit_feedback b-form__submit_vehicle">
+                                            <span class="b-text_btn">Оставить отзыв</span><span class="fa fa-comments" aria-hidden="true"></span>
+                                        </button>
+                                   </form>
+                               </div>
+                            </div>
+                        </figure>
+                        <figure class="b-slide_responses b-slide b-slide_active">
+                            <div class="b-slide__side b-slide__side_front">
+                                <div class="b-slide__wrap">
+                                     <!-- slide content loads HERE by JS -->
+                                </div>
+                            </div>
+                            <div class="b-slide__side b-slide__side_back">
+                                <div class="b-slide__wrap b-slide__wrap_back">
+                                   <div class="b-slide__heading b-slide__heading_back">Что вы о нас думаете</div>
+                                   <form action="" class="b-form_feedback js-form_feedback">
+                                        <div class="row">
+                                            <div class="col-l">
+                                                <label for="name2" class="b-label_registration">Ваше Имя</label>
+                                                <input type="text" name="name" id="name2" required pattern="[A-Za-zА-Яа-яЁёІіЇї\s]{2,}">
+                                            </div>
+                                            <div class="col-r">
+                                                <label for="phone2" class="b-label_registration">Ваш Телефон</label>
+                                                <input type="tel" name="phone" id="phone2" required pattern="[0-9()\s+-]{19}">
+                                            </div>
+                                        </div>
+                                        <div class="b-feedbackForm__rating">
+                                            <input type="radio" id="sstar5" name="rating" value="5" required>
+                                            <label class="fa" for="sstar5" title="восхитительно"></label>
+                                            <input type="radio" id="sstar4" name="rating" value="4">
+                                            <label class="fa" for="sstar4" title="отлично"></label>
+                                            <input type="radio" id="sstar3" name="rating" value="3">
+                                            <label class="fa" for="sstar3" title="хорошо"></label>
+                                            <input type="radio" id="sstar2" name="rating" value="2">
+                                            <label class="fa" for="sstar2" title="удовлетворительно"></label>
+                                            <input type="radio" id="sstar1" name="rating" value="1">
+                                            <label class="fa" for="sstar1" title="плохо"></label>
+                                            <span class="b-label_rating">Ваша оценка</span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-l col-12">
+                                                <label for="feedback2" class="b-label_registration">Ваш отзыв</label>
+                                                <textarea class="b-comment" name="feedback" id="feedback2" required></textarea>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="b-form__submit_feedback b-form__submit_vehicle">
+                                            <span class="b-text_btn">Оставить отзыв</span><span class="fa fa-comments" aria-hidden="true"></span>
+                                        </button>
+                                   </form>
+                               </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="b-slider__controls_responses">
+                        <button class="b-slider__control b-slider__control_responses b-slider__control_left"><span class="fa fa-angle-double-left" aria-hidden="true"></span></button>
+                        <button class="b-slider__control b-slider__control_responses b-slider__control_right"><span class="fa fa-angle-double-right" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="b-section_seoText">
+        <article class="b-seo__article b-seo__top b-container clearfix">
+                <span class="b-section__heading b-section__heading_seo b-section__heading_howto">ОСАГО (Автогражданка)</span>
+                <p class="b-seoText">
+                    <img src="./img/seoCar.png" class="b-img_seo" alt="car">
+                    <span class="bold">Автострахование ОСАГО</span> – это обязательный вид страхования гражданско-правовой ответственности наземных транспортных средств. Также в обиходе существуют более привычные названия данной страховки – «Автоцивилка», «Автогражданка» или ГэОшка.<br><br>Заключение договоров и реализация полисов ОСАГО осуществляется в соответствии с Законом Украины «Об обязательном страховании гражданско-правовой ответственности владельцев наземных транспортных средств». Порядок полисов страхования, размер страховых сумм, методика расчетов устанавливает КабМин Украины. Для страховых компаний установлены специальные условия лицензирования.<br><br>Цель ОСАГО – возмещение вреда, причиненного жизни и здоровью потерпевших в результате ДТП и защиты имущественных интересов страхователей – владельцев страхового полиса. Этот документ является договором страхования. Отсутствие полиса влечет за собой штраф в пределах 425-850 гр
+                </p>
+        </article>
+        <article class="b-seo__article b-seo__limit_response bg-mid">
+            <div class="b-container b-container_seo">
+                <div class="b-heading_seo g-color-corporate-dark">СТРАХОВАЯ СУММА И ЛИМИТ ОТВЕТСТВЕННОСТИ</div>
+                <p class="b-seoText">
+                    <span class="bold">Страховая сумма выплаты за ущерб, причиненный имуществу, составляет 100 000, 00 грн., а за вред жизни и здоровью – 200 000, 00 грн.</span> на одного потерпевшего. По европротоколу, - специальный бланк, унифицированный в европейских странах – максимальный размер выплат составляет 50 000, 00 грн.<br><br>В итоге, оформив данный полис автострахования ОСАГО, <span class="bold">Вы оберегаете себя от больших финансовых потерь вызванных в ДТП,</span> которое наступило по Вашей вине. В такой ситуации нести материальную ответственность за нанесенный ущерб третьим лицам транспортного средства вместо Вас будет страховая компания, у которой Вы приобрели полис. Если ДТП произошло по чужой вине, то убытки будет возмещать страховая компания въехавшего в Вас автомобиля.<br><br>Что же касается вреда, нанесенного по Вашей вине имуществу Вашего авто, здоровью или даже жизни, то в таком случае расплачиваться придется самостоятельно, со своего кармана, либо же приобрести полис автострахования КАСКО.
+                </p>
+            </div>
+        </article>
+        <article class="b-seo__article b-seo__limit_vehicles">
+            <div class="b-container b-container_seo b-container_seoShifted">
+                <div class="b-heading_seo g-color-corporate-dark">НА КАКИЕ ТРАНСПОРТНЫЕ СРЕДСТВА РАСПРОСТРАНЯЕТСЯ АВТОЦИВИЛКА?</div>
+                <p class="b-seoText clearfix">
+                    Обязательному автострахованию подлежат:
+                    <span class="b-seo__vehicles">
+                        <span class="b-seo__vehicle">
+                            <span class="block">
+                                <object data="./img/cargo.svg" type="image/svg+xml" class="obj-vehicle obj-vehicle_cargo"></object>
+                            </span>
+                            <span class="title bold">грузовые авто</span>
+                        </span>
+                        <span class="b-seo__vehicle">
+                            <span class="block">
+                                   <object data="./img/car.svg" type="image/svg+xml" class="obj-vehicle obj-vehicle_car"></object>
+                            </span>
+                            <span class="title bold">легковые  авто</span>
+                        </span>
+                        <span class="b-seo__vehicle" style="clear: right">
+                            <span class="block">
+                                <object data="./img/moto.svg" type="image/svg+xml" class="obj-vehicle obj-vehicle_moto"></object>
+                            </span>
+                            <span class="title bold">мотоциклы, мотороллеры</span>
+                        </span>
+                        <span class="b-seo__vehicle">
+                            <span class="block">
+                                <object data="./img/trailer.svg" type="image/svg+xml" class="obj-vehicle obj-vehicle_trailer"></object>
+                            </span>
+                            <span class="title bold">прицепы</span>
+                        </span>
+                        <span class="b-seo__vehicle">
+                            <span class="block">
+                                <object data="./img/bus.svg" type="image/svg+xml" class="obj-vehicle obj-vehicle_bus"></object>
+                            </span>
+                            <span class="title bold">автобусы</span>
+                        </span>
+                    </span>
+                </p>
+                <p class="b-seoText">
+                    Следует помнить о том, что данный вид страховки можно оформлять только на:<br><br>
+                    транспортное средство, зарегистрированное в Украине;<br>
+                    транспортное средство, ввезенное на таможенную территорию Украины для временной эксплуатации и использования, которое зарегистрировано в других странах.
+                </p>
+            </div>
+        </article>
+        <article class="b-seo__article b-seo__article_prices">
+            <div class="b-container b-container_seo">
+                <span class="b-section__heading b-section__heading_seo b-section__heading_howto">Цены на страхование авто в Украине</span>
+                <p class="b-seoText">
+                    Все автомобилисты хотят застраховаться дешево и со скидками, но далеко не каждый понимает,<br> - откуда берется цена на страховку авто. Ценообразующими факторами являются:
+                    <br><br>
+                </p>
+            </div>
+            <div class="b-container b-container_seo b-container_seoWide">
+                <div class="b-seoText clearfix">
+                    <span class="b-factors_seo bg-mid">
+                        <span class="b-factors__heading g-color-corporate-dark">Характеристики транспортного средства</span>
+                        <span>(объем двигателя, грузоподъемность и пр.);</span>
+                        <span class="b-factors__heading g-color-corporate-dark">Место регистрации транспортного средства</span>
+                        <span>(город, где находиться МРЭО, через которое регистрировался автомобиль);</span>
+                        <span class="b-factors__heading g-color-corporate-dark">Водительский стаж;</span>
+                        <span></span>
+                        <span class="b-factors__heading g-color-corporate-dark">Срок действия договора</span>
+                        <span>(от 6 месяцев до 1 года, а для нерезидентов и владельцев временных, транзитных номеров есть возможность оформления на 15 дней и любое количество месяцев до года);</span>
+                        <span class="b-factors__heading g-color-corporate-dark">Год выпуска машины</span>
+                        <span>(стоимость страховки может быть снижена за счет безубыточной езды);</span>
+                        <span class="b-factors__heading g-color-corporate-dark">Сфера использования авто</span>
+                        <span>(в личных или коммерческих целях, например, такси);</span>
+                        <span class="b-factors__heading g-color-corporate-dark">Наличие льгот.</span>
+                        <span></span>
+                    </span>
+                    Прежде, чем купить полис ОСАГО онлайн, мы рекомендуем правильно рассчитать цену на данную услугу в Вашем конкретном случае. Сегодня это можно сделать через интернет самостоятельно или доверить дело грамотным специалистам.<br><br>Лицам, относящимся к льготной категории, дополнительно нужно предоставить документы, подтверждающие данную информацию. Так, льгота на страховой платеж в размере 50% предоставляется:<br>
+                    <ul class="list_seoDiscount bold">
+                        <li>участникам войны;</li>
+                        <li>инвалидам II группы;</li>
+                        <li>пострадавшим I и II категории от Чернобыльской катастрофы;</li>
+                        <li>пенсионерам.</li>
+                    </ul>
+                    <br>
+                    Скидка для льготников  в 50% от страхового платежа распространяется только на автомобили с объемом двигателя не более 2500 см3. Авто должно быть собственностью лица, относящегося к одной из вышеуказанных категорий, и исключительно в его управлении.
+                </div>
+            </div>
+        </article>
+        <article class="b-seo__article b-seo__article_additional">
+            <div class="b-container b-container_seo">
+                 <div class="title bold">ПЕРЕЧЕНЬ ДОКУМЕНТОВ ДЛЯ ОФОРМЛЕНИЯ ОСАГО</div>
+                 <ul class="list_seoDocks g-color-corporate-dark bold">
+                     <li>Паспорт или водительское удостоверение;<span class="g-text_unstyled"></span></li>
+                     <li>Свидетельство о регистрации транспортного средства <span class="g-text_unstyled">(тех. паспорт); </span></li>
+                     <li>ИНН код <span class="g-text_unstyled">(Идентификационный номер налогоплательщика).</span></li>
+                 </ul>
+                 <div class="title bold">ПОЧЕМУ СТОИТ ВОСПОЛЬЗОВАТЬСЯ НАШИМИ УСЛУГАМИ?</div>
+                 <p class="b-seoText">
+                    Стоимость ОСАГО можно рассчитать с помощью онлайн калькулятора у нас на сайте. Всего лишь указав объем двигателя Вашего авто и место регистрации. Вам также предоставляется самостоятельный выбор той страховой компании, которая Вам более подходит по стоимости и с учетом надежности.
+                    <br><br>
+                    Готовый полис можно получить в любом отделении Новой почты по всей Украине или курьерской доставкой по Киеву.
+                    <br><br>
+                    При оформлении страховки ОСАГО Вы получаете сам бланк страхового полиса, стикер на лобовое стекло своего авто, европротокол, а также карточку techassistance, с услугами, которые предоставляет выбранная Вами страховая компания (если таковые имеются).
+                    <br><br>
+                    Согласно Закону Украины “Об обязательном страховании гражданско-правовой ответственности владельцев наземных транспортных средств”, все, кто управляет транспортным средством - будь то легковой или грузовой автомобиль, автобус, мотоцикл или даже прицеп - обязаны иметь соответствующий полис, представляющий собой документ на бумажном листе формата А-4.
+                </p>
+            </div>
+        </article>
+    </section>
+    
+    <footer class="b-footer">
+        <div class="b-container g-pos_relative" style="visibility: hidden">
+            <div class="b-footer__toTop" id="toTop">
+                <span class="b-heading_toTop g-bold">Вверх&nbsp;</span>
+                <a href="#header" class="b-btn_toTop">
+                    <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+        <div class="b-footer__up">
+            <div class="b-footer__part b-footer__part_left">
+                <div class="b-part_footer">
+                    <ul class="b-linkslist_footer">
+                        <li class="b-linkitem_footer">
+                            <a class="b-link_footer b-header__link b-callback_footer js-btn_callback callback" id="callbackBtn_footer">
+                                <span class="fa fa-phone" aria-hidden="true"></span>
+                                <span class="b-link__text">Обратный звонок</span>
+                            </a>
+                        </li>
+                        <li class="b-linkitem_footer">
+                            <a href="tel:0442903669" class="b-link_footer b-header__link b-header__link_phone">
+                                <span class="b-icon_phone"></span>
+                                <span class="b-link__text">(098) 733 67 18</span>
+                            </a>
+                        </li>
+                        <li class="b-linkitem_footer">
+                            <a href="mailto:sales@oh.ua" class="b-link_footer b-header__link b-header__link_email">
+                                <span class="fa fa-envelope-open-o" aria-hidden="true"></span>
+                                <span class="b-link__text">sales@oh.ua</span>
+                            </a>
+                        </li>
+                        <li class="b-linkitem_footer">
+                            <a href="tel:0442903669" class="b-link_footer"><span class="b-link__text">Звонок оператору</span></a>
+                        </li>
+                    </ul>
+                    <ul class="b-linkslist_footer">
+                        <li class="b-linkitem_footer">
+                            <a data-href="#" class="b-link_footer">О компании</a>
+                        </li>
+                        <li class="b-linkitem_footer">
+                            <a data-href="#" class="b-link_footer">Контакты</a>
+                        </li>
+                        <li class="b-linkitem_footer">
+                            <a data-href="#" class="b-link_footer">Оплата и доставка</a>
+                        </li>
+                    </ul>
+                    <span class="b-adress_header">Украина, г. Киев, ул. Пушкинская, 9</span>
+                </div>
+            </div>
+            <div class="b-footer__part b-footer__part_right">
+                <div class="b-part_footer">
+                    <ul class="b-linkslist_footer">
+                        <li class="b-linkitem_footer">
+                            <a data-shit="true" data-href="#" class="b-link_footer">Сотрудничество</a>
+                        </li>
+                        <li class="b-linkitem_footer">
+                            <a data-href="#" class="b-link_footer">Акции</a>
+                        </li>
+                        <li class="b-linkitem_footer">
+                            <a href="#" class="b-link_footer">Автострахование</a>
+                        </li>
+                    </ul>
+                    <ul class="b-linkslist_footer">
+                        <li class="b-linkitem_footer">
+                            <a href="#" class="b-link_footer">Новости</a>
+                        </li>
+                        <li class="b-linkitem_footer">
+                            <a href="#" class="b-link_footer">Часто задаваемые вопросы (FAQ)</a>
+                        </li>
+                        <li class="b-linkitem_footer">
+                            <a href="#" class="b-link_footer">Рейтинг страховых компаний</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="b-footer__up_mobile">
+            <ul class="b-footer__list_categories">
+                <li class="b-footer__category">
+                    <span class="b-category__heading js-accordion__trigger">О компании</span>
+                    <div class="b-accordion_content js-accordion__content">
+                        <ul class="b-category__list_links">
+                            <li class="b-category__item"><a href="#" class="b-category__link">Акции</a></li>
+                            <li class="b-category__item"><a href="#" class="b-category__link">Новости</a></li>
+                            <li class="b-category__item"><a href="https://test.oh.ua/faq/kak-osuschestvlyaetsya-oplata/" class="b-category__link">Оплата и доставка</a></li>
+                            <li class="b-category__item"><a href="#" class="b-category__link">Часто задаваемые вопросы (FAQ)</a></li>
+                            <li class="b-category__item"><a href="#" class="b-category__link">Сотрудничество</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="b-footer__category">
+                    <span class="b-category__heading js-accordion__trigger">Услуги</span>
+                    <div class="b-accordion_content js-accordion__content">
+                        <ul class="b-category__list_links">
+                            <li class="b-category__item"><a href="#" class="b-category__link">ОСАГО</a></li>
+                            <li class="b-category__item"><a href="#" class="b-category__link">Туристическое страхование</a></li>
+                            <li class="b-category__item"><a href="#" class="b-category__link">Зеленая Карта</a></li>
+                            <li class="b-category__item"><a href="#" class="b-category__link">КАСКО</a></li>
+                            <li class="b-category__item"><a href="#" class="b-category__link">Электронный полис ОСАГО</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="b-footer__category">
+                    <span class="b-category__heading js-accordion__trigger">Сервисы</span>
+                    <div class="b-accordion_content js-accordion__content">
+                        <ul class="b-category__list_links">
+                            <li class="b-category__item"><a href="#" class="b-category__link">Калькулятор ОСАГО</a></li>
+                            <li class="b-category__item"><a href="#" class="b-category__link">Калькулятор Зеленая Карта</a></li>
+                            <li class="b-category__item"><a href="#" class="b-category__link">Калькулятор ВЗР</a></li>
+                            <li class="b-category__item"><a href="#" class="b-category__link">Калькулятор КАСКО</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="b-footer__category">
+                    <span class="b-category__heading js-accordion__trigger">Контакты</span>
+                    <div class="b-accordion_content js-accordion__content">
+                        <ul class="b-linkslist_footer">
+                            <li class="b-linkitem_footer">
+                                <a href="#" class="b-link_footer b-header__link b-callback_footer js-btn_callback callback">
+                                    <span class="fa fa-phone" aria-hidden="true"></span>
+                                    <span class="b-link__text">Обратный звонок</span>
+                                </a>
+                            </li>
+                            <li class="b-linkitem_footer">
+                                <a href="tel:0442903669" class="b-link_footer b-header__link b-header__link_phone">
+                                    <span class="b-icon_phone"></span>
+                                    <span class="b-link__text">(098) 733 67 18</span>
+                                </a>
+                            </li>
+                            <li class="b-linkitem_footer">
+                                <a href="mailto:sales@oh.ua" class="b-link_footer b-header__link b-header__link_email">
+                                    <span class="fa fa-envelope-open-o" aria-hidden="true"></span>
+                                    <span class="b-link__text">sales@oh.ua</span>
+                                </a>
+                            </li>
+                            <li class="b-linkitem_footer">
+                                <a href="tel:0442903669" class="b-link_footer"><span class="b-link__text">Звонок оператору</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="b-footer__down">
+            <p class="b-footer__pay">
+               Мы принимаем:<br>
+               <span class="fa fa-cc-visa" aria-hidden="true"></span>
+               <span class="fa fa-cc-mastercard" aria-hidden="true"></span>
+            </p>
+        </div>
+</footer>
+    
+<!-- MODALS -->
+    <div class="b-overlay_modal">
+        <div class="b-modal b-modal_callback b-gradient_bg">
+            <div class="b-modal__btn_close">
+                <span class="fa fa-times" aria-hidden="true"></span>
+            </div>
+            <div class="b-modal__heading">Введите ваш<br>номер телефона и мы<br>вам перезвоним</div>
+                <form action="" class="b-modal__form_callback b-form_feedback js-form_callback">
+                    <input type="tel" name="phone" required pattern="[0-9()\s+-]{19}">
+                    <button type="submit" class="b-form__submit_feedback b-form__submit_vehicle">
+                        <span class="b-text_btn">Перезвонить</span><span class="fa fa-phone" aria-hidden="true"></span>
+                    </button>
+                </form>
+        </div>
+        <div class="b-modal b-modal_callbackSuccess b-gradient_bg">
+            <div class="b-modal__btn_close">
+                <span class="fa fa-times" aria-hidden="true"></span>
+            </div>
+            <div class="b-modal__heading">Спасибо, мы перезвоним вам на протяжении 5 минут.</div>
+        </div>
+        <div class="b-modal b-modal_feedbackSuccess b-gradient_bg">
+            <div class="b-modal__btn_close">
+                <span class="fa fa-times" aria-hidden="true"></span>
+            </div>
+            <div class="b-modal__heading">Спасибо, ваш отзыв принят.</div>
+        </div>
+        <div class="b-modal b-modal_error b-gradient_bg">
+            <div class="b-modal__btn_close">
+                <span class="fa fa-times" aria-hidden="true"></span>
+            </div>
+            <div class="b-modal__heading">Ошибка, попробуйте еще раз.</div>
+        </div>
+    </div>
+<!-- MODALS END -->
+
+<!--    HIDDEN BLOCK FOR RESPONSES SLIDER-->
+    <div class="hidden" style="display:none" id="slides">
+        <div class="b-slide__wrap">
+            <div class="b-slide__heading">0Сергей Зарицкий</div>
+            <div class="b-slide__content">
+                <span class="b-company__rating b-company__rating_propos" data-rating="0">
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                </span>
+                <div class="b-slide__aside_marks">
+                    <div class="b-mark__heading">Качество сервиса </div>
+                    <div class="b-mark__num">5/10</div>
+                    <div class="b-mark__heading">Уровень цен</div>
+                    <div class="b-mark__num">5/10</div>
+                    <div class="b-mark__heading">Выбор компаний </div>
+                    <div class="b-mark__num">1/10</div>
+                </div>
+                <p class="b-slide__response"><span class="b-response__highlight">Воспользовался сервисом на прошлой неделе.</span>Всё быстро и качественно. Рекомендую. Девочка Юля предложила варианты, выбрали, в электронной форме всё оформили, курьер привёз полис. Я доволен :)</p>
+                <a href="#" class="b-link_response g-bold">Смотреть на FACEBOOK<span  class="fa fa-chevron-right" aria-hidden="true"></span></a>
+            </div>
+        </div>
+        <div class="b-slide__wrap">
+            <div class="b-slide__heading">1Сергей Зарицкий</div>
+            <div class="b-slide__content">
+                <span class="b-company__rating b-company__rating_propos" data-rating="1">
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                </span>
+                <div class="b-slide__aside_marks">
+                    <div class="b-mark__heading">Качество сервиса </div>
+                    <div class="b-mark__num">5/10</div>
+                    <div class="b-mark__heading">Уровень цен</div>
+                    <div class="b-mark__num">5/10</div>
+                    <div class="b-mark__heading">Выбор компаний </div>
+                    <div class="b-mark__num">2/10</div>
+                </div>
+                <p class="b-slide__response">Всячески рекомендую данный сервис к повсеместному использованию. Страховки на любой вкус и карман, причем дешевле, как если бы покупать напрямую у страховиков. Если есть тяга к какой-то определенной страховой компании - можно выбрать из перечня. Если в сортах полисов не разбираешься - посоветуют, подберут и, что немаловажно в наше смутное время, не обдерут, как липку.</p>
+                <a href="#" class="b-link_response g-bold">Смотреть на FACEBOOK<span  class="fa fa-chevron-right" aria-hidden="true"></span></a>
+            </div>
+        </div>
+        <div class="b-slide__wrap">
+            <div class="b-slide__heading">2Сергей Зарицкий</div>
+            <div class="b-slide__content">
+                <span class="b-company__rating b-company__rating_propos" data-rating="2">
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                </span>
+                <div class="b-slide__aside_marks">
+                    <div class="b-mark__heading">Качество сервиса </div>
+                    <div class="b-mark__num">5/10</div>
+                    <div class="b-mark__heading">Уровень цен</div>
+                    <div class="b-mark__num">5/10</div>
+                    <div class="b-mark__heading">Выбор компаний </div>
+                    <div class="b-mark__num">3/10</div>
+                </div>
+                <p class="b-slide__response"><span class="b-response__highlight">Воспользовался сервисом на прошлой неделе.</span>Всё быстро и качественно. Рекомендую. Девочка Юля предложила варианты, выбрали, в электронной форме всё оформили, курьер привёз полис. Я доволен :)</p>
+                <a href="#" class="b-link_response g-bold">Смотреть на FACEBOOK<span  class="fa fa-chevron-right" aria-hidden="true"></span></a>
+            </div>
+        </div>
+        <div class="b-slide__wrap">
+            <div class="b-slide__heading">3Сергей Зарицкий</div>
+            <div class="b-slide__content">
+                <span class="b-company__rating b-company__rating_propos" data-rating="3">
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                </span>
+                <div class="b-slide__aside_marks">
+                    <div class="b-mark__heading">Качество сервиса </div>
+                    <div class="b-mark__num">5/10</div>
+                    <div class="b-mark__heading">Уровень цен</div>
+                    <div class="b-mark__num">5/10</div>
+                    <div class="b-mark__heading">Выбор компаний </div>
+                    <div class="b-mark__num">4/10</div>
+                </div>
+                <p class="b-slide__response"><span class="b-response__highlight">Воспользовался сервисом на прошлой неделе.</span>Всё быстро и качественно. Рекомендую. Девочка Юля предложила варианты, выбрали, в электронной форме всё оформили, курьер привёз полис. Я доволен :)</p>
+                <a href="#" class="b-link_response g-bold">Смотреть на FACEBOOK<span  class="fa fa-chevron-right" aria-hidden="true"></span></a>
+            </div>
+        </div>
+        <div class="b-slide__wrap">
+            <div class="b-slide__heading">4Сергей Зарицкий</div>
+            <div class="b-slide__content">
+                <span class="b-company__rating b-company__rating_propos" data-rating="4">
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                </span>
+                <div class="b-slide__aside_marks">
+                    <div class="b-mark__heading">Качество сервиса </div>
+                    <div class="b-mark__num">5/10</div>
+                    <div class="b-mark__heading">Уровень цен</div>
+                    <div class="b-mark__num">5/10</div>
+                    <div class="b-mark__heading">Выбор компаний </div>
+                    <div class="b-mark__num">5/10</div>
+                </div>
+                <p class="b-slide__response"><span class="b-response__highlight">Воспользовался сервисом на прошлой неделе.</span>Всё быстро и качественно. Рекомендую. Девочка Юля предложила варианты, выбрали, в электронной форме всё оформили, курьер привёз полис. Я доволен :)</p>
+                <a href="#" class="b-link_response g-bold">Смотреть на FACEBOOK<span  class="fa fa-chevron-right" aria-hidden="true"></span></a>
+            </div>
+        </div>
+        <div class="b-slide__wrap">
+            <div class="b-slide__heading">5Сергей Зарицкий</div>
+            <div class="b-slide__content">
+                <span class="b-company__rating b-company__rating_propos" data-rating="5">
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                    <span class="fa fa-star-o" aria-hidden="true"></span>
+                </span>
+                <div class="b-slide__aside_marks">
+                    <div class="b-mark__heading">Качество сервиса </div>
+                    <div class="b-mark__num">5/10</div>
+                    <div class="b-mark__heading">Уровень цен</div>
+                    <div class="b-mark__num">5/10</div>
+                    <div class="b-mark__heading">Выбор компаний </div>
+                    <div class="b-mark__num">6/10</div>
+                </div>
+                <p class="b-slide__response"><span class="b-response__highlight">Воспользовался сервисом на прошлой неделе.</span>Всё быстро и качественно. Рекомендую. Девочка Юля предложила варианты, выбрали, в электронной форме всё оформили, курьер привёз полис. Я доволен :)</p>
+                <a href="#" class="b-link_response g-bold">Смотреть на FACEBOOK<span  class="fa fa-chevron-right" aria-hidden="true"></span></a>
+            </div>
+        </div>
+    </div>
+<!--   /HIDDEN BLOCK FOR RESPONSES SLIDER-->
+	<!-- scripts -->
+	<script src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./js/jquery.maskedinput.min.js"></script>
+	<script src="./js/jquery.selectric.min.js"></script>
+	<script src="./js/ion.rangeSlider.min.js"></script>
+	<script src="./js/jquery.auto-complete.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jQvalidateCore.js"></script>
+    <script src="./js/jQvalidatePattern.js"></script>
+    <script src="./js/jQvalidateMessages_ru.js"></script>
+    <script src="./js/picker.js"></script>
+    <script src="./js/picker.date.js"></script>
+    <script src="./js/pickaday_rus.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

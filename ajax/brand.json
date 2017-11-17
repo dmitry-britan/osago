@@ -1,0 +1,10 @@
+{"items":
+	[
+		{"name":"BMW","id":"1"},
+		{"name":"Daewoo","id":"2"},
+		{"name":"Chrysler","id":"3"},
+		{"name":"Lamborghini","id":"4"},
+		{"name":"Ferrari","id":"5"},
+		{"name":"ЛАЗ","id":"6"}
+	]
+}
