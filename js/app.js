@@ -454,8 +454,6 @@ $(document).ready(function(){
 			$proposListContainer.dequeue("ajax");
 		}
 
-		// сховаємо форму параметрів
-		$vehicleForm.css("display", "none");
 		// при кліку на кнопку в заголовку "Результаты расчета для" показуємо/ховаємо форму параметрів
 		$toggleFilters.click(function(){
 			$(this).toggleClass("b-link_unscrolled")
