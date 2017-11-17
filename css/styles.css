@@ -3017,12 +3017,6 @@ a.b-callback_footer:hover{
 .b-order .fa{
     margin: 0 4px;
 }
-.b-order__price .fa:before{
-    content: '\f106';
-}
-.b-order__price_revert .fa:before{
-    content: '\f107';
-}
 .b-order__rating .fa:before{
     content: '\f106';
 }

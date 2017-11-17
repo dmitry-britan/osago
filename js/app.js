@@ -364,6 +364,7 @@ $(document).ready(function(){
 					}
 				});
 				$sortBtnByPrice.on("click", function(){
+					$(this).find(".fa").toggleClass("fa-sort-amount-asc fa-sort-amount-desc");
 					sortByField.call(this, "price", $proposList, $proposListItems, true);
 					$proposListItems = $proposList.children(".js-proposition");
 					if (!$moreProposBtn.hasClass("js-rolled")) {
