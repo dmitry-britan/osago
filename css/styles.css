@@ -2633,6 +2633,7 @@ a.b-callback_footer:hover{
 }
 
 /*  PROPOSITIONS  */
+.b-container__order,
 .b-container__calculator_propositions{
     padding-left: 40px;
     padding-right: 40px;
@@ -2641,9 +2642,11 @@ a.b-callback_footer:hover{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.b-container_crumbs_order,
 .b-container_crumbs_propos{
     margin: 0 -16px;
 }
+.b-crumbs_order,
 .b-crumbs_propos{
     display: inline-block;
     padding-left: 10px;
@@ -3289,10 +3292,12 @@ a.b-callback_footer:hover{
 .b-wrap_guaranties{
     padding: 15px;
 }
+.b-order__btn_edge,
 .b-propos__btn_edge{
-    border: 1px solid #efca14;
+border: 1px solid #efca14;
     background-color: transparent;
 }
+.b-order__btn_edge>span.fa,
 .b-propos__btn_edge>span.fa{
     border-left: 1px solid #efca14;
 }
