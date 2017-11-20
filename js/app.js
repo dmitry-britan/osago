@@ -233,6 +233,7 @@ $(document).ready(function(){
 			,$vehicleSelect = $("#vehicle")
 			,$toggleFilters = $("#toggleFilters")
 			,$vehicleForm = $("#vehicleForm")
+			,$oneClickForm = $("#oneClickForm")
 			,$cityName = $vehicleForm.find("#regCity")
 			,$cityId = $vehicleForm.find("#cityId")
 			,$cityZone = $vehicleForm.find("#zoneId")
@@ -253,6 +254,47 @@ $(document).ready(function(){
 			,$franshiza = $(".js-range_franshiza").ionRangeSlider()			// слайдер Франшизи
 			;
 
+			// modals
+			var	 $modalOvl = $(".b-overlay_modal")
+			,$modals = $modalOvl.find(".b-modal")
+			,$modalError = $modals.filter(".b-modal_error")
+			,$modalCallbackSuccess = $modals.filter(".b-modal_callbackSuccess")
+			;
+
+		$oneClickForm.find("input[type='tel']").mask("+38 (099) 999-99-99");
+		
+		// callback form submission
+		$oneClickForm.submit(function(event){
+			event.preventDefault();
+			var data = $(this).serialize();
+
+			$.ajax({
+					// type : 'post',
+					type : 'get',
+					url: './ajax/create-callback.json',
+					data : data,
+					cache : false,
+					success : function(response){
+							if(response.status == true)
+							{
+									// in a case of Ajax success:
+									$modals.fadeOut();	// ховаємо видимі модалки
+									$modalOvl.fadeIn();
+									$modalCallbackSuccess.fadeIn();	// show success modal
+									$oneClickForm.find('input[type="tel"]').val('');
+							} 
+							else
+							{
+								$modals.fadeOut();	// ховаємо видимі модалки
+								$modalOvl.fadeIn();
+								$modalError.fadeIn();	// show error modal
+							}
+					},
+					error: function(){
+							alert('There is an error!');
+					}
+			});
+		})
 
 		// ф-я ініціалізації функціонала кнопок купівлі і доставки
 		var buyBtnsInit = function(){

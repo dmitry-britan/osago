@@ -639,11 +639,11 @@
                                 (098) 733 67 18
                             </a>
                         </div>
-                        <div class="callback">
+                        <div id="oneClickForm" class="callback">
                             <form class="callback__inner">
                                 <div class="callback__header">Заказ в 1 клик</div>
                                 <div class="callback__content">
-                                    <input type="tel" name="phone" id="phone_byphone" aria-required="true" class="input" title="введите номер украинского оператора связи" aria-invalid="true">
+                                    <input type="tel" name="phone" id="phone_byphone" class="input" title="введите номер украинского оператора связи" required pattern="[0-9()\s+-]{19}">
                                 </div>
                                 <div class="callback__footer">
                                     <button type="submit" class="callback__action b-btn b-btn--purple with--arrow">
