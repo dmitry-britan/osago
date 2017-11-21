@@ -21,7 +21,7 @@
         </div>
         <div class="b-calculator__heading b-heading_finalize">Как вам удобнее оформить страховку?</div>
         <div class="b-finalize__btns_method">
-            <a href="#" class="b-finalize__btn_method" data-for="bySelf">
+            <a href="#" class="b-finalize__btn_method b-finalize__btn_active" data-for="bySelf">
                 <div class="b-btn__heading_method">Заполнить самостоятельно</div>
                 <div class="b-btn__cover_method">
                     <svg viewBox="-49 141 512 512" class="svg-method svg-method_self">
@@ -47,7 +47,7 @@
                 </div>
                 <div class="b-btn__footer_method">Перезвоним в течение 10 минут</div>
             </a>
-            <a href="#" class="b-finalize__btn_method b-finalize__btn_active" data-for="byUpload">
+            <a href="#" class="b-finalize__btn_method" data-for="byUpload">
                 <div class="b-btn__heading_method">Отправить документы</div>
                 <div class="b-btn__cover_method">
                     <svg viewBox="21.5 141 371 512" class="svg-method svg-method_upload">
@@ -113,7 +113,7 @@
                 </div>
             </div>
         </div>
-        <div class="b-finalize__method b-finalize__method_self" id="bySelf">
+        <div class="b-finalize__method b-finalize__method_self js-method_active" id="bySelf">
             <div class="b-calculator__heading b-heading_finalize b-heading_method">Введите данные, чтобы получить полис</div>
             <form action="" class="b-form_finalize" id="formBySelf">
                 <div class="step step--1 is--active">
@@ -399,7 +399,7 @@
                 </div>
             </form>
         </div>
-        <div class="b-finalize__method b-finalize__method__upload js-method_active" id="byUpload" style="display:block">
+        <div class="b-finalize__method b-finalize__method__upload" id="byUpload" style="display:block">
             <div class="b-calculator__heading b-heading_finalize b-heading_method">Введите данные, чтобы получить полис</div>
             <form action="" class="b-form_finalize" id="formByUpload">
                 <div class="b-form__block b-form__insured_byupload">

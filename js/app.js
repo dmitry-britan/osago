@@ -1054,15 +1054,16 @@ $(document).ready(function(){
 			$('.step--'+stepId).addClass('is--active');
 		});
 		// on mobiles show only byFileUpload method
-		$window.on("resize", function(){
-			if ($window.outerWidth() <= BREAKPOINT_XS && !$methodBtns.filter("[data-for='byUpload']").hasClass("b-finalize__btn_active")){
-				console.log("viewport <= 767px");
-				$methodBtns.filter("[data-for='byUpload']").trigger("click");
-			} else {
-				// console.log("viewport > 767px");
-				// $methodBtns.filter("[data-for='bySelf']").trigger("click");
-			}
-		});
+		$methodBtns.filter("[data-for='byUpload']").trigger("click");
+		// $window.on("resize", function(){
+		// 	if ($window.outerWidth() <= BREAKPOINT_XS && !$methodBtns.filter("[data-for='byUpload']").hasClass("b-finalize__btn_active")){
+		// 	 console.log("viewport <= 767px");
+		// 	 $methodBtns.filter("[data-for='byUpload']").trigger("click");
+		// 	} else {
+		// 	 // console.log("viewport > 767px");
+		// 	 // $methodBtns.filter("[data-for='bySelf']").trigger("click");
+		// 	}
+		//  });
 		// .triggerHandler("resize");
 
 		// перемикання блоку "парень-девушка"
