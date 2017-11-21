@@ -773,9 +773,8 @@ a.b-menu__heading:hover{
     color: #f2c916;
 }
 .b-calculator_vehicle{
-/*    float: right;*/
-/*    width: 599px;*/
-    margin-left: 100px;
+    max-width: 620px;
+    margin: 0 auto;
 }
 .b-form_vehicle{
     display: inline-block;
