@@ -6904,4 +6904,6 @@ border: 1px solid #efca14;
     }
     .step__action a{
         display: inline-block;
+        min-width: 65px;
+        margin-left: 16px;
     }
