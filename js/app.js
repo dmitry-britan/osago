@@ -1688,8 +1688,8 @@ $(document).ready(function(){
 	}
 
 // breadcrumbs click event listener
-    $(document).on('click', '.b-crumbs__link, .js-crumbs__link', function(){
-
+    $(document).on('click', '.b-crumbs__link, .js-crumbs__link', function(e){
+				e.preventDefault();
         var step = +$(this).attr('data-step');	// 1 - вибір ТЗ, 2 - пропозиції
 
 	    switch (step){
