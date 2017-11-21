@@ -6899,6 +6899,7 @@ border: 1px solid #efca14;
     .step__action{
         margin: 0 auto;
         max-width: 760px;
+        padding-right: 138px;
         text-align: right;
     }
     .step__action a{
