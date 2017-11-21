@@ -6844,6 +6844,7 @@ border: 1px solid #efca14;
 /* Free Call */
     .free-call{
         margin-bottom: 25px;
+        text-align: center;
     }
     .free-call__text{
         display: block;
