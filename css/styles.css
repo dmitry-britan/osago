@@ -5994,6 +5994,7 @@ border: 1px solid #efca14;
         padding-left: 20px;
     }
     .b-advantages{
+        clear: both;
         margin: 0 -20px 0;
         background-color: #fff;
     }
