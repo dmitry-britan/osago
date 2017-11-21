@@ -484,6 +484,7 @@ $(document).ready(function(){
 
 	            	    $buyBtns = $("#propositions").find(".js-proposition__buy")						// кнопка оформлення покупки
 						$quickDelivBtns = $("#propositions").find(".js-proposition__delivery_quick")	// кнопка оформлення швидкої доставки
+						$makeBtns = $().add($buyBtns).add($quickDelivBtns)       // кнопки оформлення
 	            	    buyBtnsInit();
 	            	},
 	            	complete: function(){
@@ -523,6 +524,18 @@ $(document).ready(function(){
 			$vehicleForm.trigger("submit");
 		});
 		$cityName.on("change", function(){
+			$vehicleForm.trigger("submit");
+		});
+		$carParamSelect.on("change", function(){
+			$vehicleForm.trigger("submit");
+		});
+		$trailerParamSelect.on("change", function(){
+			$vehicleForm.trigger("submit");
+		});
+		$busParamSelect.on("change", function(){
+			$vehicleForm.trigger("submit");
+		});
+		$motoParamSelect.on("change", function(){
 			$vehicleForm.trigger("submit");
 		});
 
