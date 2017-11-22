@@ -3730,7 +3730,7 @@ border: 1px solid #efca14;
 }
 .b-form__cell_map,
 .b-form__cell_comment{
-    margin-right: 70px;
+    margin-right: 70px!important;
     float: none;
 }
 .b-comment{
