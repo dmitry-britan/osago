@@ -1053,7 +1053,6 @@ $(document).ready(function(){
 
 			$('.step--'+(stepId-1)+' .b-form__block .b-form__cell').each(function(){
 				if (!$(this).find('input').val()){
-					console.log($(this));
 					$(this).addClass('b-cell_error');
 					isEmptyField = true;
 				}
