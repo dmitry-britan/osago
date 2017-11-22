@@ -3647,6 +3647,9 @@ border: 1px solid #efca14;
     font-weight: 700;
     font-family: 'Roboto Condensed', sans-serif;
 }
+.b-form__heading_finalize.is--mr-40{
+    margin-right: 40px;
+}
 .row_form{
     margin: 0;
 }
@@ -3725,6 +3728,7 @@ border: 1px solid #efca14;
 #finalize .selectric-wrapper{
     width: 190px;
 }
+.b-form__cell_map,
 .b-form__cell_comment{
     margin-right: 70px;
     float: none;
@@ -3751,7 +3755,7 @@ border: 1px solid #efca14;
     border: none;
 }
 .b-map_finalize{ 
-    width: 330px;
+    width: 100%;
     height: 240px;
 }
 
@@ -3773,7 +3777,8 @@ border: 1px solid #efca14;
     padding-left: 0;
 }
 .b-radio_pay:checked + label{
-    background-color: #f2c916;
+    border: 1px solid #f2c916;
+    background-color: #ffffff;
 }
 .b-radio_pay:not(checked) + label:before {
     content: none;
