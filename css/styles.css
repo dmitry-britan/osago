@@ -3726,7 +3726,8 @@ border: 1px solid #efca14;
     width: 190px;
 }
 .b-form__cell_comment{
-    margin-right: 30px;
+    margin-right: 70px;
+    float: none;
 }
 .b-comment{
     white-space: normal;
@@ -3736,8 +3737,8 @@ border: 1px solid #efca14;
     resize: none;
 }
 .b-comment_finalize{
-    width: 330px;
-    height: 240px;
+    width: 100%;
+    height: 80px;
     padding-top: 5px;
     padding-bottom: 5px;
     line-height: 19px;
