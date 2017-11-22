@@ -1049,9 +1049,19 @@ $(document).ready(function(){
 		$orderByYourselfNavigate.on('click', function(e){
 			e.preventDefault();
 			var stepId = $(this).data('step');
+			var isEmptyField = false;
 
-			$('.step').removeClass('is--active');
-			$('.step--'+stepId).addClass('is--active');
+			$('.step--'+(stepId-1)+' .b-form__block .b-form__cell').each(function(){
+				if (!$(this).find('input').val()){
+					console.log($(this));
+					$(this).addClass('b-cell_error');
+					isEmptyField = true;
+				}
+			});
+			if ( !$('.step--'+(stepId-1)+' .b-form__block .b-cell_error').length && !isEmptyField ){
+				$('.step').removeClass('is--active');
+				$('.step--'+stepId).addClass('is--active');
+			}
 		});
 		// on mobiles show only byFileUpload method
 		$methodBtns.filter("[data-for='byUpload']").trigger("click");
@@ -1633,8 +1643,8 @@ $(document).ready(function(){
 				        	items = []; // масив елементів
 				    		itemIds = [];	// масив id елементів
 				    		itemOtherIds = [];	// масив додаткових id елементів
-				        	// oJS = data;	//відповідний JSоб'єкт до JSON об'єкту AJAX відповіді
-				        	oJS = JSON.parse(data);	//відповідний JSоб'єкт до JSON об'єкту AJAX відповіді
+				        	oJS = data;	//відповідний JSоб'єкт до JSON об'єкту AJAX відповіді
+				        	// oJS = JSON.parse(data);	//відповідний JSоб'єкт до JSON об'єкту AJAX відповіді
 				        	propertiesLength = 0;
 				        	var i;
 				        	// for (i in oJS.items[0]) {
