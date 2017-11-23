@@ -3863,6 +3863,14 @@ border: 1px solid #efca14;
     opacity: 0;
     font-size: 0;
 }
+.b-form__text{
+    margin-bottom: 7px;
+    color: #4b4b4b;
+    font-weight: 300;
+}
+.b-form__text.is--mt-10{
+    margin-top: 10px;
+}
 .b-button_files{
     position: absolute;
     top: 0;
@@ -6460,6 +6468,15 @@ border: 1px solid #efca14;
     }
     .b-vehicle .svg-vehicle, .obj-vehicle{
         width: 50px;
+    }
+    .b-calculator_vehicle .b-block_franshiza{
+        margin: 0 auto;
+        float: left;
+        clear: both;
+        width: 90%;
+    }
+    .b-autocomplete_vehicle {
+        margin-right: 45px;
     }
     .b-calculator__heading{
         font-size: 18px;
