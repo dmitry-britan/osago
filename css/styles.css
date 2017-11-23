@@ -5713,6 +5713,13 @@ border: 1px solid #efca14;
     .b-propos__recalc .b-select__container_propos:nth-child(n){
         width: 100%;
     }
+
+    .b-propos__recalc .b-select__container_propos.b-block_franshiza{
+        margin: 0 auto;
+        float: left;
+        clear: both;
+        width: 90%;
+    }
     .b-propositions__link{
         display: block;
     }
@@ -6475,8 +6482,11 @@ border: 1px solid #efca14;
         clear: both;
         width: 90%;
     }
+    .b-block_registration{
+        width: 100%;
+    }
     .b-autocomplete_vehicle {
-        margin-right: 45px;
+        margin-right: 0;
     }
     .b-calculator__heading{
         font-size: 18px;
