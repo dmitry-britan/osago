@@ -263,6 +263,11 @@ $(document).ready(function(){
 
 		$oneClickForm.find("input[type='tel']").mask("+38 (099) 999-99-99");
 		
+		// callapse filter on mobile devices
+		if ($window.outerWidth() <= BREAKPOINT_XS && !$toggleFilters.hasClass('b-link_unscrolled') ){
+			console.log($toggleFilters);
+			$toggleFilters.trigger('click');
+		}
 		// callback form submission
 		$oneClickForm.submit(function(event){
 			event.preventDefault();
