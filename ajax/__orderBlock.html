@@ -279,6 +279,10 @@
                                             <option value="byNP">Новая почта</option>
                                         </select>
                                     </div>
+                                    <div class="b-form__cell js-self-address">
+                                        <label class="b-label_finalize">&nbsp;</label>
+                                        <div class="b-form__text is--mt-10">Киев, ул. Пушинская, 9</div>
+                                    </div>
                                     <div class="b-form__cell hidden">
                                         <label for="delivCityCourier" class="b-label_finalize">Город доставки 
                                             <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
@@ -297,44 +301,14 @@
                                 </div>
                                 
                                 <div class="row row_form hidden">
-                                    <div class="b-form__cell">
-                                        <label for="delivRegionNP" class="b-label_finalize">Выберите область
-                                            <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
-                                            <span class="fa_error fa fa-times" aria-hidden="true"></span>
+                                    <div class="b-form__cell b-form__cell_comment">
+                                        <label for="npAddress" class="b-label_finalize">Укажите адрес доставки
                                         </label>
-                                        <!-- <input type="text" class="js-autocomplete js-ignoreValidate" id="delivRegionNP">-->
-                                        <!-- <input type="hidden" name="delivRegionIdNP" class="hidden" id="delivRegionIdNP">-->
-                                        <select name="regionNP" id="delivRegionNP">
-                                            <option value="" disabled selected hidden>Выберите область</option>
-                                            <option value="1">Киевская</option>
-                                            <option value="2">Житомирская</option>
-                                            <option value="3">Черкасская</option>
-                                        </select>
-                                    </div>
-                                    <div class="b-form__cell">
-                                        <label for="delivCityNP" class="b-label_finalize">Выберите город
-                                            <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
-                                            <span class="fa_error fa fa-times" aria-hidden="true"></span>
-                                        </label>
-                                        <input type="text" class="js-autocomplete js-ignoreValidate" id="delivCityNP" disabled>
-                                        <input type="hidden" name="delivCityIdNP" class="hidden" id="delivCityIdNP">
-                                    </div>
-                                    <div class="b-form__cell">
-                                        <label for="delivDivisionNP" class="b-label_finalize">Выберите отделение
-                                            <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
-                                            <span class="fa_error fa fa-times" aria-hidden="true"></span>
-                                        </label>
-                                         <!--
-                                        <input type="text" class="js-autocomplete js-ignoreValidate" id="delivDivisionNP" disabled>
-                                        <input type="hidden" name="delivDivisionIdNP" class="hidden" id="delivDivisionIdNP">
-                                        -->
-                                        <select name="delivDivisionIdNP" id="delivDivisionNP" disabled>
-                                            <option value="" disabled selected hidden>Выберите отделение</option>
-                                        </select>
+                                        <textarea class="b-autocomplete b-comment b-comment_finalize js-np-address"></textarea>
                                     </div>
                                 </div>
                                 
-                                <div class="row row_form">
+                                <div class="row row_form js-comment-order">
                                     <div class="b-form__cell b-form__cell_comment">
                                         <label for="commentBySelf" class="b-label_finalize">Комментарий к заказу
                                         </label>
@@ -540,6 +514,10 @@
                                             <option value="byNP">Новая почта</option>
                                         </select>
                                     </div>
+                                    <div class="b-form__cell js-self-address">
+                                        <label class="b-label_finalize">&nbsp;</label>
+                                        <div class="b-form__text is--mt-10">Киев, ул. Пушинская, 9</div>
+                                    </div>
                                     <div class="b-form__cell hidden">
                                         <label for="delivCityCourier_byUpload" class="b-label_finalize">Город доставки 
                                             <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
@@ -558,38 +536,16 @@
                                 </div>
                                 
                                 <div class="row row_form hidden">
-                                    <div class="b-form__cell">
-                                        <label for="delivRegionNP_byUpload" class="b-label_finalize">Выберите область
-                                            <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
-                                            <span class="fa_error fa fa-times" aria-hidden="true"></span>
-                                        </label>
-                                        <select name="regionNP" id="delivRegionNP_byUpload" disabled>
-                                            <option value="" disabled selected hidden>Выберите область</option>
-                                            <option value="1">Киевская</option>
-                                            <option value="2">Житомирская</option>
-                                            <option value="3">Черкасская</option>
-                                        </select>
-                                    </div>
-                                    <div class="b-form__cell">
-                                        <label for="delivCityNP_byUpload" class="b-label_finalize">Выберите город
-                                            <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
-                                            <span class="fa_error fa fa-times" aria-hidden="true"></span>
-                                        </label>
-                                        <input type="text" class="js-autocomplete js-ignoreValidate" id="delivCityNP_byUpload" disabled>
-                                        <input type="hidden" name="delivCityIdNP" class="hidden" id="delivCityIdNP_byUpload">
-                                    </div>
-                                    <div class="b-form__cell">
-                                        <label for="delivDivisionNP_byUpload" class="b-label_finalize">Выберите отделение
-                                            <span class="fa_ok fa fa-check-circle" aria-hidden="true"></span>
-                                            <span class="fa_error fa fa-times" aria-hidden="true"></span>
-                                        </label>
-                                        <select name="delivDivisionIdNP" id="delivDivisionNP_byUpload" disabled>
-                                            <option value="" disabled selected hidden>Выберите отделение</option>
-                                        </select>
+                                    <div class="row row_form hidden">
+                                        <div class="b-form__cell b-form__cell_comment">
+                                            <label for="npAddress" class="b-label_finalize">Укажите адрес доставки
+                                            </label>
+                                            <textarea class="b-autocomplete b-comment b-comment_finalize js-np-address"></textarea>
+                                        </div>
                                     </div>
                                 </div>
                                 
-                                <div class="row row_form">
+                                <div class="row row_form js-comment-order">
                                     <div class="b-form__cell b-form__cell_comment">
                                         <label for="commentByUpload" class="b-label_finalize">Комментарий к заказу
                                         </label>

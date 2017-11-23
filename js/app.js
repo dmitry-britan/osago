@@ -1009,7 +1009,9 @@ $(document).ready(function(){
 			,$newPostRegion = $methods.find("select[name='regionNP']")
 			,$newPostCity = $methods.find("input[name='delivCityIdNP']").prev()
 			,$newPostDivision = $methods.find("select[name='delivDivisionIdNP']")
-			,$newPostRow = $newPostDivision.parents(".row_form")
+			,$newPostRow = $(".js-np-address").parents(".row_form")
+			,$bySelfAddress = $(".js-self-address")
+			,$commentField = $(".js-comment-order")
 			,$orderByYourselfNavigate = $orderBlock.find(".js-step-nav")
 			;
 		
@@ -1257,10 +1259,13 @@ $(document).ready(function(){
 						$newPostRow.addClass("hidden");
 						// елементи Самовивоза
 						$selfMap.removeClass("hidden");
+						$commentField.removeClass("hidden");
+						$bySelfAddress.removeClass("hidden");
 						break;
 					case "byCourier":	// кур'єр
 						// елементи Самовивоза
 						$selfMap.addClass("hidden");
+						$bySelfAddress.addClass("hidden");
 						// елементи НП						
 						$newPostRegion.prop("disabled", true);
 						$newPostCity.prop("disabled", true);
@@ -1271,6 +1276,7 @@ $(document).ready(function(){
 									.parent().removeClass("hidden");
 						$courierAddr.prop("disabled", false).removeClass("hidden")
 									.parent().removeClass("hidden");
+						$commentField.removeClass("hidden");
 						break;
 					case "byNP":	// НП
 						// елементи Кур'єра
@@ -1280,8 +1286,10 @@ $(document).ready(function(){
 									.parent().addClass("hidden");
 						// елементи Самовивоза
 						$selfMap.addClass("hidden");
+						$bySelfAddress.addClass("hidden");
 						// елементи НП						
 						$newPostRow.removeClass("hidden");
+						$commentField.addClass("hidden");
 						$newPostRegion.each(function(){
 							$(this).prop("disabled", false).removeClass("hidden");
 							$(this).selectric("refresh");
