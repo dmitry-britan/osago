@@ -21,7 +21,6 @@
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    box-shadow: 0 0 10px #bebebe;
 }
 
 .irs {
@@ -92,6 +91,7 @@
     border-radius: 50%;
 /*    background-position: 0 -120px;*/
     background: #f0cc31;
+    cursor: pointer;
 /*
     cursor: grab;
     cursor: -webkit-grab;
