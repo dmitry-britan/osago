@@ -1,3 +1,7 @@
+// window.onbeforeunload = function() {
+//     return 'Данные не сохранены. Точно перейти?';
+// }
+
 // pickadate plugin defaults
 jQuery.extend( jQuery.fn.pickadate.defaults, {
 	monthsFull: [ 'января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря' ],
@@ -13,20 +17,20 @@ jQuery.extend( jQuery.fn.pickadate.defaults, {
 });
 
 //SET CURSOR POSITION plugin
-$.fn.setCursorPosition = function(pos) {
-  this.each(function(index, elem) {
-    if (elem.setSelectionRange) {
-      elem.setSelectionRange(pos, pos);
-    } else if (elem.createTextRange) {
-      var range = elem.createTextRange();
-      range.collapse(true);
-      range.moveEnd('character', pos);
-      range.moveStart('character', pos);
-      range.select();
-    }
-  });
-  return this;
-};
+// $.fn.setCursorPosition = function(pos) {
+//   this.each(function(index, elem) {
+//     if (elem.setSelectionRange) {
+//       elem.setSelectionRange(pos, pos);
+//     } else if (elem.createTextRange) {
+//       var range = elem.createTextRange();
+//       range.collapse(true);
+//       range.moveEnd('character', pos);
+//       range.moveStart('character', pos);
+//       range.select();
+//     }
+//   });
+//   return this;
+// };
 
 var 
 	 $window = $(window)
@@ -2198,6 +2202,7 @@ $(document).ready(function(){
 		,$modals = $modalOvl.find(".b-modal")
 		,$modalError = $modals.filter(".b-modal_error")
 		,$modalCloseBtn = $modals.find(".b-modal__btn_close")
+		,$modalExitPopup = $modals.filter(".b-modal_exitPopup")
 		,$modalCallback = $modals.filter(".b-modal_callback")
 		,$modalCallbackSuccess = $modals.filter(".b-modal_callbackSuccess")
 		,$modalFeedbackSuccess = $modals.filter(".b-modal_feedbackSuccess")
@@ -2219,6 +2224,29 @@ $(document).ready(function(){
 	$modalCloseBtn.click(hideModals);	// hide modals by close button click
 	$modalOvl.click(hideModals);	// hide modals by click on overlay
 
+	$modalOvl.fadeIn();
+    $modalExitPopup.fadeIn();
+
+ //    window.onbeforeunload = function() {
+	//     return 'Dont exit';
+	// }
+	// $window.on('beforeunload', function () {
+	//     //вызов попапа
+	//     $modalOvl.fadeIn();
+	//     $modalExitPopup.fadeIn();
+	// });
+
+	// $window.on("unload", function () {
+	//     //вызов попапа
+	//     $modalOvl.fadeIn();
+	//     $modalExitPopup.fadeIn();
+	// });
+
+	// window.onbeforeunload = function() {
+	//     if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
+	//         return true;
+	//     }
+	// };
 
 // callback form submission
 	$modalCallbackForm.submit(function(event){
