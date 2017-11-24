@@ -505,7 +505,6 @@ $(document).ready(function(){
 		});
 		// callapse filter on mobile devices
 		if ($window.outerWidth() <= BREAKPOINT_XS && !$toggleFilters.hasClass('b-link_unscrolled') ){
-			console.log($toggleFilters);
 			$toggleFilters.trigger('click');
 		}
 
