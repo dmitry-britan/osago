@@ -5846,6 +5846,7 @@ border: 1px solid #efca14;
         text-align: left;
     }
     .b-row_crumb{
+        display: inline-block;
         max-width: 165px;
         padding-top: 5px;
     }
