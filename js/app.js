@@ -233,7 +233,7 @@ $(document).ready(function(){
 			,$vehicleSelect = $("#vehicle")
 			,$toggleFilters = $("#toggleFilters")
 			,$vehicleForm = $("#vehicleForm")
-			,$oneClickForm = $("#oneClickForm")
+			,$oneClickForm = $("#oneClickForm").find("form.callback__inner")
 			,$cityName = $vehicleForm.find("#regCity")
 			,$cityId = $vehicleForm.find("#cityId")
 			,$cityZone = $vehicleForm.find("#zoneId")
