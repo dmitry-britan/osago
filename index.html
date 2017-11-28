@@ -1748,7 +1748,7 @@
             <div class="b-modal__heading">Введите ваш<br>номер телефона и мы<br>вам перезвоним</div>
             <form action="" class="b-modal__form_callback b-form_feedback js-form_callback">
                 <input type="tel" name="phone" required pattern="[0-9()\s+-]{19}">
-                <button type="submit" class="b-form__submit_feedback b-form__submit_vehicle">
+                <button type="submit" class="b-form__submit_feedback b-form__submit_vehicle" onclick="dataLayer.push({'event': 'GAevent', 'eventCategory': 'callBack', 'eventAction': 'callForm'});">
                     <span class="b-text_btn">Перезвонить</span><span class="fa fa-phone" aria-hidden="true"></span>
                 </button>
             </form>

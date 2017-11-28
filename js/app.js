@@ -914,6 +914,7 @@ $(document).ready(function(){
 				
 				
 				if (bValid){
+					dataLayer.push({'event': 'GAevent', 'eventCategory': 'anketaOrder', 'eventAction': 'anketaPurchase'});
 					// $.ajax({
 					// 	url: form.action,
 					// 	type: form.method,
@@ -1070,6 +1071,17 @@ $(document).ready(function(){
 			if ( !$('.step--'+(stepId-1)+' .b-form__block .b-cell_error').length && !isEmptyField ){
 				$('.step').removeClass('is--active');
 				$('.step--'+stepId).addClass('is--active');
+
+				switch (stepId) {
+					case 2:
+						dataLayer.push({'event': 'GAevent', 'eventCategory': 'anketaOrder', 'eventAction': 'anketaStepOne'});
+						break;
+					case 3:
+						dataLayer.push({'event': 'GAevent', 'eventCategory': 'anketaOrder', 'eventAction': 'anketaStepTwo'}); 
+					break;
+					default:
+						break;
+				}
 			}
 		});
 		// on mobiles show only byFileUpload method
