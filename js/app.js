@@ -235,7 +235,6 @@ $(document).ready(function(){
 			
 			,$moreProposBtn = $propositionsBlock.find("#morePropositions")	// "Больше предложений" button
 			,$vehicleSelect = $("#vehicle")
-			,$toggleFilters = $("#toggleFilters")
 			,$vehicleForm = $("#vehicleForm")
 			,$oneClickForm = $("#oneClickForm").find("form.callback__inner")
 			,$cityName = $vehicleForm.find("#regCity")
@@ -448,20 +447,6 @@ $(document).ready(function(){
 	            	,city = $cityId.val()
 	            	,zone = $cityZone.val()
 	            	;
-				var changeHeader =function($toggleFilters){
-					var 
-						selectVal = function($Select){
-							return $Select.parent().siblings(".selectric-items").find("li").filter(".selected").text();
-						}
-						,sVehicle = selectVal($vehicleSelect)
-						,sParams = selectVal($type)
-						,settlement = $cityName.attr("data-item").match(/(^.+?(?=, ))|(^.+)/i)
-						,headerText = sVehicle + ' ' + sParams + ' ' + settlement[0]
-						;
-						
-					$toggleFilters.text(headerText);
-				}
-				changeHeader($toggleFilters);
 
 				$.ajax({
 	            	type: "get",
@@ -502,15 +487,6 @@ $(document).ready(function(){
 			$proposListContainer.dequeue("ajax");
 		}
 
-		// при кліку на кнопку в заголовку "Результаты расчета для" показуємо/ховаємо форму параметрів
-		$toggleFilters.click(function(){
-			$(this).toggleClass("b-link_unscrolled")
-			$vehicleForm.slideToggle(200);
-		});
-		// callapse filter on mobile devices
-		if ($window.outerWidth() <= BREAKPOINT_XS && !$toggleFilters.hasClass('b-link_unscrolled') ){
-			$toggleFilters.trigger('click');
-		}
 
 		$(".js-selectric").selectric();	// selects stylization
 
