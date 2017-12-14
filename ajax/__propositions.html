@@ -19,83 +19,8 @@
                     <div class="b-calculator__heading b-calculator__heading_propos">
                         Результаты расчета
                     </div>
-                    <form action="" class="b-propos__recalc" id="vehicleForm">
-                        <div class="b-select__container_propos">
-                            <label for="vehicle" class="b-label_registration">Обьект страхования</label>
-                            <select name="vehicle" class="js-selectric" id="vehicle">
-                                <option value="car" selected>Легковой автомобиль</option>
-                                <option value="trailer">Грузовой автомобиль</option>
-                                <option value="bus">Пассажирский автобус</option>
-                                <option value="moto">Мотоцикл, мотороллер</option>
-                            </select>
-                        </div>
-                        <div class="b-select__container_propos js-vehicle__block js-car">
-                            <label for="engineCapacity" class="b-label_registration">Обьем двигателя</label>
-                            <select name="engineCapacity" class="js-selectric js-selectric_car" id="engineCapacity">
-                                <option value="3" selected>до 1600 см&sup3;</option>
-                                <option value="4">1601 - 2000 см&sup3;</option>
-                                <option value="5">2001 - 3000 см&sup3;</option>
-                                <option value="6">от 3001 см&sup3;</option>
-                            </select>
-                        </div>
-                        <div class="b-select__container_propos js-vehicle__block js-trailer">
-                            <label for="tonnage" class="b-label_registration">Грузоподьемность</label>
-                            <select name="engineCapacity" class="js-selectric js-selectric_trailer" id="tonnage">
-                                <option value="7">до 2т</option>
-                                <option value="8" selected>более 2т</option>
-                            </select>
-                        </div>
-                        <div class="b-select__container_propos js-vehicle__block js-bus">
-                            <label for="passengers" class="b-label_registration">Пассажировместительность</label>
-                            <select name="engineCapacity" class="js-selectric js-selectric_bus" id="passengers">
-                                <option value="9">до 20 человек</option>
-                                <option value="10" selected>более 20 человек</option>
-                            </select>
-                        </div>
-                        <div class="b-select__container_propos js-vehicle__block js-moto">
-                            <label for="engineCapacity" class="b-label_registration">Обьем двигателя</label>
-                            <select name="engineCapacity" class="js-selectric js-selectric_moto" id="engineCapacity">
-                                <option value="1">до 300 см&sup3;</option>
-                                <option value="2" selected>более 300 см&sup3;</option>
-                            </select>
-                        </div>
-                        <div class="b-select__container_propos">
-                            <label for="regCity" class="b-label_registration">Место регистрации</label>
-                            <input type="text" class="b-autocomplete selectric" id="regCity" title="Введите и выберите город" name="regCity" value="Киев (г.), Киевская обл." autocomplete="off" data-item="Киев (г.), Киевская обл.">
-                            <input class="hidden" name="regCityId" id="cityId" value="1" type="hidden">
-                            <input class="hidden" name="zoneId" id="zoneId" value="1" type="hidden">
-                            <div class="autocomplete-suggestions b-precomplete_brand js-precomplete">
-                                <div class="autocomplete-suggestion" data-id="1" data-zone="1">Киев (г.), Киевская обл.</div>
-                                <div class="autocomplete-suggestion" data-id="9" data-zone="3">Харьков (г.), Харьковская обл.</div>
-                                <div class="autocomplete-suggestion" data-id="14" data-zone="3">Днепропетровск (г.), Днепропетровская обл.</div>
-                                <div class="autocomplete-suggestion" data-id="46" data-zone="3">Мариуполь (г.), Донецкая обл.</div>
-                                <div class="autocomplete-suggestion" data-id="15" data-zone="3">Львов (г.), Львовская обл.</div>
-                                <div class="autocomplete-suggestion" data-id="10" data-zone="3">Одесса (г.), Одесская обл.</div>
-                                <div class="autocomplete-suggestion" data-id="12" data-zone="3">Запорожье (г.), Запорожская обл.</div>
-                                <div class="autocomplete-suggestion" data-id="5237" data-zone="3">Красноармейск (г.), Донецкая обл.</div>
-                                <div class="autocomplete-suggestion" data-id="47" data-zone="3">Черкассы (г.), Черкасская обл.</div>
-                                <div class="autocomplete-suggestion" data-id="3" data-zone="3">Бровары (г.), Киевская обл.</div>
-                                <div class="autocomplete-suggestion" data-id="37" data-zone="3">Житомир (г.), Житомирская обл.</div>
-                                <div class="autocomplete-suggestion" data-id="32" data-zone="3">Полтава (г.), Полтавская обл.</div>
-                                <div class="autocomplete-suggestion" data-id="13" data-zone="6">Кривой Рог (г.), Днепропетровская обл.</div>
-                                <div class="autocomplete-suggestion" data-id="44" data-zone="3">Николаев (г.), Николаевская обл.</div>
-                            </div>
-                        </div>
-                        <div class="b-select__container_propos b-block_franshiza">
-                            <label for="franshiza" class="b-label_registration">Франшиза</label>
-                            <input type="text" name="franshiza" class="js-range_franshiza" data-min="0" data-from="1000" data-max="2000" data-step="1000">
-                        </div>
-                        <button type="submit" class="b-propos__btn_change b-form__submit_vehicle b-propos__btn_edge">
-<!--                            <span class="b-text_btn">Изменить данные</span>-->
-                        </button>
-                    </form>
                     <div class="b-propositions">
                         <div class="b-propositions__header">
-                            <!-- <div class="b-container__filter b-container__filter_name">
-                                <span class="b-filter b-filter_name js-filter js-filter_name">
-                                    Страховая компания <span class="b-order b-order__name js-order"></span>
-                                </span>
-                            </div> -->
                             <div class="b-container__filter b-container__filter_rating">
                                 <span class="b-filter b-filter_rating js-filter js-filter_rating" data-order="asc">
                                     <span class="b-order b-order__rating js-order">
@@ -129,14 +54,6 @@
                                         </div>
                                         <div class="b-container__filter b-container__filter_price b-proposition__price">
                                             <span class="b-price">816<span class="b-currency"> грн</span></span>
-                                            
-<!--
-                                            <div class="b-discont">
-                                                <span class="b-discont__num">15%</span>
-                                                 скидка от Oh.ua<br>
-                                                 Напрямую у страховой <span class="g-bold">1478</span> грн
-                                            </div>
--->
                                             <div class="b-discont">
                                                 <span class="fa fa-question-circle" title="Часть ущерба, которая не покрывается за счет страховой компании и возмещается страхователем из собственных средств"></span>
                                                  Франшиза 0 грн
@@ -145,77 +62,32 @@
                                         </div>
                                         <div class="b-container__filter b-container__filter_rating b-proposition__about">
                                             <ul class="b-details__list_propos">
-<!--
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img bg-corporate_dark">
-                                                        <span class="fa fa-truck" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">Бесплатная доставка</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-money" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">Франшиза 0 грн</span>
-                                                </li>
--->
                                                 <li class="b-detail__item_propos">
                                                     <div class="b-item__block_img">
                                                         <span class="fa fa-check" aria-hidden="true"></span>
                                                     </div>
                                                     <span class="b-text_detail g-bold">Работает в системе прямого урегулирования!</span>
                                                 </li>
-<!--
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-warning" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">AAA</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-line-chart" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">BBB</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-car" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">CCC</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-truck" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">DDD</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-user-plus" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">EEE</span>
-                                                </li>
--->
-<!--
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img bg-corporate_light">
-                                                        23
-                                                    </div>
-                                                    <span class="b-text_detail">Человека уже купили эту страховку в июле</span>
-                                                </li>
--->
                                             </ul>
                                         </div>
                                         <div class="b-proposition__buy_row">
                                             <button type="button" class="b-form__submit_vehicle b-btn_buy js-proposition__buy" data-proposition="1">
                                                 <span class="b-text_btn" data-fullprice="1478">Заказать <span class="to-trim">страховку</span></span><span class="fa fa-angle-right" aria-hidden="true"></span>
                                             </button>
-<!--
-                                            <button type="button" class="b-propos__btn_change b-form__submit_vehicle b-propos__btn_edge js-proposition__delivery_quick" data-proposition="1">
-                                                <span class="b-text_btn" data-fullprice="1478">Заказать <span class="to-trim">доставку</span></span><span class="fa fa-angle-right" aria-hidden="true"></span>
-                                            </button>
--->
+                                            <a href="" class="link-oneclick"><span>Заказать в 1 клик</span><i class="fa fa-angle-down"></i></a>
+                                            
+                                            <div id="oneClickForm" class="callback">
+                                                <form class="callback__inner">
+                                                    <div class="callback__content">
+                                                        <input type="tel" name="phone" id="phone_byphone" class="input" title="введите номер украинского оператора связи" required pattern="[0-9()\s+-]{19}">
+                                                    </div>
+                                                    <div class="callback__footer">
+                                                        <button type="submit" class="callback__action b-btn b-btn--purple with--arrow" onclick="dataLayer.push({'event': 'GAevent', 'eventCategory': 'oneClickCall', 'eventAction': 'callForm'});">
+                                                            Жду звонка <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -235,13 +107,6 @@
                                         </div>
                                         <div class="b-container__filter b-container__filter_price b-proposition__price">
                                             <span class="b-price">1023<span class="b-currency"> грн</span></span>
-<!--
-                                            <div class="b-discont">
-                                                <span class="b-discont__num">22%</span>
-                                                 скидка от Oh.ua<br>
-                                                 Напрямую у страховой <span class="g-bold">1478</span> грн
-                                            </div>
--->
                                             <div class="b-discont">
                                                 <span class="fa fa-question-circle"></span>
                                                  Франшиза 0 грн
@@ -257,37 +122,13 @@
                                                     </div>
                                                     <span class="b-text_detail g-bold">Бесплатная доставка</span>
                                                 </li>
-<!--
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-money" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">Франшиза 0 грн</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-retweet" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">Работает в системе прямого урегулирования!</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img bg-corporate_light">
-                                                        23
-                                                    </div>
-                                                    <span class="b-text_detail">Человека уже купили эту страховку в июле</span>
-                                                </li>
--->
                                             </ul>
                                         </div>
                                         <div class="b-proposition__buy_row">
                                             <button type="button" class="b-form__submit_vehicle b-btn_buy js-proposition__buy" data-proposition="1">
                                                 <span class="b-text_btn" data-fullprice="1478">Заказать <span class="to-trim">страховку</span></span><span class="fa fa-angle-right" aria-hidden="true"></span>
                                             </button>
-<!--
-                                            <button type="button" class="b-propos__btn_change b-form__submit_vehicle b-propos__btn_edge js-proposition__delivery_quick" data-proposition="1">
-                                                <span class="b-text_btn" data-fullprice="1478">Заказать <span class="to-trim">доставку</span></span><span class="fa fa-angle-right" aria-hidden="true"></span>
-                                            </button>
--->
+                                            <a href="" class="link-oneclick"><span>Заказать в 1 клик</span><i class="fa fa-angle-down"></i></a>
                                         </div>
                                     </div>
                                 </li>
@@ -307,13 +148,6 @@
                                         </div>
                                         <div class="b-container__filter b-container__filter_price b-proposition__price">
                                             <span class="b-price">1030<span class="b-currency"> грн</span></span>
-<!--
-                                            <div class="b-discont">
-                                                <span class="b-discont__num">22%</span>
-                                                 скидка от Oh.ua<br>
-                                                 Напрямую у страховой <span class="g-bold">1478</span> грн
-                                            </div>
--->
                                             <div class="b-discont">
                                                 <span class="fa fa-question-circle"></span>
                                                  Франшиза 0 грн
@@ -334,37 +168,13 @@
                                                     </div>
                                                     <span class="b-text_detail g-bold">ДГО в подарок</span>
                                                 </li>
-<!--
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-money" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">Франшиза 0 грн</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-retweet" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">Работает в системе прямого урегулирования!</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img bg-corporate_light">
-                                                        23
-                                                    </div>
-                                                    <span class="b-text_detail">Человека уже купили эту страховку в июле</span>
-                                                </li>
--->
                                             </ul>
                                         </div>
                                         <div class="b-proposition__buy_row">
                                             <button type="button" class="b-form__submit_vehicle b-btn_buy js-proposition__buy" data-proposition="1">
                                                 <span class="b-text_btn" data-fullprice="1478">Заказать <span class="to-trim">страховку</span></span><span class="fa fa-angle-right" aria-hidden="true"></span>
                                             </button>
-<!--
-                                            <button type="button" class="b-propos__btn_change b-form__submit_vehicle b-propos__btn_edge js-proposition__delivery_quick" data-proposition="1">
-                                                <span class="b-text_btn" data-fullprice="1478">Заказать <span class="to-trim">доставку</span></span><span class="fa fa-angle-right" aria-hidden="true"></span>
-                                            </button>
--->
+                                            <a href="" class="link-oneclick"><span>Заказать в 1 клик</span><i class="fa fa-angle-down"></i></a>
                                         </div>
                                     </div>
                                 </li>
@@ -384,13 +194,6 @@
                                         </div>
                                         <div class="b-container__filter b-container__filter_price b-proposition__price">
                                             <span class="b-price">800<span class="b-currency"> грн</span></span>
-<!--
-                                            <div class="b-discont">
-                                                <span class="b-discont__num">22%</span>
-                                                 скидка от Oh.ua<br>
-                                                 Напрямую у страховой <span class="g-bold">1478</span> грн
-                                            </div>
--->
                                             <div class="b-discont">
                                                 <span class="fa fa-question-circle"></span>
                                                  Франшиза 0 грн
@@ -417,37 +220,13 @@
                                                     </div>
                                                     <span class="b-text_detail g-bold">ДГО в подарок</span>
                                                 </li>
-<!--
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-money" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">Франшиза 0 грн</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-retweet" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">Работает в системе прямого урегулирования!</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img bg-corporate_light">
-                                                        23
-                                                    </div>
-                                                    <span class="b-text_detail">Человека уже купили эту страховку в июле</span>
-                                                </li>
--->
                                             </ul>
                                         </div>
                                         <div class="b-proposition__buy_row">
                                             <button type="button" class="b-form__submit_vehicle b-btn_buy js-proposition__buy" data-proposition="1">
                                                 <span class="b-text_btn" data-fullprice="1478">Заказать <span class="to-trim">страховку</span></span><span class="fa fa-angle-right" aria-hidden="true"></span>
                                             </button>
-<!--
-                                            <button type="button" class="b-propos__btn_change b-form__submit_vehicle b-propos__btn_edge js-proposition__delivery_quick" data-proposition="1">
-                                                <span class="b-text_btn" data-fullprice="1478">Заказать <span class="to-trim">доставку</span></span><span class="fa fa-angle-right" aria-hidden="true"></span>
-                                            </button>
--->
+                                            <a href="" class="link-oneclick"><span>Заказать в 1 клик</span><i class="fa fa-angle-down"></i></a>
                                         </div>
                                     </div>
                                 </li>
@@ -467,13 +246,6 @@
                                         </div>
                                         <div class="b-container__filter b-container__filter_price b-proposition__price">
                                             <span class="b-price">700<span class="b-currency"> грн</span></span>
-<!--
-                                            <div class="b-discont">
-                                                <span class="b-discont__num">22%</span>
-                                                 скидка от Oh.ua<br>
-                                                 Напрямую у страховой <span class="g-bold">1478</span> грн
-                                            </div>
--->
                                             <div class="b-discont">
                                                 <span class="fa fa-question-circle"></span>
                                                  Франшиза 0 грн
@@ -488,37 +260,13 @@
                                                     </div>
                                                     <span class="b-text_detail g-bold">Работает в системе прямого урегулирования!</span>
                                                 </li>
-<!--
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-money" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">Франшиза 0 грн</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-retweet" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">Работает в системе прямого урегулирования!</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img bg-corporate_light">
-                                                        23
-                                                    </div>
-                                                    <span class="b-text_detail">Человека уже купили эту страховку в июле</span>
-                                                </li>
--->
                                             </ul>
                                         </div>
                                         <div class="b-proposition__buy_row">
                                             <button type="button" class="b-form__submit_vehicle b-btn_buy js-proposition__buy" data-proposition="1">
                                                 <span class="b-text_btn" data-fullprice="1478">Заказать <span class="to-trim">страховку</span></span><span class="fa fa-angle-right" aria-hidden="true"></span>
                                             </button>
-<!--
-                                            <button type="button" class="b-propos__btn_change b-form__submit_vehicle b-propos__btn_edge js-proposition__delivery_quick" data-proposition="1">
-                                                <span class="b-text_btn" data-fullprice="1478">Заказать <span class="to-trim">доставку</span></span><span class="fa fa-angle-right" aria-hidden="true"></span>
-                                            </button>
--->
+                                            <a href="" class="link-oneclick"><span>Заказать в 1 клик</span><i class="fa fa-angle-down"></i></a>
                                         </div>
                                     </div>
                                 </li>
@@ -538,13 +286,6 @@
                                         </div>
                                         <div class="b-container__filter b-container__filter_price b-proposition__price">
                                             <span class="b-price">0<span class="b-currency"> грн</span></span>
-<!--
-                                            <div class="b-discont">
-                                                <span class="b-discont__num">22%</span>
-                                                 скидка от Oh.ua<br>
-                                                 Напрямую у страховой <span class="g-bold">1478</span> грн
-                                            </div>
--->
                                             <div class="b-discont">
                                                 <span class="fa fa-question-circle"></span>
                                                  Франшиза 0 грн
@@ -559,37 +300,13 @@
                                                     </div>
                                                     <span class="b-text_detail g-bold">Работает в системе прямого урегулирования!</span>
                                                 </li>
-<!--
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-money" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">Франшиза 0 грн</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img g-color-corporate-dark">
-                                                        <span class="fa fa-retweet" aria-hidden="true"></span>
-                                                    </div>
-                                                    <span class="b-text_detail">Работает в системе прямого урегулирования!</span>
-                                                </li>
-                                                <li class="b-detail__item_propos">
-                                                    <div class="b-item__block_img bg-corporate_light">
-                                                        23
-                                                    </div>
-                                                    <span class="b-text_detail">Человека уже купили эту страховку в июле</span>
-                                                </li>
--->
                                             </ul>
                                         </div>
                                         <div class="b-proposition__buy_row">
                                             <button type="button" class="b-form__submit_vehicle b-btn_buy js-proposition__buy" data-proposition="1">
                                                 <span class="b-text_btn" data-fullprice="1478">Заказать <span class="to-trim">страховку</span></span><span class="fa fa-angle-right" aria-hidden="true"></span>
                                             </button>
-<!--
-                                            <button type="button" class="b-propos__btn_change b-form__submit_vehicle b-propos__btn_edge js-proposition__delivery_quick" data-proposition="1">
-                                                <span class="b-text_btn" data-fullprice="1478">Заказать <span class="to-trim">доставку</span></span><span class="fa fa-angle-right" aria-hidden="true"></span>
-                                            </button>
--->
+                                            <a href="" class="link-oneclick"><span>Заказать в 1 клик</span><i class="fa fa-angle-down"></i></a>
                                         </div>
                                     </div>
                                 </li>
@@ -597,38 +314,6 @@
                         </div>
                     </div>
                     <div class="b-propos__guaranties">
-<!--
-                        <ul class="b-crumbs_aside">
-                            <li class="b-crumbs__item_aside b-item_done js-crumbs__link" data-step="1">
-                                <div class="b-item__link">
-                                    <span class="b-item__pre"></span>
-                                    <span class="b-item__text">Расчет</span>
-                                </div>
-                            </li>
-                            <li class="b-crumbs__item_aside b-item_active">
-                                <div class="b-item__link">
-                                    <span class="b-item__pre">2</span>
-                                    <span class="b-item__text">Выбор</span>
-                                </div>
-                            </li>
-                            <li class="b-crumbs__item_aside b-item_unactive">
-                                <div class="b-item__link">
-                                    <span class="b-item__pre">3</span>
-                                    <span class="b-item__text">Оформление</span>
-                                </div>
-                            </li>
-                            <li class="b-crumbs__item_aside b-item_unactive">
-                                <div class="b-item__link">
-                                    <span class="b-item__pre">4</span>
-                                    <span class="b-item__text">Оплата</span>
-                                </div>
-                            </li>
-                        </ul>
--->
-                        <!-- <div class="b-wrap_guaranties bg-light">
-                            <div class="b-guaranties__heading">Гарантия лучшей цены</div>
-                            <p>Мы гарантируем самые низкие цены. Не дороже, чем напрямую в страховой компании. Если вы нашли цену ниже, мы компенсируем вам эту разницу.</p>
-                        </div> -->
                         <div class="free-call">
                             <div class="free-call__text">Звоните! Это бесплатно</div>
                             <a href="+380987336718" class="free-call__phone">
@@ -636,19 +321,74 @@
                                 (098) 733 67 18
                             </a>
                         </div>
-                        <div id="oneClickForm" class="callback">
-                            <form class="callback__inner">
-                                <div class="callback__header">Заказ в 1 клик</div>
-                                <div class="callback__content">
-                                    <input type="tel" name="phone" id="phone_byphone" class="input" title="введите номер украинского оператора связи" required pattern="[0-9()\s+-]{19}">
+                        
+                        <form action="" class="b-propos__recalc" id="vehicleForm">
+                            <div class="b-select__container_propos">
+                                <label for="vehicle" class="b-label_registration">Обьект страхования</label>
+                                <select name="vehicle" class="js-selectric" id="vehicle">
+                                    <option value="car" selected>Легковой автомобиль</option>
+                                    <option value="trailer">Грузовой автомобиль</option>
+                                    <option value="bus">Пассажирский автобус</option>
+                                    <option value="moto">Мотоцикл, мотороллер</option>
+                                </select>
+                            </div>
+                            <div class="b-select__container_propos js-vehicle__block js-car">
+                                <label for="engineCapacity" class="b-label_registration">Обьем двигателя</label>
+                                <select name="engineCapacity" class="js-selectric js-selectric_car" id="engineCapacity">
+                                    <option value="3" selected>до 1600 см&sup3;</option>
+                                    <option value="4">1601 - 2000 см&sup3;</option>
+                                    <option value="5">2001 - 3000 см&sup3;</option>
+                                    <option value="6">от 3001 см&sup3;</option>
+                                </select>
+                            </div>
+                            <div class="b-select__container_propos js-vehicle__block js-trailer">
+                                <label for="tonnage" class="b-label_registration">Грузоподьемность</label>
+                                <select name="engineCapacity" class="js-selectric js-selectric_trailer" id="tonnage">
+                                    <option value="7">до 2т</option>
+                                    <option value="8" selected>более 2т</option>
+                                </select>
+                            </div>
+                            <div class="b-select__container_propos js-vehicle__block js-bus">
+                                <label for="passengers" class="b-label_registration">Пассажировместительность</label>
+                                <select name="engineCapacity" class="js-selectric js-selectric_bus" id="passengers">
+                                    <option value="9">до 20 человек</option>
+                                    <option value="10" selected>более 20 человек</option>
+                                </select>
+                            </div>
+                            <div class="b-select__container_propos js-vehicle__block js-moto">
+                                <label for="engineCapacity" class="b-label_registration">Обьем двигателя</label>
+                                <select name="engineCapacity" class="js-selectric js-selectric_moto" id="engineCapacity">
+                                    <option value="1">до 300 см&sup3;</option>
+                                    <option value="2" selected>более 300 см&sup3;</option>
+                                </select>
+                            </div>
+                            <div class="b-select__container_propos">
+                                <label for="regCity" class="b-label_registration">Место регистрации</label>
+                                <input type="text" class="b-autocomplete selectric" id="regCity" title="Введите и выберите город" name="regCity" value="Киев (г.), Киевская обл." autocomplete="off" data-item="Киев (г.), Киевская обл.">
+                                <input class="hidden" name="regCityId" id="cityId" value="1" type="hidden">
+                                <input class="hidden" name="zoneId" id="zoneId" value="1" type="hidden">
+                                <div class="autocomplete-suggestions b-precomplete_brand js-precomplete">
+                                    <div class="autocomplete-suggestion" data-id="1" data-zone="1">Киев (г.), Киевская обл.</div>
+                                    <div class="autocomplete-suggestion" data-id="9" data-zone="3">Харьков (г.), Харьковская обл.</div>
+                                    <div class="autocomplete-suggestion" data-id="14" data-zone="3">Днепропетровск (г.), Днепропетровская обл.</div>
+                                    <div class="autocomplete-suggestion" data-id="46" data-zone="3">Мариуполь (г.), Донецкая обл.</div>
+                                    <div class="autocomplete-suggestion" data-id="15" data-zone="3">Львов (г.), Львовская обл.</div>
+                                    <div class="autocomplete-suggestion" data-id="10" data-zone="3">Одесса (г.), Одесская обл.</div>
+                                    <div class="autocomplete-suggestion" data-id="12" data-zone="3">Запорожье (г.), Запорожская обл.</div>
+                                    <div class="autocomplete-suggestion" data-id="5237" data-zone="3">Красноармейск (г.), Донецкая обл.</div>
+                                    <div class="autocomplete-suggestion" data-id="47" data-zone="3">Черкассы (г.), Черкасская обл.</div>
+                                    <div class="autocomplete-suggestion" data-id="3" data-zone="3">Бровары (г.), Киевская обл.</div>
+                                    <div class="autocomplete-suggestion" data-id="37" data-zone="3">Житомир (г.), Житомирская обл.</div>
+                                    <div class="autocomplete-suggestion" data-id="32" data-zone="3">Полтава (г.), Полтавская обл.</div>
+                                    <div class="autocomplete-suggestion" data-id="13" data-zone="6">Кривой Рог (г.), Днепропетровская обл.</div>
+                                    <div class="autocomplete-suggestion" data-id="44" data-zone="3">Николаев (г.), Николаевская обл.</div>
                                 </div>
-                                <div class="callback__footer">
-                                    <button type="submit" class="callback__action b-btn b-btn--purple with--arrow" onclick="dataLayer.push({'event': 'GAevent', 'eventCategory': 'oneClickCall', 'eventAction': 'callForm'});">
-                                        Жду звонка <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
+                            </div>
+                            <div class="b-select__container_propos b-block_franshiza_prop">
+                                <label for="franshiza" class="b-label_registration">Франшиза</label>
+                                <input type="text" name="franshiza" class="js-range_franshiza" data-min="0" data-from="1000" data-max="2000" data-step="1000">
+                            </div>
+                        </form>
                     </div>
                     <button type="button" class="b-form__submit_vehicle b-propos__btn_more" id="morePropositions">
                         <span class="b-text_btn">Больше предложений</span>

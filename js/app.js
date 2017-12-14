@@ -369,6 +369,20 @@ $(document).ready(function(){
 				,$sortBtnByRating = $sortBtns.filter(".js-filter_rating")
 				;
 			
+				// форма заказать в 1 клик
+				$('.link-oneclick').on('click', function(event){
+					event.preventDefault();
+					
+					if ( $(this).parents('.b-proposition_row').hasClass('is--current') ) {
+						$('.b-proposition_row').removeClass('is--current');
+					} else {
+						$('.b-proposition_row').removeClass('is--current');
+						$(this).parents('.b-proposition_row').addClass('is--current');
+						$(this).parent().append( $('#oneClickForm') );
+					}
+				});
+				
+				$("input[type='tel']").mask("+38 (099) 999-99-99");
 			// сортування таблиці пропозицій
 				// функція сортування
 				// sName - ім'я властивості
