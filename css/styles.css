@@ -7061,8 +7061,8 @@ border: 1px solid #efca14;
     .is--current .callback{
         height: auto;
         visibility: visible;
-        -webkit-box-shadow: 0 21px 30px 9px rgba(0,0,0,0.1);
-        box-shadow: 0 21px 30px 9px rgba(0,0,0,0.1);
+        -webkit-box-shadow: 0 30px 30px 9px rgba(0,0,0,0.1);
+        box-shadow: 0 30px 30px 9px rgba(0,0,0,0.1);
         border-radius: 0 0 4px 4px;
     }
     .callback__inner{
