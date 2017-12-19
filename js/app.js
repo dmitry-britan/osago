@@ -236,6 +236,9 @@ $(document).ready(function(){
 			,$moreProposBtn = $propositionsBlock.find("#morePropositions")	// "Больше предложений" button
 			,$vehicleSelect = $("#vehicle")
 			,$toggleFilters = $("#toggleFilters")
+			,$toggleFilter = $(".js-toggle-filter")
+			,$toggleOneClick = $(".js-toggle-1click")
+			,$garanteeBlock = $(".b-propos__guaranties")
 			,$vehicleForm = $("#vehicleForm")
 			,$oneClickForm = $("#oneClickForm").find("form.callback__inner")
 			,$cityName = $vehicleForm.find("#regCity")
@@ -507,6 +510,22 @@ $(document).ready(function(){
 			$(this).toggleClass("b-link_unscrolled")
 			$vehicleForm.slideToggle(200);
 		});
+		
+		// toggle filter on mobile
+		$toggleFilter.click(function(){
+			$toggleOneClick.removeClass('is--active');
+			$toggleFilter.toggleClass('is--active');
+			$garanteeBlock.slideUp(0);
+			$vehicleForm.slideToggle(200);
+		});
+		// toggle oneClickForm on mobile
+		$toggleOneClick.click(function(){
+			$toggleFilter.removeClass('is--active');
+			$toggleOneClick.toggleClass('is--active');
+			$vehicleForm.slideUp(0);
+			$garanteeBlock.slideToggle(200);
+		});
+
 		// callapse filter on mobile devices
 		if ($window.outerWidth() <= BREAKPOINT_XS && !$toggleFilters.hasClass('b-link_unscrolled') ){
 			$toggleFilters.trigger('click');

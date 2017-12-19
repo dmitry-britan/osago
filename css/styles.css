@@ -4930,6 +4930,12 @@ border: 1px solid #efca14;
     }
 }
 
+.b-calculator__togglers{
+    display: none;
+}
+.b-calculator__toggle{
+    max-width: 100px;
+}
 
 @media (max-width: 1540px){
     .b-section_video {
@@ -6561,6 +6567,75 @@ border: 1px solid #efca14;
         margin-top: 10px;
         font-size: 30px;
     }
+    .b-calculator__heading_propos{
+        display: none;
+    }
+    .b-calculator__togglers{
+        width: 100%;
+        margin-bottom: 25px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-around;
+    }
+    .b-calculator__toggle-link{
+        font-family: "Roboto Condensed";
+        font-size: 20px;
+        font-weight: 700;
+        color: #231f20;
+    }
+    .b-calculator__toggle-link.is--active{
+        color: #7139a4;
+    }
+    .b-calculator__toggle-link:after {
+        display: inline-block;
+        padding-left: 5px;
+        content: '\f107';
+        font-family: "FontAwesome";
+        text-decoration: none;
+    }
+    .b-calculator__toggle-link.is--active:after {
+        content: "\f106";
+    }
+    .b-propos__guaranties{
+        -webkit-order: 1;
+        -moz-order: 1;
+        -ms-order: 1;
+        -o-order: 1;
+        order: 1;
+        margin-bottom: 30px;
+    }
+    .b-propositions{
+        -webkit-order: 2;
+        -moz-order: 2;
+        -ms-order: 2;
+        -o-order: 2;
+        order: 2;
+    }
+    .b-propos__recalc{
+        padding: 0 15px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+    .selectric-coverage-area,
+    .b-propos__recalc .b-select__container_propos:last-of-type{
+        min-width:250px;
+    }
+    .free-call,
+    .callback__header{
+        display: none;
+    }
+    .callback {
+        width: 70%;
+        float: right;
+    }
+    .callback__inner{
+        padding: 0 15px;
+        background: transparent;
+    }
+
     .b-form_vehicle{
         display: block;
         margin: 0 auto;
@@ -6778,13 +6853,6 @@ border: 1px solid #efca14;
     .b-container__calculator_propositions{
         padding-right: 10px;
         padding-left: 10px;
-    }
-    .b-propositions{
-        -webkit-order: initial;
-        -moz-order: initial;
-        -ms-order: initial;
-        -o-order: initial;
-        order: initial;
     }
     .b-propos__guaranties .b-wrap_guaranties{
         flex-grow: 1;
