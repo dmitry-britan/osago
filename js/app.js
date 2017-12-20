@@ -505,6 +505,8 @@ $(document).ready(function(){
 		$(".js-selectric").selectric();	// selects stylization
 
 		$vehicleSelect.selectric({	//селект вибора ТЗ
+			disableOnMobile: false,
+			nativeOnMobile: false,
 			onInit: function() {
 				vehicleChange.call(this);
 			},
@@ -2224,9 +2226,6 @@ $(document).ready(function(){
 	})
 	$modalCloseBtn.click(hideModals);	// hide modals by close button click
 	$modalOvl.click(hideModals);	// hide modals by click on overlay
-
-	$modalOvl.fadeIn();
-    $modalExitPopup.fadeIn();
 
  //    window.onbeforeunload = function() {
 	//     return 'Dont exit';
