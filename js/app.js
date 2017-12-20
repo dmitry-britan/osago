@@ -534,6 +534,8 @@ $(document).ready(function(){
 		$(".js-selectric").selectric();	// selects stylization
 
 		$vehicleSelect.selectric({	//селект вибора ТЗ
+			disableOnMobile: false,
+			nativeOnMobile: false,
 			onInit: function() {
 				vehicleChange.call(this);
 			},
