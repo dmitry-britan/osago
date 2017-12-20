@@ -4980,7 +4980,7 @@ border: 1px solid #efca14;
 }
 
 /* Callback */
-.callback{
+.callback-form{
     height: 0;
     overflow: hidden;
     position: absolute;
@@ -4988,18 +4988,18 @@ border: 1px solid #efca14;
     right: 0;
     visibility: hidden;
 }
-.is--current .callback{
+.is--current .callback-form{
     height: auto;
     visibility: visible;
     -webkit-box-shadow: 0 30px 30px 9px rgba(0,0,0,0.1);
     box-shadow: 0 30px 30px 9px rgba(0,0,0,0.1);
     border-radius: 0 0 4px 4px;
 }
-.callback__inner{
+.callback-form__inner{
     padding: 15px 30px 20px;
     background: #fff;
 }
-.callback__header{
+.callback-form__header{
     margin: 0 0 25px;
     padding: 0;
     font-family: "Roboto Condensed", serif;
@@ -5009,11 +5009,11 @@ border: 1px solid #efca14;
     color: #7139a4;
     text-align: center;
 }
-.callback__content{
+.callback-form__content{
     margin-bottom: 15px;
 }
-.callback__footer{}
-.callback__action{
+.callback-form__footer{}
+.callback-form__action{
     display: block;
     width: 100%;
     border: none!important; /* у этой кнопки нет границ */
