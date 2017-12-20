@@ -182,7 +182,7 @@ $(document).ready(function(){
             	,cityName = $("#vehicleForm #regCity").val()
             	,zone = $("#vehicleForm #zoneId").val()
             	;
-
+		alert(type);
 		$containerAjax.queue("ajax", function(){
 
 			$.ajax({
@@ -1541,6 +1541,8 @@ $(document).ready(function(){
 	var vehicleCalcInit = function($containerAjax){
 		// selects stylization
 		$(".js-selectric").selectric({
+				disableOnMobile: false,
+				nativeOnMobile: false,
 		    onSelect: function(element) {
 		    	$(element).change();
 		    	var value = $(element).val();
