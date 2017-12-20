@@ -5908,11 +5908,14 @@ border: 1px solid #efca14;
         width: 100%;
     }
 
+    .b-calculator_vehicle .b-block_franshiza,
     .b-propos__recalc .b-select__container_propos.b-block_franshiza{
-        margin: 0 auto;
-        float: left;
+        display: block;
+        float: none;
         clear: both;
         width: 90%;
+        margin: 0 auto;
+        padding-top: 1px;
     }
     .b-propositions__link{
         display: block;
@@ -6699,12 +6702,6 @@ border: 1px solid #efca14;
     }
     .b-vehicle .svg-vehicle, .obj-vehicle{
         width: 50px;
-    }
-    .b-calculator_vehicle .b-block_franshiza{
-        margin: 0 auto;
-        float: left;
-        clear: both;
-        width: 90%;
     }
     .b-block_registration{
         width: 100%;
