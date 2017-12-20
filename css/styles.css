@@ -6564,7 +6564,10 @@ border: 1px solid #efca14;
     .b-section_crumbs, .b-propos__guaranties, .b-videohelp:last-child .b-stages_videohelp, .b-section_responses, .b-section_seoText, .b-vehicles, .b-vehicle__params{
         display: none;
     }
-    
+    .b-block_checkbox {
+        margin-right: 0;
+        float: left;
+    }
     .b-calculator__heading_main{
         margin-top: 10px;
         font-size: 30px;
