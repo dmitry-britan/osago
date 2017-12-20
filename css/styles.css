@@ -3863,7 +3863,6 @@ border: 1px solid #efca14;
 }
 .b-radio_pay:checked + label{
     border: 1px solid #f2c916;
-    background-color: #ffffff;
 }
 .b-radio_pay:not(checked) + label:before {
     content: none;
@@ -4931,7 +4930,30 @@ border: 1px solid #efca14;
         top: 0;
     }
 }
-
+/* Callback */
+.callback{}
+.callback__inner{
+    padding: 20px 15px;
+    background: #fff;
+}
+.callback__header{
+    margin: 0 0 25px;
+    padding: 0;
+    font-family: "Roboto Condensed", serif;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #7139a4;
+    text-align: center;
+}
+.callback__content{
+    margin-bottom: 15px;
+}
+.callback__footer{}
+.callback__action{
+    display: block;
+    width: 100%;
+}
 .b-calculator__togglers{
     display: none;
 }
@@ -6564,6 +6586,15 @@ border: 1px solid #efca14;
     .b-section_crumbs, .b-propos__guaranties, .b-videohelp:last-child .b-stages_videohelp, .b-section_responses, .b-section_seoText, .b-vehicles, .b-vehicle__params{
         display: none;
     }
+    .b-form__pay .b-form__heading_finalize{
+        display: block;
+        margin: 0 0 5px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    .b-form__pay .b-form__submit_pay{
+        width: 100%;
+    }
     .b-block_checkbox {
         margin-right: 0;
         float: left;
@@ -7076,30 +7107,7 @@ border: 1px solid #efca14;
         color: #231f20;
         text-decoration: none;
     }
-/* Callback */
-    .callback{}
-    .callback__inner{
-        padding: 20px 15px;
-        background: #fff;
-    }
-    .callback__header{
-        margin: 0 0 25px;
-        padding: 0;
-        font-family: "Roboto Condensed", serif;
-        font-size: 22px;
-        line-height: 22px;
-        font-weight: 700;
-        color: #7139a4;
-        text-align: center;
-    }
-    .callback__content{
-        margin-bottom: 15px;
-    }
-    .callback__footer{}
-    .callback__action{
-        display: block;
-        width: 100%;
-    }
+
 
 /* step */
     .step{
