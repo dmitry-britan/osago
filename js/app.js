@@ -181,8 +181,8 @@ $(document).ready(function(){
             	,city = $("#vehicleForm #cityId").val()
             	,cityName = $("#vehicleForm #regCity").val()
             	,zone = $("#vehicleForm #zoneId").val()
-            	;
-		alert(type);
+							;
+							
 		$containerAjax.queue("ajax", function(){
 
 			$.ajax({
