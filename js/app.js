@@ -236,6 +236,7 @@ $(document).ready(function(){
 			,$moreProposBtn = $propositionsBlock.find("#morePropositions")	// "Больше предложений" button
 			,$vehicleSelect = $("#vehicle")
 			,$vehicleForm = $("#vehicleForm")
+			,$toggleFilters = $("#toggleFilters")
 			,$oneClickForm = $("#oneClickForm").find("form.callback__inner")
 			,$cityName = $vehicleForm.find("#regCity")
 			,$cityId = $vehicleForm.find("#cityId")
@@ -501,6 +502,15 @@ $(document).ready(function(){
 			$proposListContainer.dequeue("ajax");
 		}
 
+		// при кліку на кнопку в заголовку "Результаты расчета для" показуємо/ховаємо форму параметрів
+		$toggleFilters.click(function(){
+			$(this).toggleClass("b-link_unscrolled")
+			$vehicleForm.slideToggle(200);
+		});
+		// callapse filter on mobile devices
+		if ($window.outerWidth() <= BREAKPOINT_XS && !$toggleFilters.hasClass('b-link_unscrolled') ){
+			$toggleFilters.trigger('click');
+		}
 
 		$(".js-selectric").selectric();	// selects stylization
 

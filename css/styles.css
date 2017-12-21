@@ -2818,6 +2818,9 @@ a.b-callback_footer:hover{
     margin-bottom: 20px;
     font-size: 20px;
 }
+.b-calculator__heading_propos.is--mobile-visible{
+    display: none;
+}
 .b-precomplete_regCity{
     top: 100%;
     left: 0;
@@ -3011,9 +3014,14 @@ a.b-callback_footer:hover{
 
 /* ====== NEW PROPOSITIONS ====== */
 .b-propositions__link{
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    font-weight: 700;
     color: #5c2e87;
-    text-decoration: underline;
     cursor: pointer;
+}
+.b-propositions__link.b-link_unscrolled{
+    color: #231f20;
 }
 .b-propositions__link:after{
     display: inline-block;
@@ -3883,7 +3891,6 @@ border: 1px solid #efca14;
 }
 .b-radio_pay:checked + label{
     border: 1px solid #f2c916;
-    background-color: #ffffff;
 }
 .b-radio_pay:not(checked) + label:before {
     content: none;
@@ -5320,6 +5327,15 @@ border: 1px solid #efca14;
     }
 }
 @media (max-width: 1023px){
+    .free-call{
+        display:none;
+    }
+    .b-calculator__heading_propos.is--mobile-visible{
+        display: block;
+    }
+    .b-calculator__heading_propos.is--mobile-hidden{
+        display: none;
+    }
     .b-howto__stage{
         max-width: 150px;
     }
@@ -5374,6 +5390,7 @@ border: 1px solid #efca14;
     }
     .b-propos__recalc {
         padding: 24px;
+        margin: 0 auto;
     }
     .b-propos__recalc .b-select__container_propos:first-child{
         min-width: 206px;
@@ -5756,6 +5773,12 @@ border: 1px solid #efca14;
     .hidden-xs, .b-header .b-header__link_email, #finalize .b-crumbs_aside{
         display: none;
     }
+    .b-form__submit_vehicle.b-propos__btn_more{
+        margin: 0 auto;
+    }
+    .link-oneclick{
+        display: block;
+    }
     .b-menu__list{
         display: block;
     }
@@ -5935,7 +5958,11 @@ border: 1px solid #efca14;
         max-width: 470px;
     }
     .b-propos__guaranties{
-        margin-bottom: 60px;
+        padding: 0;
+        max-width: 90%;
+        margin: 0 auto;
+        left: 0;
+        float: none;
     }
     .b-propositions__header{
         display: none;
@@ -5944,6 +5971,7 @@ border: 1px solid #efca14;
     .b-propos__recalc, .b-propositions{
         width: 100%;
         max-width: 470px;
+        box-sizing: border-box;
     }
     .b-proposition_row{
         margin-bottom: 15px;
@@ -6669,8 +6697,15 @@ border: 1px solid #efca14;
     }
 }
 @media (max-width: 480px){
-    .b-section_crumbs, .b-propos__guaranties, .b-videohelp:last-child .b-stages_videohelp, .b-section_responses, .b-section_seoText, .b-vehicles, .b-vehicle__params{
+    .b-section_crumbs, .b-videohelp:last-child .b-stages_videohelp, .b-section_responses, .b-section_seoText, .b-vehicles, .b-vehicle__params{
         display: none;
+    }
+    .b-label_registration{
+        text-align: left;
+    }
+    .b-block_checkbox {
+        margin-right: 0;
+        float: left;
     }
     .b-form__pay .b-form__heading_finalize{
         display: block;
@@ -6893,16 +6928,12 @@ border: 1px solid #efca14;
     }
     
 /*    stage 2 styles*/
+    .b-propos__recalc .b-select__container_propos:last-of-type {
+        min-width: 180px;
+    }
     .b-container__calculator_propositions{
         padding-right: 10px;
         padding-left: 10px;
-    }
-    .b-propositions{
-        -webkit-order: initial;
-        -moz-order: initial;
-        -ms-order: initial;
-        -o-order: initial;
-        order: initial;
     }
     .b-propos__guaranties .b-wrap_guaranties{
         flex-grow: 1;
