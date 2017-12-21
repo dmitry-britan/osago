@@ -6700,6 +6700,9 @@ border: 1px solid #efca14;
     .b-section_crumbs, .b-videohelp:last-child .b-stages_videohelp, .b-section_responses, .b-section_seoText, .b-vehicles, .b-vehicle__params{
         display: none;
     }
+    .b-modal{
+        width: 320px;
+    }
     .b-label_registration{
         text-align: left;
     }
