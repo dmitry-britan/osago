@@ -6608,7 +6608,7 @@ border: 1px solid #efca14;
         display: none;
     }
     .b-modal{
-        width: 320px;
+        max-width: 320px;
     }
     .b-form__pay .b-form__heading_finalize{
         display: block;
