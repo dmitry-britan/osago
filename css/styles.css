@@ -1592,9 +1592,6 @@ a.b-menu__heading:hover{
     -o-transition: color 400ms;
     transition: color 400ms;
 }
-.b-factor__heading:hover{
-    color: #f2c90c;
-}
 .b-attention__factor p{
     width: 165px;
     margin: 0 auto;
