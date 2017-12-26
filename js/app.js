@@ -116,8 +116,8 @@ $(document).ready(function(){
 		};
 
 		obj.menuToggler = function(){
-			// open/close menu on mouseenter event
-			obj.$menuBtn.on("mouseenter click", function(){
+			// open/close menu on event
+			obj.$menuBtn.on("click", function(){
 				if (obj.$mainMenu.hasClass("opened")){
 					obj.closeMenu();
 				} else {
