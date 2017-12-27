@@ -5023,6 +5023,12 @@ border: 1px solid #efca14;
     border: none!important; /* у этой кнопки нет границ */
 }
 
+@media screen and (max-width: 1279px){
+    .callback-form__inner{
+        padding: 15px 15px 20px;
+    }
+}
+
 /* step */
 .step{
     display: none;
