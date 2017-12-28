@@ -3201,8 +3201,8 @@ a.b-callback_footer:hover{
 }
 .b-proposition__company .b-discont{
     display: none;
-/*    margin-top: 15px;*/
     margin-top: auto;
+    margin-bottom: -9px;
     color: #000;
 }
 .b-proposition_row .b-proposition__about{
