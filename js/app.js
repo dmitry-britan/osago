@@ -2439,8 +2439,6 @@ $(document).ready(function(){
 									$modalOvl.fadeIn();
 									$modalExitCallbackSuccess.fadeIn();
 									$leavePopup.remove();
-									exitPopupShow = false;
-									
 							} else {
 								$modals.fadeOut();
 								$modalOvl.fadeIn();

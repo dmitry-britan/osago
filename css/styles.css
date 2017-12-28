@@ -3241,7 +3241,7 @@ a.b-callback_footer:hover{
 }
 .b-proposition__company .b-discont{
     display: none;
-/*    margin-top: 15px;*/
+    margin-bottom: -9px;
     margin-top: auto;
     color: #000;
 }
