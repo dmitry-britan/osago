@@ -1111,7 +1111,8 @@ $(document).ready(function(){
 			if ($window.outerWidth() <= BREAKPOINT_XS && !$methodBtns.filter("[data-for='byUpload']").hasClass("b-finalize__btn_active")){
 			//  console.log("viewport <= 767px");
 			 $methodBtns.filter("[data-for='byUpload']").trigger("click");
-			} else {
+			} 
+			if ($window.outerWidth() > BREAKPOINT_XS && $methodBtns.filter("[data-for='byUpload']").hasClass("b-finalize__btn_active")) {
 			//  console.log("viewport > 767px");
 			 $methodBtns.filter("[data-for='bySelf']").trigger("click");
 			}
