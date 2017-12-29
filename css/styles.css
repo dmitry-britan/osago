@@ -4080,6 +4080,7 @@ border: 1px solid #efca14;
 .b-info_order{
     margin-bottom: 30px;
     width: 606px;
+    min-width: 280px;
     -webkit-box-shadow: 0 0 30px 9px rgba(0,0,0,0.2);
     box-shadow: 0 0 30px 9px rgba(0,0,0,0.2);
     border-collapse: collapse;
@@ -6219,6 +6220,9 @@ border: 1px solid #efca14;
     }
     .b-info_order{
         width: 100%;
+    }
+    .b-info_order td input[type="image"] {
+        max-width: 150px;
     }
     .b-info_order th{
         width: 175px;
