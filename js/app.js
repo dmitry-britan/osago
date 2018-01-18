@@ -258,7 +258,14 @@ $(document).ready(function(){
 			,$buyBtns = $("#propositions").find(".js-proposition__buy")						// кнопка оформлення покупки
 			,$quickDelivBtns = $("#propositions").find(".js-proposition__delivery_quick")	// кнопка оформлення швидкої доставки
 			,$makeBtns = $().add($buyBtns).add($quickDelivBtns)							// кнопки оформлення
-			,$franshiza = $(".js-range_franshiza").ionRangeSlider()			// слайдер Франшизи
+			,$franshiza = $(".js-range_franshiza").ionRangeSlider({
+				grid: true,
+				step: 1000,
+				min: 0,
+				max: 2000,
+				from: 2000,
+				values: [0, 1000, 2000]
+			})			// слайдер Франшизи
 			;
 
 			// modals
@@ -1581,7 +1588,14 @@ $(document).ready(function(){
 		});
 
 		// слайдер Франшизи
-		$(".js-range_franshiza").ionRangeSlider();
+		$(".js-range_franshiza").ionRangeSlider({
+			grid: true,
+			step: 1000,
+			min: 0,
+			max: 2000,
+			from: 2000,
+			values: [0, 1000, 2000]
+		});
 
 		// додамо до поля міста реєстрації статичну випадашку при введенні від 0 до 1 символа (до відпрацювання автокомпліта)
 		precomplete(2, $("#regCity"));

@@ -67,18 +67,18 @@
         }
 
     .irs-min {
-        position: absolute; display: block;
+        position: absolute; display: none;
         left: 0;
         cursor: default;
     }
     .irs-max {
-        position: absolute; display: block;
+        position: absolute; display: none;
         right: 0;
         cursor: default;
     }
 
     .irs-from, .irs-to, .irs-single {
-        position: absolute; display: block;
+        position: absolute; display: none;
         top: 0; left: 0;
         cursor: default;
         white-space: nowrap;
@@ -86,7 +86,7 @@
 
 .irs-grid {
     position: absolute; display: none;
-    bottom: 0; left: 0;
+    bottom: 15px; left: 0;
     width: 100%; height: 20px;
 }
 .irs-with-grid .irs-grid {
@@ -99,6 +99,7 @@
         background: #000;
     }
     .irs-grid-pol.small {
+        display: none;
         height: 4px;
     }
     .irs-grid-text {
