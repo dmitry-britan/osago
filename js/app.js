@@ -1026,6 +1026,9 @@ $(document).ready(function(){
 			,$orderByYourselfNavigate = $orderBlock.find(".js-step-nav")
 			;
 		
+		// убераем лишние информационные блоки страницы
+		$('.js-hide-on-step-3').hide();
+
 		// show only selected buy method
 		$methodBtns.click(function(e){
 			e.preventDefault();
@@ -1581,6 +1584,10 @@ $(document).ready(function(){
 				$cityName.focus();
 			} else {
 				showPropositions($containerAjax);	// load of propositions
+				// скрываем ненужные блоки
+				$('.js-hide-on-step-2').hide();
+				$('.js-hide-on-step-3').show();
+				// 
 			}
 		});
 	};
@@ -1719,6 +1726,14 @@ $(document).ready(function(){
 			    }
 			});
 		});
+		// убераем текущее значение в инпуте при фокусе
+		$objToComplete.on('focus', function() {
+			if (!$(this).data('item')){
+				$(this).data('item', $(this).val());
+			} else {
+				$(this).val('');
+			}
+		});
 		$objToComplete.blur(function(){	// при втраті фокуса, якщо ми змінили значення, але не обрали з меню автокомпліта, то повернемо раніше обране значення полю
 			var  dataItem = $(this).attr("data-item")	// раніше обране значення, збережене в атрибуті "data-item"
 				,fieldValue = $(this).val()	// поточне значення
@@ -1739,7 +1754,9 @@ $(document).ready(function(){
 				showVehicleCalc($containerAjax);
 	            break;
 	        case 2:
-        		hideContainerAjax($containerAjax);
+						hideContainerAjax($containerAjax);
+						// отображаем блоки которые скрыли на третьем шаге
+						$('.js-hide-on-step-3').show();
 		        $containerAjax.queue("ajax", function(){
 		        	$.ajax({
 			        	type: "get",
