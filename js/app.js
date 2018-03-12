@@ -766,8 +766,7 @@ $(document).ready(function(){
         		chassis:  {
         			required: true,
                     minlength: 2,
-                    maxlength: 17,
-                    pattern: /^[A-Za-z]+[A-Za-z0-9]*$/
+                    maxlength: 17
         		},
         		plateNum: {
         			required: true,
@@ -836,8 +835,7 @@ $(document).ready(function(){
         		chassis:  {
         			required: "Поле обязательно для заполнения!",
                     minlength: "не менее 2х символов",
-                    maxlength: "не более 17 символов",
-                    pattern: "латинница, минимум одна цифра"
+                    maxlength: "не более 17 символов"
         		},
         		plateNum: {
                     required: "Поле обязательно для заполнения!",
