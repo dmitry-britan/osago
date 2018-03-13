@@ -236,7 +236,6 @@ $(document).ready(function(){
 			,$moreProposBtn = $propositionsBlock.find("#morePropositions")	// "Больше предложений" button
 			,$vehicleSelect = $("#vehicle")
 			,$toggleFilters = $("#toggleFilters")
-			,$toggleFilter = $(".js-toggle-filter")
 			,$toggleOneClick = $(".js-toggle-1click")
 			,$garanteeBlock = $(".b-propos__guaranties")
 			,$vehicleForm = $("#vehicleForm")
@@ -379,7 +378,22 @@ $(document).ready(function(){
 				,$sortBtnByPrice = $sortBtns.filter(".js-filter_price")
 				,$sortBtnByRating = $sortBtns.filter(".js-filter_rating")
 				;
+
+			// форма заказать в 1 клик
+			$('.link-oneclick').on('click', function(event){
+				event.preventDefault();
+				
+				if ( $(this).parents('.b-proposition_row').hasClass('is--current') ) {
+					$('.b-proposition_row').removeClass('is--current');
+				} else {
+					$('.b-proposition_row').removeClass('is--current');
+					$(this).parents('.b-proposition_row').addClass('is--current');
+					$(this).parent().append( $('#oneClickForm') );
+				}
+			});
 			
+			$("input[type='tel']").mask("+38 (099) 999-99-99");
+
 			// сортування таблиці пропозицій
 				// функція сортування
 				// sName - ім'я властивості
@@ -457,21 +471,7 @@ $(document).ready(function(){
 	            	,cityName = $cityName.val()
 	            	,city = $cityId.val()
 	            	,zone = $cityZone.val()
-	            	;
-				var changeHeader =function($toggleFilters){
-					var 
-						selectVal = function($Select){
-							return $Select.parent().siblings(".selectric-items").find("li").filter(".selected").text();
-						}
-						,sVehicle = selectVal($vehicleSelect)
-						,sParams = selectVal($type)
-						,settlement = $cityName.attr("data-item").match(/(^.+?(?=, ))|(^.+)/i)
-						,headerText = sVehicle + ' ' + sParams + ' ' + settlement[0]
-						;
-						
-					$toggleFilters.text(headerText);
-				}
-				changeHeader($toggleFilters);
+								;
 
 				$.ajax({
 	            	type: "get",
@@ -517,22 +517,6 @@ $(document).ready(function(){
 			$(this).toggleClass("b-link_unscrolled")
 			$vehicleForm.slideToggle(200);
 		});
-		
-		// toggle filter on mobile
-		$toggleFilter.click(function(){
-			$toggleOneClick.removeClass('is--active');
-			$toggleFilter.toggleClass('is--active');
-			$garanteeBlock.slideUp(0);
-			$vehicleForm.slideToggle(200);
-		});
-		// toggle oneClickForm on mobile
-		$toggleOneClick.click(function(){
-			$toggleFilter.removeClass('is--active');
-			$toggleOneClick.toggleClass('is--active');
-			$vehicleForm.slideUp(0);
-			$garanteeBlock.slideToggle(200);
-		});
-
 		// callapse filter on mobile devices
 		if ($window.outerWidth() <= BREAKPOINT_XS && !$toggleFilters.hasClass('b-link_unscrolled') ){
 			$toggleFilters.trigger('click');
