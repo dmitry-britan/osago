@@ -1088,15 +1088,20 @@ $(document).ready(function(){
 			}
 		});
 		// on mobiles show only byFileUpload method
-
+		function setActiveMethod(methodNum){
+			$activeMethod.fadeOut(400, function(){
+				$activeMethod.removeClass("js-method_active");
+				$activeMethod = $methods.eq(methodNum).addClass("js-method_active");
+				$activeMethod.fadeIn(400);	// show active method
+				// validate current method form
+				validatorCurrent = orderFormsValidation($activeMethod);	// hidden method could not be initialized before
+			});
+		}
 		$window.on("resize", function(){
-			if ($window.outerWidth() <= BREAKPOINT_XS && !$methodBtns.filter("[data-for='byUpload']").hasClass("b-finalize__btn_active")){
-				//  console.log("viewport <= 767px");
-				 $methodBtns.filter("[data-for='byUpload']").trigger("click");
-				} 
-			if ($window.outerWidth() > BREAKPOINT_XS && $methodBtns.filter("[data-for='byUpload']").hasClass("b-finalize__btn_active")) {
-			//  console.log("viewport > 767px");
-				$methodBtns.filter("[data-for='bySelf']").trigger("click");
+			var methodNum = ($window.outerWidth() <= BREAKPOINT_XS)?2:0;
+			
+			if (!$methods.eq(methodNum).hasClass("js-method_active")){
+				setActiveMethod(methodNum);
 			}
 		 });
 

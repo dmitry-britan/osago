@@ -2729,6 +2729,9 @@ a.b-callback_footer:hover{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.b-container__order{
+    padding-bottom: 20px;
+}
 .b-container_crumbs_order,
 .b-container_crumbs_propos{
     margin: 0 -16px;
