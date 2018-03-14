@@ -5031,6 +5031,9 @@ border: 1px solid #efca14;
     .callback-form__inner{
         padding: 15px 15px 20px;
     }
+    .callback-form__content .input{
+        font-size: 14px;
+    }
 }
 
 /* step */
@@ -5777,6 +5780,9 @@ border: 1px solid #efca14;
     }
 }
 @media (max-width: 767px){
+    .callback-form__content .input{
+        font-size: 16px;
+    }
     .hidden-xs, .b-header .b-header__link_email, #finalize .b-crumbs_aside{
         display: none;
     }
