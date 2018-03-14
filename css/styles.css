@@ -5053,11 +5053,11 @@ border: 1px solid #efca14;
         margin: 0 auto;
     }
     
-/*    stage 3 styles*/
+    /*    stage 3 styles*/
     .b-section_crumbs .b-crumbs_aside{
         right: 10px;
     }
-/*    stage thanks styles*/
+    /*    stage thanks styles*/
     .b-thanks{
         margin-bottom: 50px;
     }
@@ -5086,6 +5086,9 @@ border: 1px solid #efca14;
     }
 }
 @media (max-width: 1279px){
+    .callback-form__content .input{
+        font-size: 14px;
+    }
     .b-seoMap, .b-seoMap_descr{
         display: block;
         margin: 0 auto;
@@ -5751,6 +5754,9 @@ border: 1px solid #efca14;
     }
 }
 @media (max-width: 767px){
+    .callback-form__content .input{
+        font-size: 16px;
+    }
     .hidden-xs, .b-header .b-header__link_email, #finalize .b-crumbs_aside{
         display: none;
     }
