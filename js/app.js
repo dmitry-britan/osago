@@ -765,8 +765,9 @@ $(document).ready(function(){
         		},
         		chassis:  {
         			required: true,
-                    minlength: 2,
-                    maxlength: 17
+                    minlength: 5,
+                    maxlength: 17,
+                    pattern: /^[A-Za-z]+[A-Za-z0-9]*$/
         		},
         		plateNum: {
         			required: true,
@@ -790,13 +791,13 @@ $(document).ready(function(){
                     required: "Поле обязательно для заполнения!",
                     minlength: "не менее 2х символов",
                     maxlength: "не более 100 символов",
-                    pattern: "латинница, кириллица, пробел, дефис"
+                    pattern: "латиница, кириллица, пробел, дефис"
                 },
         		firstName:{
                     required: "Поле обязательно для заполнения!",
                     minlength: "не менее 2х символов",
                     maxlength: "не более 75 символов",
-                    pattern: "латинница, кириллица, пробел, дефис"
+                    pattern: "латиница, кириллица, пробел, дефис"
         		},
         		email:    {
                     required: "Поле обязательно для заполнения!",
@@ -834,14 +835,15 @@ $(document).ready(function(){
         		},
         		chassis:  {
         			required: "Поле обязательно для заполнения!",
-                    minlength: "не менее 2х символов",
-                    maxlength: "не более 17 символов"
+                    minlength: "не менее 5 символов",
+                    maxlength: "не более 17 символов",
+                    pattern: "латиница (обязательно, как 1-й символ), цифры, без пробелов"
         		},
         		plateNum: {
                     required: "Поле обязательно для заполнения!",
                     minlength: "не менее 2х символов",
                     maxlength: "не более 10ти символов",
-                    pattern: "латинница, кириллица, цифры, без пробелов"
+                    pattern: "латиница, кириллица, цифры, без пробелов"
         		},
         		date: {
                     required: "Поле обязательно для заполнения!",
@@ -1080,6 +1082,16 @@ $(document).ready(function(){
 						dataLayer.push({'event': 'GAevent', 'eventCategory': 'anketaOrder', 'eventAction': 'anketaStepOne'});
 						break;
 					case 3:
+						// Изменяем введенный ВИН код
+						var $chassis = $('#chassis');
+						var vinCodeVal = $chassis.val();
+							vinCodeVal = vinCodeVal.replace('q','0')
+																		.replace('Q','0')
+																		.replace('o','0')
+																		.replace('O','0')
+																		.replace('i','1')
+																		.replace('I','1');
+							$chassis.val(vinCodeVal);
 						dataLayer.push({'event': 'GAevent', 'eventCategory': 'anketaOrder', 'eventAction': 'anketaStepTwo'}); 
 					break;
 					default:
