@@ -767,7 +767,7 @@ $(document).ready(function(){
         			required: true,
                     minlength: 5,
                     maxlength: 17,
-                    pattern: /^[A-Za-z]+[A-Za-z0-9]*$/
+                    pattern: /^[A-Za-z0-9]*$/
         		},
         		plateNum: {
         			required: true,
@@ -837,7 +837,7 @@ $(document).ready(function(){
         			required: "Поле обязательно для заполнения!",
                     minlength: "не менее 5 символов",
                     maxlength: "не более 17 символов",
-                    pattern: "латиница (обязательно, как 1-й символ), цифры, без пробелов"
+                    pattern: "латиница, цифры, без пробелов"
         		},
         		plateNum: {
                     required: "Поле обязательно для заполнения!",
