@@ -7443,6 +7443,9 @@ border: 1px solid #efca14;
 	margin: 0 0 34px;
 	padding: 0;
 }
+.footer__contacts-item.is--no-icon{
+	padding-left: 75px;
+}
 .footer__contacts-item i{
 	margin-right: 28px;
 }
@@ -7562,12 +7565,15 @@ border: 1px solid #efca14;
 	padding: 0;
 }
 .footer__block-link{
-	display: block;
+    display: block;
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 400;
 	text-decoration: none;
 	color: #ffffff;
+}
+.footer__block-link.callback:hover {
+    color: #ffca00;
 }
 @media screen and (max-width: 1350px){
 	.footer__block-link{
